@@ -1,0 +1,21 @@
+target_default: 2_observations
+
+packages:
+  - readr
+  - zip
+
+sources:
+  - src/file_functions.R
+
+targets:
+  2_observations:
+    depends:
+      - out_data/temperature_observations.zip
+      - out_data/flow_observations.zip
+
+  # daily flow and temperature data
+  out_data/temperature_observations.zip:
+    command: zip_obs(out_file = target_name, in_file = '')
+    
+  out_data/flow_observations.zip:
+    command: zip_obs(out_file = target_name, in_file = '')
