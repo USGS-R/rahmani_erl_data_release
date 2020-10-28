@@ -1,0 +1,22 @@
+target_default: 3_inputs
+
+include:
+
+packages:
+  - dplyr
+  - zip
+  - readr
+
+sources:
+  - src/file_functions.R
+
+targets:
+  3_inputs:
+    depends:
+
+  #weather_drivers:
+   # command: extract_weather_drivers()
+    
+  #out_data/weather_drivers.zip:
+   # command: zip_this(out_file = target_name, in_file = weather_drivers)
+    

@@ -1,0 +1,36 @@
+target_default: 1_spatial
+
+packages:
+  - dplyr
+  - meddle
+  - rgdal
+  - sf
+  - zip
+  
+sources:
+  - src/spatial_functions.R
+
+targets:
+  1_spatial:
+    depends:
+      - out_data/01_spatial.zip
+
+  modeled_network_sf:
+    command: retrieve_network(network_sf_fl = '')
+    
+  network_vertices_sf:
+    command: retrieve_vertices(network_sf_fl = '')
+  
+  # include map of network, maybe with HRUs?
+  #out_data/modeling_domain_map.png:
+   # command: plot_domain_map(target_name,
+    #  network_sf = modeled_network_sf,
+      #plot_crs = I("+init=epsg:2811"))
+    
+  spatial_metadata:
+    command: extract_feature(network_vertices_sf)
+    
+  out_data/01_spatial_network.zip:
+    command: sf_to_zip(target_name,
+      sf_object = modeled_network_sf,
+      layer_name = I('study_stream_reaches'))
