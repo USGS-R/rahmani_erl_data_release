@@ -7,7 +7,7 @@
 
 1. Download the entire contents of the "Data - ERL paper" folder at https://drive.google.com/drive/u/0/folders/1i3BDRPThyLmVYwaIjxIVpiGf61E3pLzq. Unzip into the "tmp" folder in this project to create
 ```
-- tmp
+- in_data
   - Data - ERL paper
     - Forcing_attrFiles
     - LR
@@ -16,7 +16,7 @@
 
 2. Download or clone the entire contents of the temperature model code repo at https://github.com/FRahmani368/LSTM_Temperature. Copy the essential code files into the "tmp" folder in this project to create
 ```
-- tmp
+- in_data
   - Data - ERL paper
   - LSTM_Temperature
     - the essential code files from the LSTM_Temperature repo go here
