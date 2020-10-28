@@ -1,0 +1,61 @@
+authors: ["Farshid Rahmani, XX"]
+pubdate: 2020
+doi: XX
+abstract: >-
+  This data release provides all data and code used in Rahmani et al. 2020. Briefly, this project used the CAMELS dataset as a test case for temperature prediction using deep learning methods. XX
+
+# ----associated publication----
+larger-cites:
+  -
+    authors: ["TBD XX"]
+    title: >-
+      TBD XX
+    pubdate: 2020
+
+purpose: XXDecision support, limnological research, and fish habitat.
+start-date: 19801001
+end-date: 20191231
+
+update: none planned
+themekeywords: ["machine learning", "deep learning", "water","temperature","streams","modeling", "XX"]
+
+usage-rules: >-
+  These data are subject to change and are not citable until reviewed and approved for official publication by the USGS
+
+descgeog: "River catchments as defined by XX."
+data-publisher: U.S. Geological Survey
+
+# ----contacts----
+contact-person: Farshid Rahmani
+contact-phone: XX
+contact-email: XX
+contact-position: XX
+contact-address: "XX"
+contact-city: XX
+contact-state: XX
+contact-zip: XX
+
+metadata-person: XX
+metadata-position: XX
+metadata-phone: XX
+metadata-fax: XX
+metadata-email: XX
+metadata-address: "XX"
+metadata-city: XX
+metadata-state: XX
+metadata-zip: XX
+metadata-date: !expr format(Sys.time(),'%Y%m%d')
+
+accur-test: No formal attribute accuracy tests were conducted.
+funding-credits: >-
+  This study was funded by the Integrated Water Prediction Program at the U.S. Geological Survey. XX.
+
+process-description: >-
+  At the core of the modeling framework is a deep learning model that uses inputs of XX.
+  
+distro-person: Samantha K. Oliver
+liability-statement: >-
+  Unless otherwise stated, all data, metadata and related materials are considered to satisfy the quality standards relative to the purpose for which the data were collected.
+  Although these data and associated metadata have been reviewed for accuracy and completeness and approved for release by the U.S. Geological Survey (USGS),
+  no warranty expressed or implied is made regarding the display or utility of the data on any other system or for general or scientific purposes, nor shall
+  the act of distribution constitute any such warranty.
