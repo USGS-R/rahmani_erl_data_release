@@ -1,0 +1,100 @@
+title: >-
+  Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 2 observations
+
+
+abstract: >-
+  XX
+
+cross-cites:
+  -
+    authors: XX
+    title: >-
+      XX
+    pubdate: XX
+    link: XX
+
+entities:
+  -
+    data-name: temperature_observations.zip
+    data-description: Water temperature observation data from 118 catchments used in this study.
+    attributes:
+    -
+      attr-label: seg_id_nat
+      attr-def: >-
+        River reach identifier from XX, which the site was matched to based on latitude and longitude.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: site_id
+      attr-def: >-
+        Site identifier from the data provider.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: date
+      attr-def: Date of temperature measurement
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: temp
+      attr-def: Water temperature
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: degrees C
+    -
+      attr-label: source_id
+      attr-def: The source of these data.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: NA
+  -
+    data-name: flow_observations.zip
+    data-description: Flow observation from XX river catchments used in this study.
+    attributes:
+    -
+      attr-label: seg_id_nat
+      attr-def: >-
+        River reach identifier from XX, which the site was matched to based on latitude and longitude.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: site_id
+      attr-def: >-
+        Site identifier from the data provider.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: date
+      attr-def: Date of temperature measurement
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: flow
+      attr-def: River flow or discharge
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: cubic meters per second
+    -
+      attr-label: source_id
+      attr-def: The source of these data
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: NA
+
+file-format: comma-delimited files, some compressed into zip files
