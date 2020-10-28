@@ -1,0 +1,30 @@
+title: >-
+    Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 6 model evaluation
+
+abstract: >-
+  The deep learning model framework was evaluated using XX metrics. XX
+
+cross-cites:
+  -
+    authors: ['XX']
+    title: >-
+      Cross cite code base?
+    pubdate: XX
+    link: XX
+
+entities:
+  -
+    data-name: temperature_rmse.csv
+    data-description: The RMSEs of water temperature predictions for 118 catchments used in this study.
+    attributes:
+    -
+      attr-label: XX
+      attr-def: >-
+        XX
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: NA
+
+build-environment: >-
+  We used XX open source XX.
