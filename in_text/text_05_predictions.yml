@@ -1,0 +1,17 @@
+title: >-
+    Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 5 model prediction data
+
+abstract: >-
+  A deep learning model framework was used to make water temperature predictions in 118 river catchments across the U.S. XX
+
+cross-cites:
+  -
+    authors: ['XX']
+    title: >-
+      Cross cite code base?
+    pubdate: XX
+    link: XX
+
+build-environment: >-
+  We used XX open source XX; Any supercomputing resources used? XX
+  
