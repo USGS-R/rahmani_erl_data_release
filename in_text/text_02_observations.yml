@@ -3,98 +3,70 @@ title: >-
 
 
 abstract: >-
-  XX
+  Mean daily temperature and discharge observations were retrieved from NWIS. The temperature observations were used to train and validate the LSTM model, while flow observations were used as a model input during training.
 
 cross-cites:
   -
-    authors: XX
+    authors: U.S. Geological Survey
     title: >-
-      XX
-    pubdate: XX
-    link: XX
+       National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)
+    pubdate: Accessed on XX
+    link: http://dx.doi.org/10.5066/F7P55KJN
 
 entities:
   -
-    data-name: temperature_observations.zip
-    data-description: Water temperature observation data from 118 catchments used in this study.
+    data-name: temperature_observations.csv
+    data-description: Water temperature observation data from 118 catchments used in this study. The observations were retrieved from NWIS and are limited to the test and training period, from 2010-10-01 through 2016-09-30.
     attributes:
     -
-      attr-label: seg_id_nat
+      attr-label: site_no
       attr-def: >-
-        River reach identifier from XX, which the site was matched to based on latitude and longitude.
+        USGS unique site identifier.
       attr-defs: NA
       data-min: NA
       data-max: NA
       data-units: NA
     -
-      attr-label: site_id
+      attr-label: datetime
       attr-def: >-
-        Site identifier from the data provider.
+        Date of temperature observation.
       attr-defs: NA
       data-min: NA
       data-max: NA
       data-units: NA
     -
-      attr-label: date
-      attr-def: Date of temperature measurement
+      attr-label: wtemp(C)
+      attr-def: Observed mean daily water temperature
       attr-defs: NA
       data-min: NA
       data-max: NA
-      data-units: NA
-    -
-      attr-label: temp
-      attr-def: Water temperature
-      attr-defs: NA
-      data-min: NA
-      data-max: NA
-      data-units: degrees C
-    -
-      attr-label: source_id
-      attr-def: The source of these data.
-      attr-defs: NA
-      data-min: NA
-      data-max: NA
-      data-units: NA
+      data-units: degrees Celsius
   -
-    data-name: flow_observations.zip
-    data-description: Flow observation from XX river catchments used in this study.
+    data-name: flow_observations.csv
+    data-description: Observed mean daily discharge observation retrieved from NWIS for the 118 gages used in this study. Flow observations were used as a driver in the water temperature model. The data were retrieved from NWIS and are limited to the test and training period, from 2010-10-01 through 2016-09-30.
     attributes:
     -
-      attr-label: seg_id_nat
+      attr-label: site_no
       attr-def: >-
-        River reach identifier from XX, which the site was matched to based on latitude and longitude.
+        USGS unique site identifier.
       attr-defs: NA
       data-min: NA
       data-max: NA
       data-units: NA
     -
-      attr-label: site_id
+      attr-label: datetime
       attr-def: >-
-        Site identifier from the data provider.
+        Date of temperature observation.
       attr-defs: NA
       data-min: NA
       data-max: NA
       data-units: NA
     -
-      attr-label: date
-      attr-def: Date of temperature measurement
+      attr-label: discharge(cfs)
+      attr-def: Observed mean daily discharge
       attr-defs: NA
       data-min: NA
       data-max: NA
-      data-units: NA
-    -
-      attr-label: flow
-      attr-def: River flow or discharge
-      attr-defs: NA
-      data-min: NA
-      data-max: NA
-      data-units: cubic meters per second
-    -
-      attr-label: source_id
-      attr-def: The source of these data
-      attr-defs: NA
-      data-min: NA
-      data-max: NA
-      data-units: NA
+      data-units: degrees Celsius
 
-file-format: comma-delimited files, some compressed into zip files
+file-format: comma-delimited files
