@@ -6,31 +6,35 @@ packages:
   - rgdal
   - sf
   - zip
-  
+  - readr
+  - stringr
+
 sources:
   - src/spatial_functions.R
+  - src/munge_functions.R
 
 targets:
   1_spatial:
     depends:
       - out_data/01_spatial.zip
 
-  modeled_network_sf:
-    command: retrieve_network(network_sf_fl = '')
-    
-  network_vertices_sf:
-    command: retrieve_vertices(network_sf_fl = '')
-  
+  study_sites:
+    command: retrieve_ids(in_file = 'in_data/Data - ERL paper/Forcing_attrFiles/no_dam_attr_temp60__days118sites.csv')
+
+  gage_locations:
+    command: subset_points(
+      points_url = I('https://water.usgs.gov/GIS/dsdl/gagesII_9322_point_shapefile.zip'), sites = study_sites)
+
   # include map of network, maybe with HRUs?
   #out_data/modeling_domain_map.png:
    # command: plot_domain_map(target_name,
     #  network_sf = modeled_network_sf,
       #plot_crs = I("+init=epsg:2811"))
-    
+
   spatial_metadata:
-    command: extract_feature(network_vertices_sf)
-    
-  out_data/01_spatial_network.zip:
+    command: extract_feature(gage_locations)
+
+  out_data/01_gage_locations.zip:
     command: sf_to_zip(target_name,
-      sf_object = modeled_network_sf,
-      layer_name = I('study_stream_reaches'))
+      sf_object = gage_locations,
+      layer_name = I('gage_locations'))

@@ -14,21 +14,45 @@ cross-cites:
 
 entities:
   -
-    data-name: 01_spatial.zip
-    data-description: GIS polygons for 118 river catchments included in this study. XX.
+    data-name: 01_gage_locations.zip
+    data-description: GIS point locations for the 118 river catchments included in this study. XX.
     attributes:
     -
-      attr-label: XX
+      attr-label: site_no
       attr-def: >-
-        XX
+        U.S. Geological Survey site number.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: site_name
+      attr-def: >-
+        Name of the site, which often includes river name.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: lat
+      attr-def: >-
+        Latitude of the site location.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: long
+      attr-def: >-
+        Longitude of the site location.
       attr-defs: NA
       data-min: NA
       data-max: NA
       data-units: NA
 
 
-data-name: Polygons for river catchments used in this study
-data-description: Shapefile of river catchments included in this data release.
+data-name: GIS points of sites used in this study.
+data-description: Location of USGS river gages used in this study.
 
 file-format: Shapefile Data Set
 
