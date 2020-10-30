@@ -9,14 +9,27 @@ packages:
 
 sources:
   - src/file_functions.R
+  - src/munge_functions.R
 
 targets:
   3_inputs:
     depends:
+      - out_data/AT_basin_attributes.csv
+      - out_data/weather_drivers.zip
 
-  #weather_drivers:
-   # command: extract_weather_drivers()
-    
-  #out_data/weather_drivers.zip:
-   # command: zip_this(out_file = target_name, in_file = weather_drivers)
-    
+  out_data/AT_basin_attributes.csv:
+    command: extract_AT_attributes(
+      out_file = target_name,
+      in_file = 'in_data/Data - ERL paper/Forcing_attrFiles/no_dam_attr_temp60__days118sites.csv')
+
+  #out_data/AQ_basin_attributes.csv:
+   # command: extract_AQ_attributes(
+    #  out_file = target_name,
+     # in_file = 'in_data/Data - ERL paper/Forcing_attrFiles/no_dam_attr_temp60__days118sites.csv')
+    #)
+
+  weather_drivers:
+    command: subset_weather_drivers(in_file = 'in_data/Data - ERL paper/Forcing_attrFiles/no_dam_forcing_60__days118sites.csv')
+
+  out_data/weather_drivers.zip:
+    command: zip_this(out_file = target_name, weather_drivers)
