@@ -6,21 +6,21 @@ abstract: >-
 
 cross-cites:
   -
-    authors: ['A. Newman; K. Sampson; M. P. Clark; A. Bock; R. J. Viger; D. Blodgett']
+    authors: ['J.A. Falcone']
     title: >-
-       A large-sample watershed-scale hydrometeorological dataset for the contiguous USA
-    pubdate: 2014
-    link: https://dx.doi.org/10.5065/D6MW2F4D
+      GAGES-II: Geospatial attributes of gages for evaluating streamflow
+    pubdate: 2011
+    link: https://doi.org/10.3133/70046617
 
 entities:
   -
     data-name: 01_gage_locations.zip
-    data-description: GIS point locations for the 118 river catchments included in this study. XX.
+    data-description: GIS point locations for the 118 river catchments included in this study. These sites are a subset from the Gages II dataset.
     attributes:
     -
       attr-label: site_no
       attr-def: >-
-        U.S. Geological Survey site number.
+        USGS unique site identifier.
       attr-defs: NA
       data-min: NA
       data-max: NA
