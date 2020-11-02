@@ -663,6 +663,35 @@ entities:
       data-min: NA
       data-max: NA
       data-units: percent
+  -
+    data-name: pred_discharge.csv
+    data-description: >-
+      Simulated discharge that was used as an input to the water temperature models. Simulated discharge was only used during the test period (water years 2014-2016).
+    attributes:
+    -
+      attr-label: site_no
+      attr-def: >-
+        U.S. Geological Survey site number.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: datetime
+      attr-def: >-
+        Date of prediction.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: sim_discharge(cfs)
+      attr-def: >-
+        Stream discharge as predicted by the discharge model.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: cubic feet per second
 
 
 

@@ -2,7 +2,7 @@ title: >-
     Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 5 model prediction data
 
 abstract: >-
-  A deep learning model framework was used to make water temperature predictions in 118 river catchments across the U.S. XX
+  A deep learning model framework was used to make water temperature predictions in 118 river catchments across the U.S. All four model (LR, noQ, obsQ, and simQ) predictions are included. Additionally, a deep learning model was used to simulate discharge, which was used as inputs to the water temperature model.
 
 cross-cites:
   -
@@ -14,4 +14,35 @@ cross-cites:
 
 build-environment: >-
   We used XX open source XX; Any supercomputing resources used? XX
-  
+
+entities:
+  -
+    data-name: model_{}_predictions.csv
+    data-description: >-
+      The water temperature predictions from each stream temperature model described in Rahmani et al. 2020. Each file represents a different stream temperature model, where model names are contained in the filename (modabbrev). Model abbreviation "lr" refers the locally-fitted linear regression model, "obsq" to the model trained with observed discharge, "simq" to the model trained with simulated discharge, and "noq" to the model trained with no discharge information.
+
+    attributes:
+    -
+      attr-label: site_no
+      attr-def: >-
+        Unique USGS site identifier.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: datetime
+      attr-def: >-
+        Date of prediction.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: sim_wtemp(C)
+      attr-def: >-
+        Simulated water temperature.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: degrees Celsius

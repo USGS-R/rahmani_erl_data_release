@@ -1,13 +1,37 @@
 target_default: 5_predictions
 
-include:
-
 packages:
+  - readr
+  - reticulate
 
 sources:
+  - src/munge_functions.R
 
 targets:
   5_predictions:
     depends:
+      - out_data/model_lr_predictions.csv
+      - out_data/model_obsq_predictions.csv
+      - out_data/model_simq_predictions.csv
+      - out_data/model_noq_predictions.csv
 
-    
+
+  out_data/model_lr_predictions.csv:
+    command: npy_to_csv(
+      out_file = target_name, sites = study_sites,
+      in_file = 'in_data/Data - ERL paper/LR/pred.npy')
+
+  out_data/model_obsq_predictions.csv:
+    command: npy_to_csv(
+      out_file = target_name, sites = study_sites,
+      in_file = 'in_data/Data - ERL paper/obsQ/pred.npy')
+
+  out_data/model_simq_predictions.csv:
+    command: npy_to_csv(
+      out_file = target_name, sites = study_sites,
+      in_file = 'in_data/Data - ERL paper/simQ/pred.npy')
+
+  out_data/model_noq_predictions.csv:
+    command: npy_to_csv(
+      out_file = target_name, sites = study_sites,
+      in_file = 'in_data/Data - ERL paper/noQ/pred.npy')
