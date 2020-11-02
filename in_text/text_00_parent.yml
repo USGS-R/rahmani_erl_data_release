@@ -3,7 +3,7 @@ title: >-
 
 
 abstract: >-
-  <p>This data release provides all data and code used in Rahmani et al. 2020. Briefly, this project used the CAMELS dataset as a test case for temperature prediction using deep learning methods. XX
+  <p>This data release provides all data and code used in Rahmani et al. 2020. Briefly, this project used the Gages II dataset as a test case for temperature prediction using deep learning methods. XX
   <br/>The data are organized into these items:</p>
   <ol>
   <li><a href="https://www.sciencebase.gov/catalog/item/5f908db182ce720ee2d0fef9">Spatial Information</a> - Pour points for 118 river basins used in this study</li>

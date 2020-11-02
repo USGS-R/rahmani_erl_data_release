@@ -3,7 +3,7 @@ title: >-
 
 
 abstract: >-
-  Mean daily temperature and discharge observations were retrieved from NWIS. The temperature observations were used to train and validate the LSTM model, while flow observations were used as a model input during training.
+  Mean daily temperature and discharge observations retrieved from NWIS. The temperature observations were used to train and validate all temperature models, while flow observations were used as a model input during training for a subset of the temperature models. The model training period was from 2010-10-01 to 2014-09-30, and the test period was from 2014-10-01 to 2016-09-30.
 
 cross-cites:
   -
