@@ -3,11 +3,45 @@ target_default: 6_evaluation
 include:
 
 packages:
+  - dplyr
+  - reticulate
 
 sources:
+  - src/munge_functions.R
 
 targets:
   6_evaluation:
     depends:
+      - out_data/model_lr_evaluation.csv
+      - out_data/model_obsq_evaluation.csv
+      - out_data/model_simq_evaluation.csv
+      - out_data/model_noq_evaluation.csv
 
-    
+  out_data/model_obsq_evaluation.csv:
+    command: extract_metrics(
+      out_file = target_name,
+      mod_index = I(1),
+      sites = study_sites,
+      in_file = "in_data/Data - ERL paper/model_evaluation_file/statDictLst_res.npz")
+
+  out_data/model_simq_evaluation.csv:
+    command: extract_metrics(
+      out_file = target_name,
+      mod_index = I(2),
+      sites = study_sites,
+      in_file = "in_data/Data - ERL paper/model_evaluation_file/statDictLst_res.npz")
+
+  out_data/model_noq_evaluation.csv:
+    command: extract_metrics(
+      out_file = target_name,
+      mod_index = I(3),
+      sites = study_sites,
+      in_file = "in_data/Data - ERL paper/model_evaluation_file/statDictLst_res.npz")
+
+  out_data/model_lr_evaluation.csv:
+    command: extract_metrics(
+      out_file = target_name,
+      mod_index = I(4),
+      sites = study_sites,
+      in_file = "in_data/Data - ERL paper/model_evaluation_file/statDictLst_res.npz")
+

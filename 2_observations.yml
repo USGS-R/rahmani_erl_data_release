@@ -6,16 +6,23 @@ packages:
 
 sources:
   - src/file_functions.R
+  - src/munge_functions.R
 
 targets:
   2_observations:
     depends:
-      - out_data/temperature_observations.zip
-      - out_data/flow_observations.zip
+      - out_data/temperature_observations.csv
+      - out_data/flow_observations.csv
 
   # daily flow and temperature data
-  out_data/temperature_observations.zip:
-    command: zip_obs(out_file = target_name, in_file = '')
-    
-  out_data/flow_observations.zip:
-    command: zip_obs(out_file = target_name, in_file = '')
+  out_data/temperature_observations.csv:
+    command: extract_obs(
+      out_file = target_name,
+      var = I('wtemp(C)'),
+      in_file = 'in_data/Data - ERL paper/Forcing_attrFiles/no_dam_forcing_60__days118sites.csv')
+
+  out_data/flow_observations.csv:
+    command: extract_obs(
+      out_file = target_name,
+      var = I('discharge(cfs)'),
+      in_file = 'in_data/Data - ERL paper/Forcing_attrFiles/no_dam_forcing_60__days118sites.csv')

@@ -2,37 +2,311 @@ title: >-
   Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 3 model inputs
 
 abstract: >-
-  XX
-  
+  Inputs to the deep learning models included daily weather forcing data, as well as river catchment attributes.
+
 cross-cites:
   -
-    authors: ['XX']
+    authors: ['P.E. Thornton', 'M.M. Thornton', 'B.W. Mayer', 'Y. Wei', 'R. Devarakonda', 'R.S. Vose', 'R.B. Cook']
     title: >-
-      XX
-    pubdate: XX
-    link: XX
-    
+      Daymet: Daily Surface Weather Data on a 1-km Grid for North America, Version 3
+    pubdate: 2018
+    link: https://doi.org/10.3334/ORNLDAAC/1328
+  -
+    authors: ['J.A. Falcone']
+    title: >-
+      GAGES-II: Geospatial attributes of gages for evaluating streamflow
+    pubdate: 2011
+    link: https://doi.org/10.3133/70046617
+
 entities:
   -
     data-name: weather_drivers.csv
-    data-description: Wather drivers used to force the deep learning models XX.
+    data-description: Daily weather driver data that was used to drive both the temperature and flow models. Data were obtained from Daymet and interpolated over each basin from the period 2004 to 2016.
     attributes:
     -
-      attr-label: from
+      attr-label: site_no
       attr-def: >-
-        The segment ID (seg_id_nat) of the starting segment for the distance calculation.
+        The unique site identifier, which is also the USGS gage site ID.
       attr-defs: NA
       data-min: NA
       data-max: NA
       data-units: NA
     -
-      attr-label: {seg_id_nat}
+      attr-label: dayls(s)
       attr-def: >-
-        Distance (in meters) between the seg_id_nat in the from column to the {seg_id_nat} in the column name. Positive numbers indicate a downstream direction, while positive numbers indicate an upstream direction.
+        Duration of the daylight period in seconds per day. This calculation is based on the period of the day during which the sun is above a hypothetical flat horizon.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: seconds per day
+    -
+      attr-label: prcp(mm/day)
+      attr-def: >-
+        Daily total precipitation in millimeters per day, sum of all forms converted to water-equivalent. Precipitation occurrence on any given day may be ascertained.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: millimeters per day
+    -
+      attr-label: srad(W/m2)
+      attr-def: >-
+        Incident shortwave radiation flux density in watts per square meter, taken as an average over the daylight period of the day. NOTE: Daily total radiation (MJ/m2/day) can be calculated as follows: ((srad (W/m2) * dayl (s/day)) / l,000,000).
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: watts per square meter
+    -
+      attr-label: swe(mm)
+      attr-def: >-
+        Snow water equivalent in kilograms per square meter. The amount of water contained within the snowpack.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: kilograms per square meter
+    -
+      attr-label: tmax(C)
+      attr-def: >-
+        Daily maximum 2-meter air temperature in degrees Celsius.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: degrees Celsius
+    -
+      attr-label: tmin(C)
+      attr-def: >-
+        Daily minimum 2-meter air temperature in degrees Celsius.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: degrees Celsius
+    -
+      attr-label: vp(Pa)
+      attr-def: >-
+        Water vapor pressure in pascals. Daily average partial pressure of water vapor.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: pascals
+    -
+      attr-label: datetime
+      attr-def: >-
+        Date of observation
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: NA
+  -
+    data-name: AT_basin_attributes.csv
+    data-description: River basin characteristics used as inputs to the water temperature model. Basin characteristics are from the Gages II dataset.
+    attributes:
+    -
+      attr-label: site_no
+      attr-def: >-
+        The unique site identifier, which is also the USGS gage site ID.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: DRAIN_SQKM
+      attr-def: >-
+        Watershed drainage area.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: Square kilometer
+    -
+      attr-label: STREAMS_KM_SQ_KM
+      attr-def: >-
+        Stream density (length of streams per area of watershed).
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: kilometer per square kilometer
+    -
+      attr-label: STOR_NID_2009
+      attr-def: >-
+        Dam storage in watershed per watershed area.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: Megalitre per square kilometer
+    -
+      attr-label: FORESTNLCD06
+      attr-def: >-
+        Watershed percent forest.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: percent
+    -
+      attr-label: PLANTNLCD06
+      attr-def: >-
+        Watershed percent agriculture (plant).
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: percent
+    -
+      attr-label: SLOPE_PCT
+      attr-def: >-
+        Mean watershed slope.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: percent
+    -
+      attr-label: RAW_DIS_NEAREST_MAJ_DAM
+      attr-def: >-
+        Raw straight line distance of gage location to nearest major dam in watershed.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: kilometer
+    -
+      attr-label: PERDUN
+      attr-def: >-
+        Dunne overland flow as percentage of total streamflow.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: percentage
+    -
+      attr-label: RAW_DIS_NEAREST_DAM
+      attr-def: >-
+        Raw straight line distance of gage location to nearest dam in watershed.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: kilometer
+    -
+      attr-label: RAW_AVG_DIS_ALL_MAJ_DAMS
+      attr-def: >-
+        Raw average straight line distance of gage location to all major dams in watershed.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: kilometer
+    -
+      attr-label: T_MIN_BASIN
+      attr-def: >-
+        Average of minimum monthly air temperature for 1971-2000.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: degrees Celsius
+    -
+      attr-label: T_MINSTD_BASIN
+      attr-def: >-
+        Standard deviation of minimum monthly air temperature  for 1971-2000.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: degrees Celsius
+    -
+      attr-label: RH_BASIN
+      attr-def: >-
+        Watershed average relative humidity.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: percent
+    -
+      attr-label: RAW_AVG_DIS_ALLDAMS
+      attr-def: >-
+        Raw average straight line distance of gage location to all dams in watershed.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: kilometer
+    -
+      attr-label: PPTAVG_BASIN
+      attr-def: >-
+        Mean annual precipitation for watershed for 1971-2000.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: centimeter
+    -
+      attr-label: HIRES_LENTIC_PCT
+      attr-def: >-
+        Percent of watershed area covered by lake/pond/reservoir.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: percent
+    -
+      attr-label: T_AVG_BASIN
+      attr-def: >-
+        Average annual air temperature for the watershed.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: degrees Celsius
+    -
+      attr-label: T_MAX_BASIN
+      attr-def: >-
+        Average of maximum monthly air temperature for 1971-2000.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: degrees Celsius
+    -
+      attr-label: T_MAXSTD_BASIN
+      attr-def: >-
+        Standard deviation of maximum monthly air temperature for 1971-2000.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: degrees Celsius
+    -
+      attr-label: NDAMS_2009
+      attr-def: >-
+        Number of dams in watershed.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: ELEV_MEAN_M_BASIN
+      attr-def: >-
+        Mean watershed elevation.
       attr-defs: NA
       data-min: NA
       data-max: NA
       data-units: meters
+
+  -
+    data-name: pred_discharge.csv
+    data-description: >-
+      Simulated discharge that was used as an input to the water temperature models. Simulated discharge was only used during the test period (water years 2014-2016).
+    attributes:
+    -
+      attr-label: site_no
+      attr-def: >-
+        U.S. Geological Survey site number.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: datetime
+      attr-def: >-
+        Date of prediction.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: sim_discharge(cfs)
+      attr-def: >-
+        Stream discharge as predicted by the discharge model.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: cubic feet per second
+
+
 
 build-environment: Multiple computer systems were used to generate these data, including XX. The open source languages R and Python was used on all systems, as well as XX.
 
