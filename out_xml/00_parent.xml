@@ -3,7 +3,12 @@
   <idinfo>
     <citation>
       <citeinfo>
-        <origin>Samantha K. Oliver, XX</origin>
+        <origin>Farshid Rahmani</origin>
+        <origin>Kathryn Lawson</origin>
+        <origin>Wenyu Ouyang</origin>
+        <origin>Alison Appling</origin>
+        <origin>Samantha Oliver</origin>
+        <origin>Chaopeng Shen</origin>
         <pubdate>2020</pubdate>
         <title>Data release: Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data</title>
         <geoform>parent data item for released data products</geoform>
@@ -14,16 +19,21 @@
         <onlink>XX</onlink>
         <lworkcit>
           <citeinfo>
-            <origin>TBD XX</origin>
+            <origin>Farshid Rahmani</origin>
+            <origin>Kathryn Lawson</origin>
+            <origin>Wenyu Ouyang</origin>
+            <origin>Alison Appling</origin>
+            <origin>Samantha Oliver</origin>
+            <origin>Chaopeng Shen</origin>
             <pubdate>2020</pubdate>
-            <title>TBD XX</title>
+            <title>Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data.</title>
           </citeinfo>
         </lworkcit>
       </citeinfo>
     </citation>
     <descript>
-      <abstract>&lt;p&gt;This data release provides all data and code used in Rahmani et al. 2020. Briefly, this project used the CAMELS dataset as a test case for temperature prediction using deep learning methods. XX &lt;br/&gt;The data are organized into these items:&lt;/p&gt; &lt;ol&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f908db182ce720ee2d0fef9"&gt;Spatial Information&lt;/a&gt; - Basin polygons and pour points for 118 river basins used in this study&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f986594d34e198cb77ff084"&gt;Observations&lt;/a&gt; - Water temperature observations and flow observations for the 118 river reaches used in this study&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865abd34e198cb77ff086"&gt;Model Inputs&lt;/a&gt; - Model inputs, including basin characteristics and weather drivers. &lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865cfd34e198cb77ff088"&gt;Models&lt;/a&gt; - Code and configuration for stream temperature models.&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865e5d34e198cb77ff08a"&gt;Model Predictions&lt;/a&gt; - Predictions of water temperature&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865fbd34e198cb77ff08c"&gt;Model Evaluation&lt;/a&gt; - Performance of models&lt;/li&gt; &lt;br/&gt; &lt;p&gt;This research was funded by the USGS, XX.&lt;/p&gt;</abstract>
-      <purpose>Decision support, limnological research, and fish habitat.</purpose>
+      <abstract>&lt;p&gt;This data release provides all data and code used in Rahmani et al. 2020. Briefly, this project used the Gages II dataset as a test case for temperature prediction using deep learning methods. XX &lt;br/&gt;The data are organized into these items:&lt;/p&gt; &lt;ol&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f908db182ce720ee2d0fef9"&gt;Spatial Information&lt;/a&gt; - Pour points for 118 river basins used in this study&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f986594d34e198cb77ff084"&gt;Observations&lt;/a&gt; - Water temperature observations and flow observations for the 118 river reaches used in this study&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865abd34e198cb77ff086"&gt;Model Inputs&lt;/a&gt; - Model inputs, including basin characteristics and weather drivers. &lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865cfd34e198cb77ff088"&gt;Models&lt;/a&gt; - Code and configuration for stream temperature models.&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865e5d34e198cb77ff08a"&gt;Model Predictions&lt;/a&gt; - Predictions of stream water temperature and discharge&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865fbd34e198cb77ff08c"&gt;Model Evaluation&lt;/a&gt; - Performance metrics of each stream temperature model&lt;/li&gt; &lt;br/&gt; &lt;p&gt;This research was funded by the Integrated Water Prediction Program at the US Geological Survey.&lt;/p&gt;</abstract>
+      <purpose>Decision support, water quality research</purpose>
     </descript>
     <timeperd>
       <timeinfo>
@@ -39,7 +49,7 @@
       <update>none planned</update>
     </status>
     <spdom>
-      <descgeog>River reach polylines as defined by the XX.</descgeog>
+      <descgeog>Locations of sites used in the study, which are a subset of the Gages II dataset.</descgeog>
       <bounding>
         <westbc/>
         <eastbc/>
@@ -52,12 +62,10 @@
         <themekt>none</themekt>
         <themekey>machine learning</themekey>
         <themekey>deep learning</themekey>
-        <themekey>hybrid modeling</themekey>
         <themekey>water</themekey>
         <themekey>temperature</themekey>
-        <themekey>reservoirs</themekey>
+        <themekey>streams</themekey>
         <themekey>modeling</themekey>
-        <themekey>XX</themekey>
       </theme>
       <theme>
         <themekt>ISO 19115 Topic Category</themekt>
@@ -80,23 +88,23 @@
     <ptcontac>
       <cntinfo>
         <cntperp>
-          <cntper>Samantha K. Oliver</cntper>
+          <cntper>Farshid Rahmani</cntper>
           <cntorg>U.S. Geological Survey</cntorg>
         </cntperp>
-        <cntpos>Hydrologist</cntpos>
+        <cntpos>Graduate Research Assistant</cntpos>
         <cntaddr>
           <addrtype>Mailing and Physical</addrtype>
-          <address>8505 Research Way</address>
-          <city>Middleton</city>
-          <state>WI</state>
-          <postal>53562</postal>
+          <address>Sackett Building, Pennsylvania State University</address>
+          <city>State College</city>
+          <state>PA</state>
+          <postal>16801</postal>
           <country>U.S.A.</country>
         </cntaddr>
-        <cntvoice>608-821-3824</cntvoice>
-        <cntemail>soliver@usgs.gov</cntemail>
+        <cntvoice>NA</cntvoice>
+        <cntemail>fzr5082@psu.edu</cntemail>
       </cntinfo>
     </ptcontac>
-    <datacred>This study was funded by the Department of the Interior Northeast Climate Adaptation Science Center, the United States Geological Survey National Climate This research used resources of the Core Science Analytics and Synthesis Advanced Research Computing program at the U.S. Geological Survey.</datacred>
+    <datacred>This study was funded by the Integrated Water Prediction Program at the U.S. Geological Survey. XX.</datacred>
     <native>Multiple computer systems were used to generate these data, including linux, OSX. The open source languages R and Python were used on all systems. XX</native>
   </idinfo>
   <dataqual>
@@ -115,8 +123,8 @@
     </posacc>
     <lineage>
       <procstep>
-        <procdesc>At the core of the modeling framework is a coupled hydrologic-thermodynamic model that uses inputs of reach-specific properties and local meteorology to estimate flow and water temperature. Our chosen model is the open source, Precipitation Runoff Modeling System (PRMS) with the coupled Stream Network Temperature Model (SNTemp) version XX. PRMS-SNTemp is a ...XX. We used PRMS-SNTemp to simulate stream flow and temperature for the period of record...XX.</procdesc>
-        <procdate>20201027</procdate>
+        <procdesc>At the core of the modeling framework is a deep learning model that uses inputs of XX.</procdesc>
+        <procdate>20201102</procdate>
       </procstep>
     </lineage>
   </dataqual>
@@ -186,25 +194,25 @@
     </stdorder>
   </distinfo>
   <metainfo>
-    <metd>20201027</metd>
+    <metd>20201102</metd>
     <metc>
       <cntinfo>
         <cntperp>
-          <cntper>Samantha K. Oliver</cntper>
+          <cntper>Farshid Rahmani</cntper>
           <cntorg>U.S. Geological Survey</cntorg>
         </cntperp>
-        <cntpos>Hydrologist</cntpos>
+        <cntpos>Graduate Research Assistant</cntpos>
         <cntaddr>
           <addrtype>Mailing and Physical</addrtype>
-          <address>8505 Research Way</address>
-          <city>Middleton</city>
-          <state>WI</state>
-          <postal>53562</postal>
+          <address>Sackett Building, Pennsylvania State University</address>
+          <city>State College</city>
+          <state>PA</state>
+          <postal>16801</postal>
           <country>U.S.A.</country>
         </cntaddr>
-        <cntvoice>608-821-3824</cntvoice>
-        <cntfax>608-821-3817</cntfax>
-        <cntemail>soliver@usgs.gov</cntemail>
+        <cntvoice>NA</cntvoice>
+        <cntfax>NA</cntfax>
+        <cntemail>fzr5082@psu.edu</cntemail>
       </cntinfo>
     </metc>
     <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
