@@ -21,7 +21,7 @@ extract_AQ_attributes <- function(out_file, in_file) {
 
 subset_pred_discharge <- function(out_file, in_file){
   dat <- readr::read_csv(in_file) %>%
-    select(site_no, datetime, sim_discharge_cfs = combine_discharge) %>%
+    select(site_no, datetime, `sim_discharge(cfs)` = combine_discharge) %>%
     filter(datetime >= as.Date('2013-09-30')) # predicted Q only in test period
 
   readr::write_csv(dat, out_file)
@@ -53,11 +53,16 @@ extract_obs <- function(out_file, var, in_file) {
 
 }
 
-read_npy <- function(in_file) {
-library(reticulate)
-  np <- import('numpy')
-  dat <- np$load("in_data/Data - ERL paper/simQ/pred.npy")
+npy_to_csv <- function(in_file, out_file, sites) {
 
+  np <- import('numpy')
+  dat <- np$load(in_file)
+  dat_long <- as.numeric(unlist(dat))
+  dat_out <- tibble(site_no = rep(sites, 731),
+                        datetime = rep(seq.Date(from = as.Date('2014-10-01'), to = as.Date('2016-09-30'), 1), each = 118),
+                        `sim_wtemp(C)` = dat_long)
+
+  readr::write_csv(dat_out, out_file)
 }
 
 extract_metrics <- function(out_file, mod_index, sites, in_file) {
