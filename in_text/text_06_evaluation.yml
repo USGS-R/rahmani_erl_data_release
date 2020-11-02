@@ -2,7 +2,7 @@ title: >-
     Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 6 model evaluation
 
 abstract: >-
-  The deep learning model framework was evaluated using XX metrics. XX
+  Several evaluation metrics were used to assess the predictive performance of each stream temperature model. For further description, see the metric calculations in the supplement of Rahmani et al. 2020. Each file correspond to a different model, but the structure of the files is the same across all models.
 
 cross-cites:
   -
@@ -14,13 +14,62 @@ cross-cites:
 
 entities:
   -
-    data-name: temperature_rmse.csv
-    data-description: The RMSEs of water temperature predictions for 118 catchments used in this study.
+    data-name: model_{modabbrev}_evaluation.csv
+    data-description: >-
+      The performance metrics of each stream temperature model assessed in Rahmani et al. 2020. Each file represents a different stream temperature model, where model names are contained in the filename (modabbrev). Model abbreviation "lr" refers the locally-fitted linear regression model, "obsq" to the model trained with observed discharge, "simq" to the model trained with simulated discharge, and "noq" to the model trained with no discharge information.
     attributes:
     -
-      attr-label: XX
+      attr-label: site_no
       attr-def: >-
-        XX
+        Unique USGS site identifier.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: Bias
+      attr-def: >-
+        mean error (bias)
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: degrees Celsius
+    -
+      attr-label: RMSE
+      attr-def: >-
+        root mean squared error
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: degrees Celsius
+    -
+      attr-label: ubRMSE
+      attr-def: >-
+        Unbiased root mean squared error (RMSE), which is calculated as RMSE minus the mean bias.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: degrees Celsius
+    -
+      attr-label: NSE
+      attr-def: >-
+        Nash-Sutcliffe efficiency
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: NSE_res
+      attr-def: >-
+        Residual Nash-Sutcliffe efficiency (NSE), where NSE is calculated on the residual between stream and air temperature.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: Corr_res
+      attr-def: >-
+        Pearson's correlation coefficient, calculated on the residual between stream and air temperature.
       attr-defs: NA
       data-min: NA
       data-max: NA
