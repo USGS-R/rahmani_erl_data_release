@@ -1,11 +1,11 @@
 
 include:
-  #- 1_spatial.yml
-  #- 2_observations.yml
-  #- 3_inputs.yml
+  - 1_spatial.yml
+  - 2_observations.yml
+  - 3_inputs.yml
   #- 4_models.yml
-  #- 5_predictions.yml
-  #- 6_evaluation.yml
+  - 5_predictions.yml
+  - 6_evaluation.yml
 
 
 packages:
@@ -28,18 +28,18 @@ targets:
   all:
     depends:
       - 00_parent_sb_xml
-      #- 01_spatial_sb_xml
-      #- 01_spatial_sb_shp
-      #- 02_observations_sb_data
-      #- 02_observations_sb_xml
-      #- 03_inputs_sb_xml
-      #- 03_inputs_sb_data
+      - 01_spatial_sb_xml
+      - 01_spatial_sb_shp
+      - 02_observations_sb_data
+      - 02_observations_sb_xml
+      - 03_inputs_sb_xml
+      - 03_inputs_sb_data
       #- 04_models_sb_xml
       #- 04_models_sb_data
-      #- 05_predictions_sb_xml
-      #- 05_predictions_sb_data
-      #- 06_evaluation_sb_data
-      #- 06_evaluation_sb_xml
+      - 05_predictions_sb_xml
+      - 05_predictions_sb_data
+      - 06_evaluation_sb_data
+      - 06_evaluation_sb_xml
 
 
   out_xml/00_parent.xml:
@@ -50,61 +50,66 @@ targets:
   00_parent_sb_xml:
      command: sb_render_post_xml(sbid_00_parent,
       "in_text/text_SHARED.yml",
-      "in_text/text_00_parent.yml")
-      #,spatial_metadata
-      
+      "in_text/text_00_parent.yml",
+      spatial_metadata)
 
-  #01_spatial_sb_xml:
-   # command: sb_render_post_xml(sbid_01_spatial,
-    #  "in_text/text_SHARED.yml",
-     # "in_text/text_01_spatial.yml",
-      #spatial_metadata)
 
-  #01_spatial_sb_shp:
-   # command: sb_replace_files(sbid_01_spatial,
-    #  "out_data/01_spatial_network.zip")
-  
-  #02_observations_sb_data:
-   # command: sb_replace_files(sbid_02_observations,
-    #  "out_data/temperature_observations.zip", "out_data/flow_observations.zip")
+  01_spatial_sb_xml:
+    command: sb_render_post_xml(sbid_01_spatial,
+      "in_text/text_SHARED.yml",
+      "in_text/text_01_spatial.yml",
+      spatial_metadata)
 
-  #02_observations_sb_xml:
-   # command: sb_render_post_xml(sbid_02_observations,
-    #  "in_text/text_SHARED.yml",
-     # "in_text/text_02_observations.yml",
-      #spatial_metadata)
+  01_spatial_sb_shp:
+    command: sb_replace_files(sbid_01_spatial,
+      "out_data/01_gage_locations.zip")
 
-  #03_inputs_sb_xml:
-   # command: sb_render_post_xml(sbid_04_inputs,
-    #  "in_text/text_SHARED.yml",
-     # "in_text/text_04_inputs.yml")
+  02_observations_sb_data:
+    command: sb_replace_files(sbid_02_observations,
+      "out_data/temperature_observations.csv", "out_data/flow_observations.csv")
 
-  #03_inputs_sb_data:
-   # command: sb_replace_files(sbid_04_inputs,
-    #  "out_data/distance_matrix.csv",
-     # "out_data/reservoir_features.csv",
-      #"out_data/sntemp_inputs_outputs.zip")
+  02_observations_sb_xml:
+    command: sb_render_post_xml(sbid_02_observations,
+      "in_text/text_SHARED.yml",
+      "in_text/text_02_observations.yml",
+      spatial_metadata)
 
-  #05_predictions_sb_xml:
-   # command: sb_render_post_xml(sbid_05_predictions,
-    #  "in_text/text_SHARED.yml",
-     # "in_text/text_05_predictions.yml",
-      #spatial_metadata)
+  03_inputs_sb_xml:
+    command: sb_render_post_xml(sbid_03_inputs,
+      "in_text/text_SHARED.yml",
+      "in_text/text_03_inputs.yml")
 
-  #05_predictions_sb_sntemp:
-   # command: sb_replace_files(sbid_05_predictions,
-    #  file_hash = "out/5_pb0_predict_zips.yml")
+  03_inputs_sb_data:
+    command: sb_replace_files(sbid_03_inputs,
+      "out_data/weather_drivers.zip",
+      "out_data/AT_basin_attributes.csv",
+      "out_data/pred_discharge.csv")
 
-  #06_evaluation_sb_xml:
-   # command: sb_render_post_xml(sb_id_06_evaluation,
-    #  "in_text/text_SHARED.yml",
-     # "in_text/text_06_evaluation.yml",
-      #spatial_metadata)
+  05_predictions_sb_xml:
+    command: sb_render_post_xml(sbid_05_predictions,
+      "in_text/text_SHARED.yml",
+      "in_text/text_05_predictions.yml",
+      spatial_metadata)
 
-  #06_evaluation_sb_data:
-   # command: sb_replace_files(sb_id_06_evaluation,
-    #  "out_data/sntemp_matched_to_observations.zip",
-     # "out_data/sntemp_evaluation.csv")
+  05_predictions_sb_data:
+    command: sb_replace_files(sbid_05_predictions,
+      "out_data/model_lr_predictions.csv",
+      "out_data/model_obsq_predictions.csv",
+      "out_data/model_simq_predictions.csv",
+      "out_data/model_noq_predictions.csv")
+
+  06_evaluation_sb_xml:
+    command: sb_render_post_xml(sb_id_06_evaluation,
+      "in_text/text_SHARED.yml",
+      "in_text/text_06_evaluation.yml",
+      spatial_metadata)
+
+  06_evaluation_sb_data:
+    command: sb_replace_files(sb_id_06_evaluation,
+      "out_data/model_lr_evaluation.csv",
+      "out_data/model_obsq_evaluation.csv",
+      "out_data/model_simq_evaluation.csv",
+      'out_data/model_noq_evaluation.csv')
 
   # ------ SB IDs --------
 
