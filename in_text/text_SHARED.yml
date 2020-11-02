@@ -1,49 +1,49 @@
-authors: ["Farshid Rahmani, XX"]
+authors: ["Farshid Rahmani", "Kathryn Lawson", "Wenyu Ouyang", "Alison Appling", "Samantha Oliver", "Chaopeng Shen"]
 pubdate: 2020
 doi: XX
 abstract: >-
-  This data release provides all data and code used in Rahmani et al. 2020. Briefly, this project used the CAMELS dataset as a test case for temperature prediction using deep learning methods. XX
+  This data release provides all data and code used in Rahmani et al. 2020. Briefly, this project used the USGS Gages II dataset as a test case for temperature prediction using deep learning methods. The paper explores the value of including stream discharge as a predictor in the temperature models, including the value of predicted discharge from a seperate model when no discharge measurements are available.
 
 # ----associated publication----
 larger-cites:
   -
-    authors: ["TBD XX"]
+    authors: ["Farshid Rahmani", "Kathryn Lawson", "Wenyu Ouyang", "Alison Appling", "Samantha Oliver", "Chaopeng Shen"]
     title: >-
-      TBD XX
+      Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data.
     pubdate: 2020
 
-purpose: XXDecision support, limnological research, and fish habitat.
+purpose: Decision support, water quality research
 start-date: 19801001
 end-date: 20191231
 
 update: none planned
-themekeywords: ["machine learning", "deep learning", "water","temperature","streams","modeling", "XX"]
+themekeywords: ["machine learning", "deep learning", "water","temperature","streams","modeling"]
 
 usage-rules: >-
   These data are subject to change and are not citable until reviewed and approved for official publication by the USGS
 
-descgeog: "River catchments as defined by XX."
+descgeog: "Locations of sites used in the study, which are a subset of the Gages II dataset."
 data-publisher: U.S. Geological Survey
 
 # ----contacts----
 contact-person: Farshid Rahmani
-contact-phone: XX
-contact-email: XX
-contact-position: XX
-contact-address: "XX"
-contact-city: XX
-contact-state: XX
-contact-zip: XX
+contact-phone: NA
+contact-email: fzr5082@psu.edu
+contact-position: Graduate Research Assistant
+contact-address: "Sackett Building, Pennsylvania State University"
+contact-city: State College
+contact-state: PA
+contact-zip: 16801
 
-metadata-person: XX
-metadata-position: XX
-metadata-phone: XX
-metadata-fax: XX
-metadata-email: XX
-metadata-address: "XX"
-metadata-city: XX
-metadata-state: XX
-metadata-zip: XX
+metadata-person: Farshid Rahmani
+metadata-position: Graduate Research Assistant
+metadata-phone: NA
+metadata-fax: NA
+metadata-email: fzr5082@psu.edu
+metadata-address: "Sackett Building, Pennsylvania State University"
+metadata-city: State College
+metadata-state: PA
+metadata-zip: 16801
 metadata-date: !expr format(Sys.time(),'%Y%m%d')
 
 accur-test: No formal attribute accuracy tests were conducted.
@@ -52,7 +52,7 @@ funding-credits: >-
 
 process-description: >-
   At the core of the modeling framework is a deep learning model that uses inputs of XX.
-  
+
 distro-person: Samantha K. Oliver
 liability-statement: >-
   Unless otherwise stated, all data, metadata and related materials are considered to satisfy the quality standards relative to the purpose for which the data were collected.
