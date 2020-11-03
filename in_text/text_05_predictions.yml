@@ -2,15 +2,15 @@ title: >-
     Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 5 model prediction data
 
 abstract: >-
-  A deep learning model framework was used to make water temperature predictions in 118 river catchments across the U.S. All four model (LR, noQ, obsQ, and simQ) predictions are included. Additionally, a deep learning model was used to simulate discharge, which was used as inputs to the water temperature model.
+  A deep learning model framework was used to make water temperature predictions in 118 river catchments across the U.S. All four model (LR, noQ, obsQ, and simQ) predictions are included.
 
 cross-cites:
   -
-    authors: ['XX']
+    authors: ['DP Feng', 'K Fang', "CP Shen"]
     title: >-
-      Cross cite code base?
-    pubdate: XX
-    link: XX
+      Enhancing streamflow forecast and extracting insights using continental-scale long-short term memory networks with data integration
+    pubdate: 2020
+    link: https://doi.org/10.1029/2019WR026793
 
 build-environment: >-
   We used XX open source XX; Any supercomputing resources used? XX
@@ -46,3 +46,12 @@ entities:
       data-min: NA
       data-max: NA
       data-units: degrees Celsius
+
+process-date: !expr format(Sys.time(),'%Y%m%d')
+indirect-spatial: U.S.A.
+latitude-res: 0.00001
+longitude-res: 0.00001
+data-name: Model predictions
+data-description: >-
+  Stream water temperature predictions from each model described in Rahmani et al. 2020.
+file-format: comma seperated file format (csv)

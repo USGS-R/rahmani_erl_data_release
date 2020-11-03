@@ -314,5 +314,5 @@ latitude-res: 0.1
 longitude-res: 0.1
 data-name: Model driver data
 data-description: >-
-  Inputs (drivers) for the temperature models described in Rahmani et al. 2020, including weather drivers, river basin attributes, and simulated river discharge
+  Inputs (drivers) for the temperature models described in Rahmani et al. 2020, including weather drivers, river basin attributes, and simulated river discharge.
 file-format: comma seperated file format (csv)
