@@ -314,5 +314,7 @@ process-date: !expr format(Sys.time(),'%Y%m%d')
 indirect-spatial: U.S.A.
 latitude-res: 0.1
 longitude-res: 0.1
-data-name: weather data, river catchment metadata
-
+data-name: Model driver data
+data-description: >-
+  Inputs (drivers) for the temperature models described in Rahmani et al. 2020, including weather drivers, river basin attributes, and simulated river discharge
+file-format: comma seperated file format (csv)

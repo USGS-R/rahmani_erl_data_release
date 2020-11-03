@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>Farshid Rahmani</origin>
+        <origin>Kathryn Lawson</origin>
+        <origin>Wenyu Ouyang</origin>
+        <origin>Alison Appling</origin>
+        <origin>Samantha Oliver</origin>
+        <origin>Chaopeng Shen</origin>
+        <pubdate>2020</pubdate>
+        <title>Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 3 model inputs</title>
+        <geoform>comma seperated file format (csv)</geoform>
+        <pubinfo>
+          <pubplace>Online (digital release)</pubplace>
+          <publish>U.S. Geological Survey</publish>
+        </pubinfo>
+        <onlink>XX</onlink>
+        <lworkcit>
+          <citeinfo>
+            <origin>Farshid Rahmani</origin>
+            <origin>Kathryn Lawson</origin>
+            <origin>Wenyu Ouyang</origin>
+            <origin>Alison Appling</origin>
+            <origin>Samantha Oliver</origin>
+            <origin>Chaopeng Shen</origin>
+            <pubdate>2020</pubdate>
+            <title>Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data.</title>
+          </citeinfo>
+        </lworkcit>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>Inputs to the deep learning models included daily weather forcing data, as well as river catchment attributes.</abstract>
+      <purpose>Decision support, water quality research</purpose>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <rngdates>
+          <begdate>19801001</begdate>
+          <enddate>20191231</enddate>
+        </rngdates>
+      </timeinfo>
+      <current>See publication date</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update>none planned</update>
+    </status>
+    <spdom>
+      <descgeog>Locations of sites used in the study, which are a subset of the Gages II dataset.</descgeog>
+      <bounding>
+        <westbc>-123.32988684</westbc>
+        <eastbc>-70.97964444</eastbc>
+        <northbc>48.90595739</northbc>
+        <southbc>30.1454932</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>none</themekt>
+        <themekey>machine learning</themekey>
+        <themekey>deep learning</themekey>
+        <themekey>water</themekey>
+        <themekey>temperature</themekey>
+        <themekey>streams</themekey>
+        <themekey>modeling</themekey>
+      </theme>
+      <theme>
+        <themekt>ISO 19115 Topic Category</themekt>
+        <themekey>environment</themekey>
+        <themekey>inlandWaters</themekey>
+        <themekey>007</themekey>
+        <themekey>012</themekey>
+      </theme>
+      <place>
+        <placekt>Department of Commerce, 1995, Countries, Dependencies, Areas of Special Sovereignty, and Their Principal Administrative Divisions,  Federal Information Processing Standard (FIPS) 10-4, Washington, D.C., National Institute of Standards and Technology</placekt>
+        <placekey>United States</placekey>
+        <placekey>US</placekey>
+      </place>
+      <place>
+        <placekt>U.S. Department of Commerce, 1987, Codes for the identification of the States, the District of Columbia and the outlying areas of the United States, and associated areas (Federal Information Processing Standard 5-2): Washington, D. C., NIST</placekt>
+        <placekey>Alabama</placekey>
+        <placekey>AL</placekey>
+        <placekey>Delaware</placekey>
+        <placekey>DE</placekey>
+        <placekey>Georgia</placekey>
+        <placekey>GA</placekey>
+        <placekey>Idaho</placekey>
+        <placekey>ID</placekey>
+        <placekey>Iowa</placekey>
+        <placekey>IA</placekey>
+        <placekey>Kansas</placekey>
+        <placekey>KS</placekey>
+        <placekey>Maine</placekey>
+        <placekey>ME</placekey>
+        <placekey>Maryland</placekey>
+        <placekey>MD</placekey>
+        <placekey>Massachusetts</placekey>
+        <placekey>MA</placekey>
+        <placekey>Michigan</placekey>
+        <placekey>MI</placekey>
+        <placekey>Mississippi</placekey>
+        <placekey>MS</placekey>
+        <placekey>Nevada</placekey>
+        <placekey>NV</placekey>
+        <placekey>New Jersey</placekey>
+        <placekey>NJ</placekey>
+        <placekey>New Mexico</placekey>
+        <placekey>NM</placekey>
+        <placekey>New York</placekey>
+        <placekey>NY</placekey>
+        <placekey>North Carolina</placekey>
+        <placekey>NC</placekey>
+        <placekey>Ohio</placekey>
+        <placekey>OH</placekey>
+        <placekey>Oklahoma</placekey>
+        <placekey>OK</placekey>
+        <placekey>Oregon</placekey>
+        <placekey>OR</placekey>
+        <placekey>Pennsylvania</placekey>
+        <placekey>PA</placekey>
+        <placekey>Rhode Island</placekey>
+        <placekey>RI</placekey>
+        <placekey>South Carolina</placekey>
+        <placekey>SC</placekey>
+        <placekey>Tennessee</placekey>
+        <placekey>TN</placekey>
+        <placekey>Texas</placekey>
+        <placekey>TX</placekey>
+        <placekey>Utah</placekey>
+        <placekey>UT</placekey>
+        <placekey>Virginia</placekey>
+        <placekey>VA</placekey>
+        <placekey>Washington</placekey>
+        <placekey>WA</placekey>
+        <placekey>West Virginia</placekey>
+        <placekey>WV</placekey>
+        <placekey>Wisconsin</placekey>
+        <placekey>WI</placekey>
+        <placekey>Wyoming</placekey>
+        <placekey>WY</placekey>
+      </place>
+    </keywords>
+    <accconst>none</accconst>
+    <useconst>These data are subject to change and are not citable until reviewed and approved for official publication by the USGS</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntperp>
+          <cntper>Farshid Rahmani</cntper>
+          <cntorg>U.S. Geological Survey</cntorg>
+        </cntperp>
+        <cntpos>Graduate Research Assistant</cntpos>
+        <cntaddr>
+          <addrtype>Mailing and Physical</addrtype>
+          <address>Sackett Building, Pennsylvania State University</address>
+          <city>State College</city>
+          <state>PA</state>
+          <postal>16801</postal>
+          <country>U.S.A.</country>
+        </cntaddr>
+        <cntvoice>NA</cntvoice>
+        <cntemail>fzr5082@psu.edu</cntemail>
+      </cntinfo>
+    </ptcontac>
+    <datacred>This study was funded by the Integrated Water Prediction Program at the U.S. Geological Survey. XX.</datacred>
+    <native>Multiple computer systems were used to generate these data, including XX. The open source languages R and Python was used on all systems, as well as XX.</native>
+    <crossref>
+      <citeinfo>
+        <origin>P.E. Thornton</origin>
+        <origin>M.M. Thornton</origin>
+        <origin>B.W. Mayer</origin>
+        <origin>Y. Wei</origin>
+        <origin>R. Devarakonda</origin>
+        <origin>R.S. Vose</origin>
+        <origin>R.B. Cook</origin>
+        <pubdate>2018</pubdate>
+        <title>Daymet: Daily Surface Weather Data on a 1-km Grid for North America, Version 3</title>
+        <onlink>https://doi.org/10.3334/ORNLDAAC/1328</onlink>
+      </citeinfo>
+    </crossref>
+    <crossref>
+      <citeinfo>
+        <origin>J.A. Falcone</origin>
+        <pubdate>2011</pubdate>
+        <title>GAGES-II: Geospatial attributes of gages for evaluating streamflow</title>
+        <onlink>https://doi.org/10.3133/70046617</onlink>
+      </citeinfo>
+    </crossref>
+  </idinfo>
+  <dataqual>
+    <attracc>
+      <attraccr>No formal attribute accuracy tests were conducted.</attraccr>
+    </attracc>
+    <logic>Not applicable</logic>
+    <complete>Not applicable</complete>
+    <posacc>
+      <horizpa>
+        <horizpar>A formal accuracy assessment of the horizontal positional information in the dataset was not conducted.</horizpar>
+      </horizpa>
+      <vertacc>
+        <vertaccr>A formal accuracy assessment of the vertical positional information in the dataset was not conducted.</vertaccr>
+      </vertacc>
+    </posacc>
+    <lineage>
+      <procstep>
+        <procdesc>At the core of the modeling framework is a deep learning model that uses inputs of XX.</procdesc>
+        <procdate>20201103</procdate>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <spdoinfo>
+    <indspref>U.S.A.</indspref>
+    <direct>Point</direct>
+    <ptvctinf>
+      <sdtsterm>
+        <sdtstype>Point</sdtstype>
+        <ptvctcnt>118</ptvctcnt>
+      </sdtsterm>
+    </ptvctinf>
+  </spdoinfo>
+  <spref>
+    <horizsys>
+      <geograph>
+        <latres>0.1</latres>
+        <longres>0.1</longres>
+        <geogunit>Decimal degrees</geogunit>
+      </geograph>
+      <geodetic>
+        <horizdn>WGS84</horizdn>
+        <ellips>WGS_1984</ellips>
+        <semiaxis>6378137.0</semiaxis>
+        <denflat>298.257</denflat>
+      </geodetic>
+    </horizsys>
+  </spref>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>weather_drivers.csv</enttypl>
+        <enttypd>Daily weather driver data that was used to drive both the temperature and flow models. Data were obtained from Daymet and interpolated over each basin from the period 2004 to 2016.</enttypd>
+        <enttypds>U.S. Geological Survey</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>site_no</attrlabl>
+        <attrdef>The unique site identifier, which is also the USGS gage site ID.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>NA</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>dayls(s)</attrlabl>
+        <attrdef>Duration of the daylight period in seconds per day. This calculation is based on the period of the day during which the sun is above a hypothetical flat horizon.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>seconds per day</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>prcp(mm/day)</attrlabl>
+        <attrdef>Daily total precipitation in millimeters per day, sum of all forms converted to water-equivalent. Precipitation occurrence on any given day may be ascertained.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>millimeters per day</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>srad(W/m2)</attrlabl>
+        <attrdef>Incident shortwave radiation flux density in watts per square meter, taken as an average over the daylight period of the day. NOTE: Daily total radiation (MJ/m2/day) can be calculated as follows: ((srad (W/m2) * dayl (s/day)) / l,000,000).</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>watts per square meter</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>swe(mm)</attrlabl>
+        <attrdef>Snow water equivalent in kilograms per square meter. The amount of water contained within the snowpack.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>kilograms per square meter</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>tmax(C)</attrlabl>
+        <attrdef>Daily maximum 2-meter air temperature in degrees Celsius.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>degrees Celsius</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>tmin(C)</attrlabl>
+        <attrdef>Daily minimum 2-meter air temperature in degrees Celsius.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>degrees Celsius</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>vp(Pa)</attrlabl>
+        <attrdef>Water vapor pressure in pascals. Daily average partial pressure of water vapor.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>pascals</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>datetime</attrlabl>
+        <attrdef>Date of observation</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>NA</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+    </detailed>
+    <detailed>
+      <enttyp>
+        <enttypl>AT_basin_attributes.csv</enttypl>
+        <enttypd>River basin characteristics used as inputs to the water temperature model. Basin characteristics are from the Gages II dataset.</enttypd>
+        <enttypds>U.S. Geological Survey</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>site_no</attrlabl>
+        <attrdef>The unique site identifier, which is also the USGS gage site ID.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>NA</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>DRAIN_SQKM</attrlabl>
+        <attrdef>Watershed drainage area.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>Square kilometer</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>STREAMS_KM_SQ_KM</attrlabl>
+        <attrdef>Stream density (length of streams per area of watershed).</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>kilometer per square kilometer</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>STOR_NID_2009</attrlabl>
+        <attrdef>Dam storage in watershed per watershed area.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>Megalitre per square kilometer</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>FORESTNLCD06</attrlabl>
+        <attrdef>Watershed percent forest.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>percent</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>PLANTNLCD06</attrlabl>
+        <attrdef>Watershed percent agriculture (plant).</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>percent</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>SLOPE_PCT</attrlabl>
+        <attrdef>Mean watershed slope.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>percent</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>RAW_DIS_NEAREST_MAJ_DAM</attrlabl>
+        <attrdef>Raw straight line distance of gage location to nearest major dam in watershed.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>kilometer</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>PERDUN</attrlabl>
+        <attrdef>Dunne overland flow as percentage of total streamflow.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>percentage</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>RAW_DIS_NEAREST_DAM</attrlabl>
+        <attrdef>Raw straight line distance of gage location to nearest dam in watershed.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>kilometer</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>RAW_AVG_DIS_ALL_MAJ_DAMS</attrlabl>
+        <attrdef>Raw average straight line distance of gage location to all major dams in watershed.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>kilometer</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>T_MIN_BASIN</attrlabl>
+        <attrdef>Average of minimum monthly air temperature for 1971-2000.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>degrees Celsius</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>T_MINSTD_BASIN</attrlabl>
+        <attrdef>Standard deviation of minimum monthly air temperature  for 1971-2000.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>degrees Celsius</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>RH_BASIN</attrlabl>
+        <attrdef>Watershed average relative humidity.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>percent</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>RAW_AVG_DIS_ALLDAMS</attrlabl>
+        <attrdef>Raw average straight line distance of gage location to all dams in watershed.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>kilometer</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>PPTAVG_BASIN</attrlabl>
+        <attrdef>Mean annual precipitation for watershed for 1971-2000.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>centimeter</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>HIRES_LENTIC_PCT</attrlabl>
+        <attrdef>Percent of watershed area covered by lake/pond/reservoir.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>percent</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>T_AVG_BASIN</attrlabl>
+        <attrdef>Average annual air temperature for the watershed.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>degrees Celsius</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>T_MAX_BASIN</attrlabl>
+        <attrdef>Average of maximum monthly air temperature for 1971-2000.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>degrees Celsius</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>T_MAXSTD_BASIN</attrlabl>
+        <attrdef>Standard deviation of maximum monthly air temperature for 1971-2000.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>degrees Celsius</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>NDAMS_2009</attrlabl>
+        <attrdef>Number of dams in watershed.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>NA</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>ELEV_MEAN_M_BASIN</attrlabl>
+        <attrdef>Mean watershed elevation.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>meters</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+    </detailed>
+    <detailed>
+      <enttyp>
+        <enttypl>pred_discharge.csv</enttypl>
+        <enttypd>Simulated discharge that was used as an input to the water temperature models. Simulated discharge was only used during the test period (water years 2014-2016).</enttypd>
+        <enttypds>U.S. Geological Survey</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>site_no</attrlabl>
+        <attrdef>U.S. Geological Survey site number.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>NA</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>datetime</attrlabl>
+        <attrdef>Date of prediction.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>NA</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>sim_discharge(cfs)</attrlabl>
+        <attrdef>Stream discharge as predicted by the discharge model.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>cubic feet per second</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+    </detailed>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>U.S. Geological Survey</cntorg>
+          <cntper>GS ScienceBase</cntper>
+        </cntorgp>
+        <cntaddr>
+          <addrtype>mailing address</addrtype>
+          <address>Denver Federal Center, Building 810, Mail Stop 302</address>
+          <city>Denver</city>
+          <state>CO</state>
+          <postal>80255</postal>
+          <country>United States</country>
+        </cntaddr>
+        <cntvoice>1-888-275-8747</cntvoice>
+        <cntemail>sciencebase@usgs.gov</cntemail>
+      </cntinfo>
+    </distrib>
+    <distliab>Unless otherwise stated, all data, metadata and related materials are considered to satisfy the quality standards relative to the purpose for which the data were collected. Although these data and associated metadata have been reviewed for accuracy and completeness and approved for release by the U.S. Geological Survey (USGS), no warranty expressed or implied is made regarding the display or utility of the data on any other system or for general or scientific purposes, nor shall the act of distribution constitute any such warranty.</distliab>
+    <stdorder>
+      <digform>
+        <digtinfo>
+          <formname>comma seperated file format (csv)</formname>
+        </digtinfo>
+        <digtopt>
+          <onlinopt>
+            <computer>
+              <networka>
+                <networkr>XX</networkr>
+              </networka>
+            </computer>
+          </onlinopt>
+        </digtopt>
+      </digform>
+      <fees>None</fees>
+    </stdorder>
+  </distinfo>
+  <metainfo>
+    <metd>20201103</metd>
+    <metc>
+      <cntinfo>
+        <cntperp>
+          <cntper>Farshid Rahmani</cntper>
+          <cntorg>U.S. Geological Survey</cntorg>
+        </cntperp>
+        <cntpos>Graduate Research Assistant</cntpos>
+        <cntaddr>
+          <addrtype>Mailing and Physical</addrtype>
+          <address>Sackett Building, Pennsylvania State University</address>
+          <city>State College</city>
+          <state>PA</state>
+          <postal>16801</postal>
+          <country>U.S.A.</country>
+        </cntaddr>
+        <cntvoice>NA</cntvoice>
+        <cntfax>NA</cntfax>
+        <cntemail>fzr5082@psu.edu</cntemail>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+  </metainfo>
+</metadata>

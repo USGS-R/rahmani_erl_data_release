@@ -29,7 +29,6 @@ targets:
   out_data/weather_drivers.zip:
     command: zip_this(out_file = target_name, weather_drivers)
 
-
   out_data/pred_discharge.csv:
     command: subset_pred_discharge(
       out_file = target_name,
