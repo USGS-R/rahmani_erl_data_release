@@ -22,7 +22,7 @@ extract_AQ_attributes <- function(out_file, in_file) {
 subset_pred_discharge <- function(out_file, in_file){
   dat <- readr::read_csv(in_file) %>%
     select(site_no, datetime, `sim_discharge(cfs)` = combine_discharge) %>%
-    filter(datetime >= as.Date('2013-09-30')) # predicted Q only in test period
+    filter(datetime > as.Date('2014-09-30')) # predicted Q only in test period
 
   readr::write_csv(dat, out_file)
 }
