@@ -96,7 +96,7 @@ targets:
 
   02_observations_sb_data:
     command: sb_replace_files(sbid_02_observations,
-      "out_data/temperature_observations.csv", "out_data/flow_observations.csv")
+      "out_data/temperature_observations.csv")
 
   02_observations_sb_xml:
     command: sb_render_post_xml(sbid_02_observations,
@@ -113,7 +113,7 @@ targets:
     command: sb_replace_files(sbid_03_inputs,
       "out_data/weather_drivers.zip",
       "out_data/AT_basin_attributes.csv",
-      "out_data/pred_discharge.csv")
+      "out_data/pred_discharge.csv", "out_data/obs_discharge.csv")
 
   05_predictions_sb_xml:
     command: sb_render_post_xml(sbid_05_predictions,

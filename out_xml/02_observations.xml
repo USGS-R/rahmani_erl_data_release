@@ -32,7 +32,7 @@
       </citeinfo>
     </citation>
     <descript>
-      <abstract>Mean daily temperature and discharge observations retrieved from NWIS. The temperature observations were used to train and validate all temperature models, while flow observations were used as a model input during training for a subset of the temperature models. The model training period was from 2010-10-01 to 2014-09-30, and the test period was from 2014-10-01 to 2016-09-30.</abstract>
+      <abstract>Mean daily temperature and discharge observations retrieved from NWIS. The temperature observations were used to train and validate all temperature models. The model training period was from 2010-10-01 to 2014-09-30, and the test period was from 2014-10-01 to 2016-09-30.</abstract>
       <purpose>Decision support, water quality research</purpose>
     </descript>
     <timeperd>
@@ -255,49 +255,6 @@
       <attr>
         <attrlabl>wtemp(C)</attrlabl>
         <attrdef>Observed mean daily water temperature</attrdef>
-        <attrdefs>NA</attrdefs>
-        <attrdomv>
-          <rdom>
-            <rdommin>NA</rdommin>
-            <rdommax>NA</rdommax>
-            <attrunit>degrees Celsius</attrunit>
-          </rdom>
-        </attrdomv>
-      </attr>
-    </detailed>
-    <detailed>
-      <enttyp>
-        <enttypl>flow_observations.csv</enttypl>
-        <enttypd>Observed mean daily discharge observation retrieved from NWIS for the 118 gages used in this study. Flow observations were used as a driver in the water temperature model. The data were retrieved from NWIS and are limited to the test and training period, from 2010-10-01 through 2016-09-30.</enttypd>
-        <enttypds>U.S. Geological Survey</enttypds>
-      </enttyp>
-      <attr>
-        <attrlabl>site_no</attrlabl>
-        <attrdef>USGS unique site identifier.</attrdef>
-        <attrdefs>NA</attrdefs>
-        <attrdomv>
-          <rdom>
-            <rdommin>NA</rdommin>
-            <rdommax>NA</rdommax>
-            <attrunit>NA</attrunit>
-          </rdom>
-        </attrdomv>
-      </attr>
-      <attr>
-        <attrlabl>datetime</attrlabl>
-        <attrdef>Date of temperature observation.</attrdef>
-        <attrdefs>NA</attrdefs>
-        <attrdomv>
-          <rdom>
-            <rdommin>NA</rdommin>
-            <rdommax>NA</rdommax>
-            <attrunit>NA</attrunit>
-          </rdom>
-        </attrdomv>
-      </attr>
-      <attr>
-        <attrlabl>discharge(cfs)</attrlabl>
-        <attrdef>Observed mean daily discharge</attrdef>
         <attrdefs>NA</attrdefs>
         <attrdomv>
           <rdom>

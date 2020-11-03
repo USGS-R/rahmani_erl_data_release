@@ -3,7 +3,7 @@ title: >-
 
 
 abstract: >-
-  Mean daily temperature and discharge observations retrieved from NWIS. The temperature observations were used to train and validate all temperature models, while flow observations were used as a model input during training for a subset of the temperature models. The model training period was from 2010-10-01 to 2014-09-30, and the test period was from 2014-10-01 to 2016-09-30.
+  Mean daily temperature and discharge observations retrieved from NWIS. The temperature observations were used to train and validate all temperature models. The model training period was from 2010-10-01 to 2014-09-30, and the test period was from 2014-10-01 to 2016-09-30.
 
 cross-cites:
   -
@@ -41,39 +41,13 @@ entities:
       data-min: NA
       data-max: NA
       data-units: degrees Celsius
-  -
-    data-name: flow_observations.csv
-    data-description: Observed mean daily discharge observation retrieved from NWIS for the 118 gages used in this study. Flow observations were used as a driver in the water temperature model. The data were retrieved from NWIS and are limited to the test and training period, from 2010-10-01 through 2016-09-30.
-    attributes:
-    -
-      attr-label: site_no
-      attr-def: >-
-        USGS unique site identifier.
-      attr-defs: NA
-      data-min: NA
-      data-max: NA
-      data-units: NA
-    -
-      attr-label: datetime
-      attr-def: >-
-        Date of temperature observation.
-      attr-defs: NA
-      data-min: NA
-      data-max: NA
-      data-units: NA
-    -
-      attr-label: discharge(cfs)
-      attr-def: Observed mean daily discharge
-      attr-defs: NA
-      data-min: NA
-      data-max: NA
-      data-units: degrees Celsius
+
 
 process-date: XX
 indirect-spatial: U.S.A.
 latitude-res: 0.00001
 longitude-res: 0.00001
-data-name: Flow and water temperature observations
+data-name: Water temperature observations
 data-description: >-
-  Flow and water temperature observations used to train and validate models described in Rahmani et al. 2020.
+  Water temperature observations used to train and validate models described in Rahmani et al. 2020.
 file-format: comma seperated file format (csv)
