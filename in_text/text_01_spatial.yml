@@ -57,8 +57,8 @@ data-description: Location of USGS river gages used in this study.
 file-format: Shapefile Data Set
 process-date: 20201028
 indirect-spatial: U.S.A.
-latitude-res: NA
-longitude-res: NA
+latitude-res: 0.00001
+longitude-res: 0.00001
 
 build-environment: >-
   This dataset was generated using XX.

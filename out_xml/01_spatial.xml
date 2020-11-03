@@ -209,8 +209,8 @@
   <spref>
     <horizsys>
       <geograph>
-        <latres>NA</latres>
-        <longres>NA</longres>
+        <latres>1e-05</latres>
+        <longres>1e-05</longres>
         <geogunit>Decimal degrees</geogunit>
       </geograph>
       <geodetic>

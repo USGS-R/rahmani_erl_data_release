@@ -52,6 +52,11 @@ targets:
       "in_text/text_SHARED.yml",
       "in_text/text_01_spatial.yml", spatial_metadata)
 
+  out_xml/02_observations.xml:
+    command: render(filename = target_name,
+      "in_text/text_SHARED.yml",
+      "in_text/text_02_observations.yml", spatial_metadata)
+
   00_parent_sb_xml:
      command: sb_render_post_xml(sbid_00_parent,
       "in_text/text_SHARED.yml",
