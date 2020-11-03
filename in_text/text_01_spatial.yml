@@ -38,17 +38,17 @@ entities:
       attr-def: >-
         Latitude of the site location.
       attr-defs: NA
-      data-min: NA
-      data-max: NA
-      data-units: NA
+      data-min: 30.14549
+      data-max: 48.90596
+      data-units: decimal degrees
     -
       attr-label: long
       attr-def: >-
         Longitude of the site location.
       attr-defs: NA
-      data-min: NA
-      data-max: NA
-      data-units: NA
+      data-min: -123.3299
+      data-max: -70.97964
+      data-units: decimal degrees
 
 
 data-name: GIS points of sites used in this study.
