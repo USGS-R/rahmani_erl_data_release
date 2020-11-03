@@ -192,12 +192,12 @@
     <lineage>
       <procstep>
         <procdesc>At the core of the modeling framework is a deep learning model that uses inputs of XX.</procdesc>
-        <procdate/>
+        <procdate>20201028</procdate>
       </procstep>
     </lineage>
   </dataqual>
   <spdoinfo>
-    <indspref/>
+    <indspref>U.S.A.</indspref>
     <direct>Point</direct>
     <ptvctinf>
       <sdtsterm>
@@ -209,8 +209,8 @@
   <spref>
     <horizsys>
       <geograph>
-        <latres/>
-        <longres/>
+        <latres>NA</latres>
+        <longres>NA</longres>
         <geogunit>Decimal degrees</geogunit>
       </geograph>
       <geodetic>
@@ -258,9 +258,9 @@
         <attrdefs>NA</attrdefs>
         <attrdomv>
           <rdom>
-            <rdommin>NA</rdommin>
-            <rdommax>NA</rdommax>
-            <attrunit>NA</attrunit>
+            <rdommin>30.14549</rdommin>
+            <rdommax>48.90596</rdommax>
+            <attrunit>decimal degrees</attrunit>
           </rdom>
         </attrdomv>
       </attr>
@@ -270,9 +270,9 @@
         <attrdefs>NA</attrdefs>
         <attrdomv>
           <rdom>
-            <rdommin>NA</rdommin>
-            <rdommax>NA</rdommax>
-            <attrunit>NA</attrunit>
+            <rdommin>-123.3299</rdommin>
+            <rdommax>-70.97964</rdommax>
+            <attrunit>decimal degrees</attrunit>
           </rdom>
         </attrdomv>
       </attr>
