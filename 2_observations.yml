@@ -12,7 +12,6 @@ targets:
   2_observations:
     depends:
       - out_data/temperature_observations.csv
-      - out_data/flow_observations.csv
 
   # daily flow and temperature data
   out_data/temperature_observations.csv:
@@ -21,8 +20,3 @@ targets:
       var = I('wtemp(C)'),
       in_file = 'in_data/Data - ERL paper/Forcing_attrFiles/no_dam_forcing_60__days118sites.csv')
 
-  out_data/flow_observations.csv:
-    command: extract_obs(
-      out_file = target_name,
-      var = I('discharge(cfs)'),
-      in_file = 'in_data/Data - ERL paper/Forcing_attrFiles/no_dam_forcing_60__days118sites.csv')

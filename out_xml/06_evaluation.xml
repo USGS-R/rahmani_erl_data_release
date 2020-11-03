@@ -10,8 +10,8 @@
         <origin>Samantha Oliver</origin>
         <origin>Chaopeng Shen</origin>
         <pubdate>2020</pubdate>
-        <title>Data release: Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data</title>
-        <geoform>parent data item for released data products</geoform>
+        <title>Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 6 model evaluation</title>
+        <geoform>comma seperated file format (csv)</geoform>
         <pubinfo>
           <pubplace>Online (digital release)</pubplace>
           <publish>U.S. Geological Survey</publish>
@@ -32,7 +32,7 @@
       </citeinfo>
     </citation>
     <descript>
-      <abstract>&lt;p&gt;This data release provides all data and code used in Rahmani et al. 2020. Briefly, this project used the Gages II dataset as a test case for temperature prediction using deep learning methods. XX &lt;br/&gt;The data are organized into these items:&lt;/p&gt; &lt;ol&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f908db182ce720ee2d0fef9"&gt;Spatial Information&lt;/a&gt; - Pour points for 118 river basins used in this study&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f986594d34e198cb77ff084"&gt;Observations&lt;/a&gt; - Water temperature observations and flow observations for the 118 river reaches used in this study&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865abd34e198cb77ff086"&gt;Model Inputs&lt;/a&gt; - Model inputs, including basin characteristics and weather drivers. &lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865cfd34e198cb77ff088"&gt;Models&lt;/a&gt; - Code and configuration for stream temperature models.&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865e5d34e198cb77ff08a"&gt;Model Predictions&lt;/a&gt; - Predictions of stream water temperature and discharge&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865fbd34e198cb77ff08c"&gt;Model Evaluation&lt;/a&gt; - Performance metrics of each stream temperature model&lt;/li&gt; &lt;br/&gt; &lt;p&gt;This research was funded by the Integrated Water Prediction Program at the US Geological Survey.&lt;/p&gt;</abstract>
+      <abstract>Several evaluation metrics were used to assess the predictive performance of each stream temperature model. For further description, see the metric calculations in the supplement of Rahmani et al. 2020. Each file correspond to a different model, but the structure of the files is the same across all models.</abstract>
       <purpose>Decision support, water quality research</purpose>
     </descript>
     <timeperd>
@@ -165,7 +165,15 @@
       </cntinfo>
     </ptcontac>
     <datacred>This study was funded by the Integrated Water Prediction Program at the U.S. Geological Survey. XX.</datacred>
-    <native>Multiple computer systems were used to generate these data, including linux, OSX. The open source languages R and Python were used on all systems. XX</native>
+    <native>We used XX open source XX.</native>
+    <crossref>
+      <citeinfo>
+        <origin>XX</origin>
+        <pubdate>XX</pubdate>
+        <title>Cross cite code base?</title>
+        <onlink>XX</onlink>
+      </citeinfo>
+    </crossref>
   </idinfo>
   <dataqual>
     <attracc>
@@ -201,8 +209,8 @@
   <spref>
     <horizsys>
       <geograph>
-        <latres>0.1</latres>
-        <longres>0.1</longres>
+        <latres>1e-05</latres>
+        <longres>1e-05</longres>
         <geogunit>Decimal degrees</geogunit>
       </geograph>
       <geodetic>
@@ -214,7 +222,98 @@
     </horizsys>
   </spref>
   <eainfo>
-      </eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>model_{modabbrev}_evaluation.csv</enttypl>
+        <enttypd>The performance metrics of each stream temperature model assessed in Rahmani et al. 2020. Each file represents a different stream temperature model, where model names are contained in the filename (modabbrev). Model abbreviation "lr" refers the locally-fitted linear regression model, "obsq" to the model trained with observed discharge, "simq" to the model trained with simulated discharge, and "noq" to the model trained with no discharge information.</enttypd>
+        <enttypds>U.S. Geological Survey</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>site_no</attrlabl>
+        <attrdef>Unique USGS site identifier.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>NA</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Bias</attrlabl>
+        <attrdef>mean error (bias)</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>degrees Celsius</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>RMSE</attrlabl>
+        <attrdef>root mean squared error</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>degrees Celsius</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>ubRMSE</attrlabl>
+        <attrdef>Unbiased root mean squared error (RMSE), which is calculated as RMSE minus the mean bias.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>degrees Celsius</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>NSE</attrlabl>
+        <attrdef>Nash-Sutcliffe efficiency</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>NA</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>NSE_res</attrlabl>
+        <attrdef>Residual Nash-Sutcliffe efficiency (NSE), where NSE is calculated on the residual between stream and air temperature.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>NA</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Corr_res</attrlabl>
+        <attrdef>Pearson's correlation coefficient, calculated on the residual between stream and air temperature.</attrdef>
+        <attrdefs>NA</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>NA</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+    </detailed>
+  </eainfo>
   <distinfo>
     <distrib>
       <cntinfo>
@@ -238,7 +337,7 @@
     <stdorder>
       <digform>
         <digtinfo>
-          <formname>parent data item for released data products</formname>
+          <formname>comma seperated file format (csv)</formname>
         </digtinfo>
         <digtopt>
           <onlinopt>

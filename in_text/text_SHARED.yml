@@ -53,7 +53,13 @@ funding-credits: >-
 process-description: >-
   At the core of the modeling framework is a deep learning model that uses inputs of XX.
 
+process-date: 20201028
+latitude-res: 0.1
+longitude-res: 0.1
 distro-person: Samantha K. Oliver
+
+build-environment: Multiple computer systems were used to generate these data, including linux, OSX. The open source languages R and Python were used on all systems. XX
+
 liability-statement: >-
   Unless otherwise stated, all data, metadata and related materials are considered to satisfy the quality standards relative to the purpose for which the data were collected.
   Although these data and associated metadata have been reviewed for accuracy and completeness and approved for release by the U.S. Geological Survey (USGS),

@@ -2,7 +2,7 @@ title: >-
   Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 3 model inputs
 
 abstract: >-
-  Inputs to the deep learning models included daily weather forcing data, as well as river catchment attributes.
+  Inputs to the deep learning models included daily weather forcing data, river catchment attributes, and simulated or observed flow.
 
 cross-cites:
   -
@@ -305,8 +305,33 @@ entities:
       data-min: NA
       data-max: NA
       data-units: cubic feet per second
-
-
+  -
+    data-name: flow_observations.csv
+    data-description: Observed mean daily discharge observation retrieved from NWIS for the 118 gages used in this study. Flow observations were used as a driver in the water temperature model. The data were retrieved from NWIS and are limited to the test and training period, from 2010-10-01 through 2016-09-30.
+    attributes:
+    -
+      attr-label: site_no
+      attr-def: >-
+        USGS unique site identifier.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: datetime
+      attr-def: >-
+        Date of temperature observation.
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: discharge(cfs)
+      attr-def: Observed mean daily discharge
+      attr-defs: NA
+      data-min: NA
+      data-max: NA
+      data-units: degrees Celsius
 
 build-environment: Multiple computer systems were used to generate these data, including XX. The open source languages R and Python was used on all systems, as well as XX.
 
@@ -314,5 +339,7 @@ process-date: !expr format(Sys.time(),'%Y%m%d')
 indirect-spatial: U.S.A.
 latitude-res: 0.1
 longitude-res: 0.1
-data-name: weather data, river catchment metadata
-
+data-name: Model driver data
+data-description: >-
+  Inputs (drivers) for the temperature models described in Rahmani et al. 2020, including weather drivers, river basin attributes, and simulated and observed river discharge.
+file-format: comma seperated file format (csv)

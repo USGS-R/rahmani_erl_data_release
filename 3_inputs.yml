@@ -17,6 +17,7 @@ targets:
       - out_data/AT_basin_attributes.csv
       - out_data/weather_drivers.zip
       - out_data/pred_discharge.csv
+      - out_data/obs_discharge.csv
 
   out_data/AT_basin_attributes.csv:
     command: extract_AT_attributes(
@@ -29,8 +30,14 @@ targets:
   out_data/weather_drivers.zip:
     command: zip_this(out_file = target_name, weather_drivers)
 
-
   out_data/pred_discharge.csv:
     command: subset_pred_discharge(
       out_file = target_name,
       in_file = 'in_data/Data - ERL paper/Forcing_attrFiles/no_dam_forcing_60__days118sites.csv')
+
+  out_data/obs_discharge.csv:
+    command: extract_obs(
+      out_file = target_name,
+      var = I('discharge(cfs)'),
+      in_file = 'in_data/Data - ERL paper/Forcing_attrFiles/no_dam_forcing_60__days118sites.csv')
+
