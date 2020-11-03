@@ -40,6 +40,12 @@ targets:
       - 05_predictions_sb_data
       - 06_evaluation_sb_data
       - 06_evaluation_sb_xml
+      - out_xml/00_parent.xml
+      - out_xml/01_spatial.xml
+      - out_xml/02_observations.xml
+      - out_xml/03_inputs.xml
+      - out_xml/05_predictions.xml
+      - out_xml/06_evaluation.xml
 
 
   out_xml/00_parent.xml:
@@ -56,6 +62,21 @@ targets:
     command: render(filename = target_name,
       "in_text/text_SHARED.yml",
       "in_text/text_02_observations.yml", spatial_metadata)
+
+  out_xml/03_inputs.xml:
+    command: render(filename = target_name,
+      "in_text/text_SHARED.yml",
+      "in_text/text_03_inputs.yml", spatial_metadata)
+
+  out_xml/05_predictions.xml:
+    command: render(filename = target_name,
+      "in_text/text_SHARED.yml",
+      "in_text/text_05_predictions.yml", spatial_metadata)
+
+  out_xml/06_evaluation.xml:
+    command: render(filename = target_name,
+      "in_text/text_SHARED.yml",
+      "in_text/text_06_evaluation.yml", spatial_metadata)
 
   00_parent_sb_xml:
      command: sb_render_post_xml(sbid_00_parent,

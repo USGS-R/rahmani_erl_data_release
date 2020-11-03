@@ -69,4 +69,11 @@ entities:
       data-max: NA
       data-units: degrees Celsius
 
-file-format: comma-delimited files
+process-date: XX
+indirect-spatial: U.S.A.
+latitude-res: 0.00001
+longitude-res: 0.00001
+data-name: Flow and water temperature observations
+data-description: >-
+  Flow and water temperature observations used to train and validate models described in Rahmani et al. 2020.
+file-format: comma seperated file format (csv)
