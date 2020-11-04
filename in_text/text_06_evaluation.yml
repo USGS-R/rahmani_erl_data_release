@@ -1,10 +1,7 @@
 title: >-
-    Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 6 model evaluation (Provisional Data Release)
+    Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 6 Model evaluation
 
 abstract: >-
-  <p><i>These data are preliminary or provisional and are subject to revision. They are being provided to meet the need for timely best science.
-  The data have not received final approval by the U.S. Geological Survey (USGS) and are provided on the condition that neither the USGS
-  nor the U.S. Government shall be held liable for any damages resulting from the authorized or unauthorized use of the data.</i></p>
   <p>Evaluation metrics used to assess the predictive performance of each stream temperature model.
   For further description, see the metric calculations in the supplement of Rahmani et al. 2020 (equations S1-S7).</p>
 

@@ -1,10 +1,7 @@
 title: >-
-  Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 2 observations (Provisional Data Release)
+  Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 2 Observations
 
 abstract: >-
-  <p><i>These data are preliminary or provisional and are subject to revision. They are being provided to meet the need for timely best science.
-  The data have not received final approval by the U.S. Geological Survey (USGS) and are provided on the condition that neither the USGS
-  nor the U.S. Government shall be held liable for any damages resulting from the authorized or unauthorized use of the data.</i></p>
   <p>Mean daily stream water temperature observations, retrieved from the USGS National Water Information System (NWIS) and
   used to train and validate all temperature models.
   The model training period was from 2010-10-01 to 2014-09-30, and the test period was from 2014-10-01 to 2016-09-30.</p>

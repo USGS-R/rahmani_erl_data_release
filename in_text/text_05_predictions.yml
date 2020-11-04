@@ -1,10 +1,7 @@
 title: >-
-    Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 5 model prediction data (Provisional Data Release)
+    Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 5 Model predictions
 
 abstract: >-
-  <p><i>These data are preliminary or provisional and are subject to revision. They are being provided to meet the need for timely best science.
-  The data have not received final approval by the U.S. Geological Survey (USGS) and are provided on the condition that neither the USGS
-  nor the U.S. Government shall be held liable for any damages resulting from the authorized or unauthorized use of the data.</i></p>
   <p>Water temperature predictions in 118 river catchments across the U.S. Predictions from all four models (locally-fitted linear regression, LSTM-noQ, LSTM-obsQ, and LSTM-simQ) are included.</p>
 
 cross-cites:
