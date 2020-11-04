@@ -224,7 +224,7 @@
   <eainfo>
     <detailed>
       <enttyp>
-        <enttypl>01_gage_locations.zip</enttypl>
+        <enttypl>gage_locations.zip</enttypl>
         <enttypd>GIS point locations for the 118 river catchments included in this study. These sites are a subset from the Gages II dataset.</enttypd>
         <enttypds>U.S. Geological Survey</enttypds>
       </enttyp>
@@ -317,7 +317,7 @@
     </stdorder>
   </distinfo>
   <metainfo>
-    <metd>20201103</metd>
+    <metd>20201104</metd>
     <metc>
       <cntinfo>
         <cntperp>

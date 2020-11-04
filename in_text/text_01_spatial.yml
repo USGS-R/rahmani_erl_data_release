@@ -14,7 +14,7 @@ cross-cites:
 
 entities:
   -
-    data-name: 01_gage_locations.zip
+    data-name: gage_locations.zip
     data-description: GIS point locations for the 118 river catchments included in this study. These sites are a subset from the Gages II dataset.
     attributes:
     -
@@ -56,9 +56,6 @@ data-description: Location of USGS river gages used in this study.
 
 file-format: Shapefile Data Set
 process-date: 20201028
-indirect-spatial: U.S.A.
-latitude-res: 0.00001
-longitude-res: 0.00001
 
 build-environment: >-
   This dataset was generated using XX.
