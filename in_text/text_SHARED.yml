@@ -2,7 +2,10 @@ authors: ["Farshid Rahmani", "Kathryn Lawson", "Wenyu Ouyang", "Alison Appling",
 pubdate: 2020
 doi: XX
 abstract: >-
-  This data release provides all data and code used in Rahmani et al. 2020. Briefly, this project used the USGS Gages II dataset as a test case for temperature prediction using deep learning methods. The paper explores the value of including stream discharge as a predictor in the temperature models, including the value of predicted discharge from a seperate model when no discharge measurements are available.
+  This data release provides all data and code used in Rahmani et al. 2020.
+  Briefly, this project used the USGS Gages II dataset as a test case for temperature prediction using deep learning methods.
+  The paper explores the value of including stream discharge as a predictor in the temperature models,
+  including the value of predicted discharge from a separate model when no discharge measurements are available.
 
 # ----associated publication----
 larger-cites:
@@ -13,8 +16,8 @@ larger-cites:
     pubdate: 2020
 
 purpose: Decision support, water quality research
-start-date: 19801001
-end-date: 20191231
+start-date: 20101001
+end-date: 20160930
 
 update: none planned
 themekeywords: ["machine learning", "deep learning", "water", "temperature", "streams", "modeling"]
@@ -61,7 +64,13 @@ distro-person: Samantha K. Oliver
 build-environment: Multiple computer systems were used to generate these data, including linux, OSX. The open source languages R and Python were used on all systems. XX
 
 liability-statement: >-
-  Unless otherwise stated, all data, metadata and related materials are considered to satisfy the quality standards relative to the purpose for which the data were collected.
-  Although these data and associated metadata have been reviewed for accuracy and completeness and approved for release by the U.S. Geological Survey (USGS),
-  no warranty expressed or implied is made regarding the display or utility of the data on any other system or for general or scientific purposes, nor shall
-  the act of distribution constitute any such warranty.
+  These data are preliminary or provisional and are subject to revision. They are being provided to meet the need for timely best science.
+  The data have not received final approval by the U.S. Geological Survey (USGS) and are provided on the condition that neither the USGS
+  nor the U.S. Government shall be held liable for any damages resulting from the authorized or unauthorized use of the data.
+
+# After approval:
+# liability-statement: >-
+#   Unless otherwise stated, all data, metadata and related materials are considered to satisfy the quality standards relative to the purpose for which the data were collected.
+#   Although these data and associated metadata have been reviewed for accuracy and completeness and approved for release by the U.S. Geological Survey (USGS),
+#   no warranty expressed or implied is made regarding the display or utility of the data on any other system or for general or scientific purposes, nor shall
+#   the act of distribution constitute any such warranty.
