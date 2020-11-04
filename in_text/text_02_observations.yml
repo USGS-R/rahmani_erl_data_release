@@ -1,9 +1,19 @@
 title: >-
-  Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 2 observations
-
+  Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 2 observations (Provisional Data Release)
 
 abstract: >-
-  Mean daily temperature and discharge observations retrieved from NWIS. The temperature observations were used to train and validate all temperature models. The model training period was from 2010-10-01 to 2014-09-30, and the test period was from 2014-10-01 to 2016-09-30.
+  <p><i>These data are preliminary or provisional and are subject to revision. They are being provided to meet the need for timely best science.
+  The data have not received final approval by the U.S. Geological Survey (USGS) and are provided on the condition that neither the USGS
+  nor the U.S. Government shall be held liable for any damages resulting from the authorized or unauthorized use of the data.</i></p>
+  <p>Mean daily stream water temperature observations, retrieved from the USGS National Water Information System (NWIS) and
+  used to train and validate all temperature models.
+  The model training period was from 2010-10-01 to 2014-09-30, and the test period was from 2014-10-01 to 2016-09-30.</p>
+
+process-date: !expr format(Sys.time(),'%Y%m%d')
+file-format: Comma-separated values (CSV; MIME Type text/csv)
+
+build-environment: >-
+  These data were retrieved
 
 cross-cites:
   -
@@ -16,7 +26,9 @@ cross-cites:
 entities:
   -
     data-name: temperature_observations.csv
-    data-description: Water temperature observation data from 118 catchments used in this study. The observations were retrieved from NWIS and are limited to the test and training period, from 2010-10-01 through 2016-09-30.
+    data-description: >-
+      Water temperature observation data from 118 catchments used in this study.
+      The observations were retrieved from NWIS and are limited to the test and training period, from 2010-10-01 through 2016-09-30.
     attributes:
     -
       attr-label: site_no
@@ -42,12 +54,3 @@ entities:
       data-max: NA
       data-units: degrees Celsius
 
-
-process-date: XX
-indirect-spatial: U.S.A.
-latitude-res: 0.00001
-longitude-res: 0.00001
-data-name: Water temperature observations
-data-description: >-
-  Water temperature observations used to train and validate models described in Rahmani et al. 2020.
-file-format: comma seperated file format (csv)

@@ -1,8 +1,17 @@
 title: >-
-  Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 1 spatial information
+  Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 1 spatial information (Provisional Data Release)
 
 abstract: >-
-  This dataset provides XX.
+  <p><i>These data are preliminary or provisional and are subject to revision. They are being provided to meet the need for timely best science.
+  The data have not received final approval by the U.S. Geological Survey (USGS) and are provided on the condition that neither the USGS
+  nor the U.S. Government shall be held liable for any damages resulting from the authorized or unauthorized use of the data.</i></p>
+  <p>This data release subitem contains a shapefile of outlet locations for the 118 river basins used by Rahmani et al. (2020).</p>
+
+process-date: !expr format(Sys.time(),'%Y%m%d')
+file-format: Shapefile (.zip of .shp, .shx, .prj, and .dbf files)
+
+build-environment: >-
+  This dataset was generated using XX.
 
 cross-cites:
   -
@@ -49,13 +58,3 @@ entities:
       data-min: -123.3299
       data-max: -70.97964
       data-units: decimal degrees
-
-
-data-name: GIS points of sites used in this study.
-data-description: Location of USGS river gages used in this study.
-
-file-format: Shapefile Data Set
-process-date: 20201028
-
-build-environment: >-
-  This dataset was generated using XX.

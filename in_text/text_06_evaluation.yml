@@ -1,8 +1,12 @@
 title: >-
-    Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 6 model evaluation
+    Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 6 model evaluation (Provisional Data Release)
 
 abstract: >-
-  Several evaluation metrics were used to assess the predictive performance of each stream temperature model. For further description, see the metric calculations in the supplement of Rahmani et al. 2020. Each file correspond to a different model, but the structure of the files is the same across all models.
+  <p><i>These data are preliminary or provisional and are subject to revision. They are being provided to meet the need for timely best science.
+  The data have not received final approval by the U.S. Geological Survey (USGS) and are provided on the condition that neither the USGS
+  nor the U.S. Government shall be held liable for any damages resulting from the authorized or unauthorized use of the data.</i></p>
+  <p>Evaluation metrics used to assess the predictive performance of each stream temperature model.
+  For further description, see the metric calculations in the supplement of Rahmani et al. 2020 (equations S1-S7).</p>
 
 cross-cites:
   -
@@ -16,7 +20,11 @@ entities:
   -
     data-name: model_{modabbrev}_evaluation.csv
     data-description: >-
-      The performance metrics of each stream temperature model assessed in Rahmani et al. 2020. Each file represents a different stream temperature model, where model names are contained in the filename (modabbrev). Model abbreviation "lr" refers the locally-fitted linear regression model, "obsq" to the model trained with observed discharge, "simq" to the model trained with simulated discharge, and "noq" to the model trained with no discharge information.
+      The performance metrics of each stream temperature model assessed in Rahmani et al. 2020.
+      Each file corresponds to a different model, and the structure of the files is the same across all models.
+      Model names are contained in the filename (modabbrev): "lr" refers the locally-fitted linear regression model,
+      "obsq" to the model trained with observed discharge, "simq" to the model trained with simulated discharge, and
+      "noq" to the model trained with no discharge information.
     attributes:
     -
       attr-label: site_no
@@ -79,10 +87,4 @@ build-environment: >-
   We used XX open source XX.
 
 process-date: !expr format(Sys.time(),'%Y%m%d')
-indirect-spatial: U.S.A.
-latitude-res: 0.00001
-longitude-res: 0.00001
-data-name: Model evaluation metrics
-data-description: >-
-  Evaluation metrics used to compare stream temperature models in Rahmani et al. 2020.
-file-format: comma seperated file format (csv)
+file-format: Comma-separated values (CSV; MIME Type text/csv)

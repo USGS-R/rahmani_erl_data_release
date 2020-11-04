@@ -1,9 +1,12 @@
 title: >-
-  Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 4 models
+  Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 4 models (Provisional Data Release)
 
 abstract: >-
-  This section provides model code and configuration for the LSTM and linear regression models used to predict stream temperature.
-  The code builds on work by Fang, Feng, and Shen (2020) and others.
+  <p><i>These data are preliminary or provisional and are subject to revision. They are being provided to meet the need for timely best science.
+  The data have not received final approval by the U.S. Geological Survey (USGS) and are provided on the condition that neither the USGS
+  nor the U.S. Government shall be held liable for any damages resulting from the authorized or unauthorized use of the data.</i></p>
+  <p>Model code and configurations for the LSTM and linear regression models used to predict stream temperature.
+  The code builds on work by Fang, Feng, and Shen (2020) and others.</p>
 
 cross-cites:
   -
@@ -83,4 +86,4 @@ process-date: !expr format(Sys.time(),'%Y%m%d')
 data-name: Model predictions
 data-description: >-
   Code for the stream water temperature models described in Rahmani et al. 2020.
-file-format: zip file of code scripts (.zip of text files with varying extensions)
+file-format: Zip file of code scripts (.zip of text files with varying extensions)

@@ -1,8 +1,11 @@
 title: >-
-  Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 3 model inputs
+  Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 3 model inputs (Provisional Data Release)
 
 abstract: >-
-  Inputs to the deep learning models included daily weather forcing data, river catchment attributes, and simulated or observed flow.
+  <p><i>These data are preliminary or provisional and are subject to revision. They are being provided to meet the need for timely best science.
+  The data have not received final approval by the U.S. Geological Survey (USGS) and are provided on the condition that neither the USGS
+  nor the U.S. Government shall be held liable for any damages resulting from the authorized or unauthorized use of the data.</i></p>
+  <p>Model inputs, including river basin attributes, weather forcing data, and simulated and observed river discharge.</p>
 
 cross-cites:
   -
@@ -336,10 +339,7 @@ entities:
 build-environment: Multiple computer systems were used to generate these data, including XX. The open source languages R and Python was used on all systems, as well as XX.
 
 process-date: !expr format(Sys.time(),'%Y%m%d')
-indirect-spatial: U.S.A.
-latitude-res: 0.1
-longitude-res: 0.1
 data-name: Model driver data
 data-description: >-
   Inputs (drivers) for the temperature models described in Rahmani et al. 2020, including weather drivers, river basin attributes, and simulated and observed river discharge.
-file-format: comma seperated file format (csv)
+file-format: Comma-separated values (CSV; MIME Type text/csv)
