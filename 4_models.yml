@@ -10,4 +10,6 @@ targets:
   4_models:
     depends:
 
-    
+
+  out_data/models.zip:
+    command: copy_zip_repo(target_name, cache_dir='in_data', source_dir='../LSTM_Temperature')
