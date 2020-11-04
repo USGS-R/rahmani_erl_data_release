@@ -28,31 +28,31 @@ zip_obs <- function(out_file, in_file){
 }
 
 zip_dir <- function(out_file, in_dir) {
+  if(!dir.exists(dirname(out_file))) dir.create(dirname(out_file))
   curdir <- getwd()
   on.exit(setwd(curdir))
   setwd(dirname(in_dir))
-  zip::zip(file.path(curdir, out_file), files = basename(.object))
+  zip::zip(file.path(curdir, out_file), files = basename(in_dir))
 }
 
 copy_zip_repo <- function(out_file, cache_dir, source_dir) {
   # cache_dir is probably created, but just in case...
-  if(!dir.exists(cache_dir)) dir.create(cache_dir)
+  if(!dir.exists(dirname(cache_dir))) dir.create(dirname(cache_dir))
 
   # copy the repo into the same dir where we'll create the zip file
   unlink(cache_dir, recursive=TRUE)
   file.copy(source_dir, dirname(cache_dir), recursive=TRUE)
 
   # remove all .gitignored files, .git/, and .gitignore
-  gitignore <- readr::read_lines(file.path(cache_dir, '.gitignore'))
+  gitignore <- readr::read_lines(file.path(cache_dir, '.gitignore')) %>%
+    # gsub('\\.', '\\\\.', .) %>%
+    gsub('\\*\\*', '*', .) %>%
+    gsub('\\*', '.*', .) %>%
+    gsub('/$', '', .) %>%
+    file.path(cache_dir, .)
   for(gi in gitignore) {
-    gi_regex <- gi %>%
-      # gsub('\\.', '\\\\.', .) %>%
-      gsub('\\*\\*', '*', .) %>%
-      gsub('\\*', '.*', .) %>%
-      gsub('/$', '', .) %>%
-      file.path(cache_dir, .)
-    message('unlinking ', gi_regex)
-    # unlink(gi_regex, recursive=TRUE)
+    message('unlinking ', gi)
+    unlink(gi, recursive=TRUE)
   }
   unlink(file.path(cache_dir, '.git'), recursive=TRUE)
   unlink(file.path(cache_dir, '.gitignore'))

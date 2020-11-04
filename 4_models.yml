@@ -12,4 +12,4 @@ targets:
 
 
   out_data/models.zip:
-    command: copy_zip_repo(target_name, cache_dir='in_data', source_dir='../LSTM_Temperature')
+    command: copy_zip_repo(target_name, cache_dir=I('in_data/LSTM_Temperature'), source_dir='../LSTM_Temperature')
