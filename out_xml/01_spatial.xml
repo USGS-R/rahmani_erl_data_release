@@ -32,7 +32,7 @@
       </citeinfo>
     </citation>
     <descript>
-      <abstract>&lt;p&gt;This data release component contains a shapefile of gage locations coincident with the outlets of the 118 river basins used by Rahmani et al. (2020).&lt;\p&gt;</abstract>
+      <abstract>&lt;p&gt;This data release component contains a shapefile of monitoring site locations coincident with the outlets of the 118 river basins modeled by Rahmani et al. (2020).&lt;\p&gt;</abstract>
       <purpose>Decision support, water quality research, and advancement of machine learning in hydrology</purpose>
     </descript>
     <timeperd>
@@ -49,7 +49,7 @@
       <update>None planned</update>
     </status>
     <spdom>
-      <descgeog>Locations of sites used in the study, which are a subset of the Gages II dataset.</descgeog>
+      <descgeog>Locations of sites used in the study, which are a subset of the GAGES-II dataset.</descgeog>
       <bounding>
         <westbc>-123.32988684</westbc>
         <eastbc>-70.97964444</eastbc>
@@ -202,8 +202,8 @@ Model-ready data used to train and run the models for the manuscript were origin
         <srccontr/>
       </srcinfo>
       <procstep>
-        <procdesc>Gage coordinates were downloaded from the GAGES-II website (Falcone, 2011) and subset to the 118 gages of interest using the R programming language (see "Native Data Set Environment"/"native").
-To select the 118 basins, water temperature (see data release component "2 Observations") and basin attribute data (data release component "3 Inputs") were initially downloaded for all 9322 gages in the GAGES-II database, and sites were then subset to those (1) with more than 60% of days between 2010/10/01 and 2014/09/30 having observed daily temperatures, and (2) whose contributing basins contained no major dams (more than 50 ft in height, or having more than 5000 acre feet storage). This subsetting process yielded 118 basins for inclusion in the modeling applications and this data release.</procdesc>
+        <procdesc>Monitoring site coordinates were downloaded from the GAGES-II website (Falcone, 2011) and subset to the 118 sites of interest using the R programming language (see "Native Data Set Environment"/"native").
+To select the 118 monitoring sites (and thus their contributing basins), water temperature (see data release component "2 Observations") and basin attribute data (data release component "3 Inputs") were initially downloaded for all 9322 sites in the GAGES-II database, and sites were then subset to those (1) with more than 60% of days between 2010/10/01 and 2014/09/30 having observed daily temperatures, and (2) whose contributing basins contained no major dams (more than 50 ft in height, or having more than 5000 acre feet storage). This subsetting process yielded 118 sites (and their basins) for inclusion in the modeling applications and this data release.</procdesc>
         <procdate>20201106</procdate>
       </procstep>
     </lineage>
@@ -237,7 +237,7 @@ To select the 118 basins, water temperature (see data release component "2 Obser
     <detailed>
       <enttyp>
         <enttypl>gage_locations.zip</enttypl>
-        <enttypd>GIS point locations for the 118 river catchments included in this study.</enttypd>
+        <enttypd>GIS point locations for the monitoring sites that define the outlets of the 118 basins modeled in this study.</enttypd>
         <enttypds>Falcone (2011) and this study</enttypds>
       </enttyp>
       <attr>

@@ -3,13 +3,13 @@ title: >-
 
 abstract: >-
   <p>This data release provides all data and code used in Rahmani et al. (2020) to model stream temperature and assess results.
-  Briefly, we used the USGS Gages II dataset as a test case for temperature prediction using deep learning methods.
+  Briefly, we used a subset of the USGS GAGES-II dataset as a test case for temperature prediction using deep learning methods.
   The associated manuscript explores the value of including stream discharge as a predictor in the temperature models,
   including the value of predicted discharge from a separate model when no discharge measurements are available.</p>
   <p>The data are organized into these items:</p>
   <ol>
-  <li><a href="https://www.sciencebase.gov/catalog/item/5f908db182ce720ee2d0fef9">Spatial Information</a> - Outlet locations for the 118 river basins used in this study</li>
-  <li><a href="https://www.sciencebase.gov/catalog/item/5f986594d34e198cb77ff084">Observations</a> - Water temperature observations for the 118 river basin pour points used in this study</li>
+  <li><a href="https://www.sciencebase.gov/catalog/item/5f908db182ce720ee2d0fef9">Spatial Information</a> - Locations of the 118 monitoring sites used in this study</li>
+  <li><a href="https://www.sciencebase.gov/catalog/item/5f986594d34e198cb77ff084">Observations</a> - Water temperature observations for the 118 sites used in this study</li>
   <li><a href="https://www.sciencebase.gov/catalog/item/5f9865abd34e198cb77ff086">Model Inputs</a> - Model inputs, including basin attributes, weather drivers, and discharge</li>
   <li><a href="https://www.sciencebase.gov/catalog/item/5f9865cfd34e198cb77ff088">Models</a> - Code and configurations for the stream temperature models</li>
   <li><a href="https://www.sciencebase.gov/catalog/item/5f9865e5d34e198cb77ff08a">Model Predictions</a> - Predictions of stream water temperature</li>
@@ -24,3 +24,60 @@ process-date: !expr format(Sys.time(),'%Y%m%d')
 process-description: >-
   This data release was organized into six components for ease of navigation; see "Abstract"/"abstract" for details.
   Data processing steps for each of those components are given in the metadata files specific to those components.
+
+entities:
+  -
+    data-name: Parent data release item
+    data-description: >-
+      ScienceBase data landing page
+    data-defsrc: This study
+
+    attributes:
+    -
+      attr-label: 1 Spatial Information
+      attr-def: >-
+        Data release component: Locations of the 118 monitoring sites used in this study
+      attr-defs: This study
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: 2 Observations
+      attr-def: >-
+        Data release component: Water temperature observations for the 118 sites used in this study
+      attr-defs: This study
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: 3 Model Inputs
+      attr-def: >-
+        Data release component: Model inputs, including basin attributes, weather drivers, and discharge
+      attr-defs: This study
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: 4 Models
+      attr-def: >-
+        Data release component: Code and configurations for the stream temperature models
+      attr-defs: This study
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: 5 Model Predictions
+      attr-def: >-
+        Data release component: Predictions of stream water temperature
+      attr-defs: This study
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: 6 Model Evaluation
+      attr-def: >-
+        Data release component: Performance metrics for each stream temperature model
+      attr-defs: This study
+      data-min: NA
+      data-max: NA
+      data-units: NA

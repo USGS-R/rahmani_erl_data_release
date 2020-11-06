@@ -13,7 +13,7 @@ transfer-format: Comma-separated values (CSV; MIME Type text/csv)
 
 process-date: 2000415
 process-description: >-
-  Water temperature data for the 118 selected monitoring locations were retrieved from the
+  Water temperature data at the 118 selected monitoring sites were retrieved from the
   USGS National Water Information System (NWIS; U.S. Geological Survey, 2020)
   using the HTTPS and the NWIS web applications programming interface.
 
@@ -22,14 +22,14 @@ source-cites:
     authors: U.S. Geological Survey
     title: >-
        National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)
-    pubdate: Accessed in April 2020
+    pubdate: 2020
     link: http://dx.doi.org/10.5066/F7P55KJN
 
 entities:
   -
     data-name: temperature_observations.csv
     data-description: >-
-      Water temperature observation data from 118 catchments used in this study.
+      Water temperature observation data at the outlets of the 118 catchments used in this study.
       The observations are limited to the test and training period, 2010-10-01 through 2016-09-30.
     data-defsrc: This study
 

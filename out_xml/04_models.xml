@@ -49,7 +49,7 @@
       <update>None planned</update>
     </status>
     <spdom>
-      <descgeog>Locations of sites used in the study, which are a subset of the Gages II dataset.</descgeog>
+      <descgeog>Locations of sites used in the study, which are a subset of the GAGES-II dataset.</descgeog>
       <bounding>
         <westbc>-123.32988684</westbc>
         <eastbc>-70.97964444</eastbc>

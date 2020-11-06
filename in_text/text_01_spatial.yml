@@ -4,24 +4,24 @@ title: >-
 
 abstract: >-
   <p>This data release component contains a shapefile of
-  gage locations coincident with the outlets of the 118 river basins
-  used by Rahmani et al. (2020).<\p>
+  monitoring site locations coincident with the outlets of the 118 river basins
+  modeled by Rahmani et al. (2020).<\p>
 
 geo-format: Vector digital data
 transfer-format: Zipfile containing shapefile components (.shp, .shx, .prj, and .dbf files)
 
 process-date: !expr format(Sys.time(),'%Y%m%d')
 process-description: >-
-  Gage coordinates were downloaded from the GAGES-II website (Falcone, 2011)
-  and subset to the 118 gages of interest
+  Monitoring site coordinates were downloaded from the GAGES-II website (Falcone, 2011)
+  and subset to the 118 sites of interest
   using the R programming language (see "Native Data Set Environment"/"native").
 
-  To select the 118 basins, water temperature (see data release component "2 Observations")
-  and basin attribute data (data release component "3 Inputs") were initially downloaded for all 9322 gages
+  To select the 118 monitoring sites (and thus their contributing basins), water temperature (see data release component "2 Observations")
+  and basin attribute data (data release component "3 Inputs") were initially downloaded for all 9322 sites
   in the GAGES-II database, and sites were then subset to those (1) with more than
   60% of days between 2010/10/01 and 2014/09/30 having observed daily temperatures, and (2)
   whose contributing basins contained no major dams (more than 50 ft in height, or having more than 5000 acre feet storage).
-  This subsetting process yielded 118 basins for inclusion in the modeling applications and this data release.
+  This subsetting process yielded 118 sites (and their basins) for inclusion in the modeling applications and this data release.
 
 source-cites:
   -
@@ -35,7 +35,7 @@ entities:
   -
     data-name: gage_locations.zip
     data-description: >-
-      GIS point locations for the 118 river catchments included in this study.
+      GIS point locations for the monitoring sites that define the outlets of the 118 basins modeled in this study.
     data-defsrc: Falcone (2011) and this study
 
     attributes:

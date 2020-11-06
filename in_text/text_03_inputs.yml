@@ -11,15 +11,15 @@ transfer-format: Comma-separated values (CSV; MIME Type text/csv), where weather
 
 process-date: !expr format(Sys.time(),'%Y%m%d')
 process-description: >-
-  Discharge data for the 118 selected USGS monitoring locations were retrieved from the
+  Discharge data at the 118 selected USGS monitoring sites were retrieved from the
   USGS National Water Information System (NWIS; U.S. Geological Survey, 2020)
   using the HTTPS and the NWIS web applications programming interface.
 
-  Attribute data for the basins contributing to those 118 USGS monitoring locations
+  Attribute data for the basins contributing to those 118 USGS monitoring sites
   were downloaded from the GAGES-II database (Falcone 2011).
 
-  We obtained basin daily meteorological forcing data (precipitation,
-  maximum and minimum air temperature, vapor pressure, solar radiation) by interpolating
+  Basin-averaged daily meteorological forcing data (precipitation,
+  maximum and minimum air temperature, vapor pressure, solar radiation) were obtained by interpolating
   a gridded meteorological dataset (Daymet) (Thornton et al. 2016) from Google Earth Engine (GEE)
   (Gorelick et al. 2017).
 

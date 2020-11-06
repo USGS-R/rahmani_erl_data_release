@@ -49,7 +49,7 @@
       <update>None planned</update>
     </status>
     <spdom>
-      <descgeog>Locations of sites used in the study, which are a subset of the Gages II dataset.</descgeog>
+      <descgeog>Locations of sites used in the study, which are a subset of the GAGES-II dataset.</descgeog>
       <bounding>
         <westbc>-123.32988684</westbc>
         <eastbc>-70.97964444</eastbc>
@@ -283,9 +283,9 @@ Model-ready data used to train and run the models for the manuscript were origin
         <srccontr/>
       </srcinfo>
       <procstep>
-        <procdesc>Discharge data for the 118 selected USGS monitoring locations were retrieved from the USGS National Water Information System (NWIS; U.S. Geological Survey, 2020) using the HTTPS and the NWIS web applications programming interface.
-Attribute data for the basins contributing to those 118 USGS monitoring locations were downloaded from the GAGES-II database (Falcone 2011).
-We obtained basin daily meteorological forcing data (precipitation, maximum and minimum air temperature, vapor pressure, solar radiation) by interpolating a gridded meteorological dataset (Daymet) (Thornton et al. 2016) from Google Earth Engine (GEE) (Gorelick et al. 2017).
+        <procdesc>Discharge data at the 118 selected USGS monitoring sites were retrieved from the USGS National Water Information System (NWIS; U.S. Geological Survey, 2020) using the HTTPS and the NWIS web applications programming interface.
+Attribute data for the basins contributing to those 118 USGS monitoring sites were downloaded from the GAGES-II database (Falcone 2011).
+Basin-averaged daily meteorological forcing data (precipitation, maximum and minimum air temperature, vapor pressure, solar radiation) were obtained by interpolating a gridded meteorological dataset (Daymet) (Thornton et al. 2016) from Google Earth Engine (GEE) (Gorelick et al. 2017).
 Although some of these datasets were initially downloaded to cover longer periods of time, we subset the results to the combined training and test period for this study, 2010-10-01 through 2016-09-30, for the analysis by Rahmani et al. (2020) and this data release.</procdesc>
         <procdate>20201106</procdate>
       </procstep>

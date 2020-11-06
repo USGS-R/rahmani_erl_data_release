@@ -32,7 +32,7 @@
       </citeinfo>
     </citation>
     <descript>
-      <abstract>&lt;p&gt;This data release provides all data and code used in Rahmani et al. (2020) to model stream temperature and assess results. Briefly, we used the USGS Gages II dataset as a test case for temperature prediction using deep learning methods. The associated manuscript explores the value of including stream discharge as a predictor in the temperature models, including the value of predicted discharge from a separate model when no discharge measurements are available.&lt;/p&gt; &lt;p&gt;The data are organized into these items:&lt;/p&gt; &lt;ol&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f908db182ce720ee2d0fef9"&gt;Spatial Information&lt;/a&gt; - Outlet locations for the 118 river basins used in this study&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f986594d34e198cb77ff084"&gt;Observations&lt;/a&gt; - Water temperature observations for the 118 river basin pour points used in this study&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865abd34e198cb77ff086"&gt;Model Inputs&lt;/a&gt; - Model inputs, including basin attributes, weather drivers, and discharge&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865cfd34e198cb77ff088"&gt;Models&lt;/a&gt; - Code and configurations for the stream temperature models&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865e5d34e198cb77ff08a"&gt;Model Predictions&lt;/a&gt; - Predictions of stream water temperature&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865fbd34e198cb77ff08c"&gt;Model Evaluation&lt;/a&gt; - Performance metrics for each stream temperature model&lt;/li&gt; &lt;/ol&gt; &lt;p&gt;This research was funded by the Integrated Water Prediction Program at the US Geological Survey.&lt;/p&gt;</abstract>
+      <abstract>&lt;p&gt;This data release provides all data and code used in Rahmani et al. (2020) to model stream temperature and assess results. Briefly, we used a subset of the USGS GAGES-II dataset as a test case for temperature prediction using deep learning methods. The associated manuscript explores the value of including stream discharge as a predictor in the temperature models, including the value of predicted discharge from a separate model when no discharge measurements are available.&lt;/p&gt; &lt;p&gt;The data are organized into these items:&lt;/p&gt; &lt;ol&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f908db182ce720ee2d0fef9"&gt;Spatial Information&lt;/a&gt; - Locations of the 118 monitoring sites used in this study&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f986594d34e198cb77ff084"&gt;Observations&lt;/a&gt; - Water temperature observations for the 118 sites used in this study&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865abd34e198cb77ff086"&gt;Model Inputs&lt;/a&gt; - Model inputs, including basin attributes, weather drivers, and discharge&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865cfd34e198cb77ff088"&gt;Models&lt;/a&gt; - Code and configurations for the stream temperature models&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865e5d34e198cb77ff08a"&gt;Model Predictions&lt;/a&gt; - Predictions of stream water temperature&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865fbd34e198cb77ff08c"&gt;Model Evaluation&lt;/a&gt; - Performance metrics for each stream temperature model&lt;/li&gt; &lt;/ol&gt; &lt;p&gt;This research was funded by the Integrated Water Prediction Program at the US Geological Survey.&lt;/p&gt;</abstract>
       <purpose>Decision support, water quality research, and advancement of machine learning in hydrology</purpose>
     </descript>
     <timeperd>
@@ -49,7 +49,7 @@
       <update>None planned</update>
     </status>
     <spdom>
-      <descgeog>Locations of sites used in the study, which are a subset of the Gages II dataset.</descgeog>
+      <descgeog>Locations of sites used in the study, which are a subset of the GAGES-II dataset.</descgeog>
       <bounding>
         <westbc>-123.32988684</westbc>
         <eastbc>-70.97964444</eastbc>
@@ -213,7 +213,86 @@ Model-ready data used to train and run the models for the manuscript were origin
     </horizsys>
   </spref>
   <eainfo>
-      </eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>Parent data release item</enttypl>
+        <enttypd>ScienceBase data landing page</enttypd>
+        <enttypds>This study</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>1 Spatial Information</attrlabl>
+        <attrdef>Data release component: Locations of the 118 monitoring sites used in this study</attrdef>
+        <attrdefs>This study</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>NA</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>2 Observations</attrlabl>
+        <attrdef>Data release component: Water temperature observations for the 118 sites used in this study</attrdef>
+        <attrdefs>This study</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>NA</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>3 Model Inputs</attrlabl>
+        <attrdef>Data release component: Model inputs, including basin attributes, weather drivers, and discharge</attrdef>
+        <attrdefs>This study</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>NA</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>4 Models</attrlabl>
+        <attrdef>Data release component: Code and configurations for the stream temperature models</attrdef>
+        <attrdefs>This study</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>NA</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>5 Model Predictions</attrlabl>
+        <attrdef>Data release component: Predictions of stream water temperature</attrdef>
+        <attrdefs>This study</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>NA</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>6 Model Evaluation</attrlabl>
+        <attrdef>Data release component: Performance metrics for each stream temperature model</attrdef>
+        <attrdefs>This study</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>NA</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+    </detailed>
+  </eainfo>
   <distinfo>
     <distrib>
       <cntinfo>
