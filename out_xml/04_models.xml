@@ -11,7 +11,7 @@
         <origin>Chaopeng Shen</origin>
         <pubdate>2020</pubdate>
         <title>Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 4 Models</title>
-        <geoform>Zip file of code scripts (.zip of text files with varying extensions)</geoform>
+        <geoform>Tabular digital data</geoform>
         <pubinfo>
           <pubplace>Online (digital release)</pubplace>
           <publish>U.S. Geological Survey</publish>
@@ -32,7 +32,7 @@
       </citeinfo>
     </citation>
     <descript>
-      <abstract>&lt;p&gt;This data release component contains model code and configurations for the LSTM and linear regression models used to predict stream temperature. The code builds on work by Fang, Feng, and Shen (2020) and others.&lt;/p&gt;</abstract>
+      <abstract>&lt;p&gt;This data release component contains model code and configurations for the LSTM and linear regression models used to predict stream temperature.&lt;/p&gt;</abstract>
       <purpose>Decision support, water quality research, and advancement of machine learning in hydrology</purpose>
     </descript>
     <timeperd>
@@ -142,7 +142,7 @@
       </place>
     </keywords>
     <accconst>none</accconst>
-    <useconst>None, but see Distribution Liability below. Users are advised to read the associated publication thoroughly to understand appropriate use and data limitations.</useconst>
+    <useconst>None, but see "Distribution Liability"/"distliab" below. Users are advised to read the associated publication thoroughly to understand appropriate use and data limitations.</useconst>
     <ptcontac>
       <cntinfo>
         <cntperp>
@@ -162,6 +162,9 @@
         <cntemail>fzr5082@psu.edu</cntemail>
       </cntinfo>
     </ptcontac>
+    <datacred>This study was funded by the Integrated Water Prediction Program of the U.S. Geological Survey, including funds transfered to Pennsylvania State University via Pennsylvania Water Resources Research Center graduate internship G19AC00425.</datacred>
+    <native>Archive-ready data were prepared for this release using the x86_64-apple-darwin17.0 operating system and the R statistical programming language (R version 4.0.2, 2020-06-22; R Core Team, 2020; https://www.R-project.org). R packages loaded into this environment: reticulate, version: 1.16; zip, version: 2.1.1; dssecrets, version: 0.1.4; sbtools, version: 1.1.12; sf, version: 0.9-6; rgdal, version: 1.5-18; sp, version: 1.4-4; feather, version: 0.3.5; meddle, version: 0.0.11; mapdata, version: 2.3.0; maps, version: 3.3.0; yaml, version: 2.2.1; scipiper, version: 0.0.23; forcats, version: 0.5.0; stringr, version: 1.4.0; dplyr, version: 1.0.2; purrr, version: 0.3.4; readr, version: 1.4.0; tidyr, version: 1.1.2; tibble, version: 3.0.4; ggplot2, version: 3.3.2; tidyverse, version: 1.3.0.
+Model-ready data used to train and run the models for the manuscript were originally procesed in the python programming language (Python version 3.7.9; Python Software Foundation, 2020; https://www.python.org). These python modules were installed: appdirs, v1.4.4; argon2-cffi, v20.1.0; attrs, v20.2.0; backcall, v0.2.0; basemap, v1.2.1; blas, v1.0; bleach, v3.2.1; ca-certificates, v2020.7.22; certifi, v2020.6.20; cffi, v1.14.3; colorama, v0.4.3; cudatoolkit, v10.0.130; cycler, v0.10.0; dataretrieval, v0.4; decorator, v4.4.2; defusedxml, v0.6.0; distlib, v0.3.1; entrypoints, v0.3; filelock, v3.0.12; freetype, v2.10.2; icc_rt, v2019.0.0; icu, v58.2; importlib-metadata, v1.7.0; importlib_metadata, v1.7.0; intel-openmp, v2020.2; ipykernel, v5.3.4; ipython, v7.18.1; ipython_genutils, v0.2.0; jedi, v0.17.2; jinja2, v2.11.2; joblib, v0.17.0; jpeg, v9b; jsonschema, v3.2.0; jupyter_client, v6.1.6; jupyter_core, v4.6.3; kiwisolver, v1.2.0; libpng, v1.6.37; libsodium, v1.0.18; libtiff, v4.1.0; lz4-c, v1.9.2; m2w64-gcc-libgfortran, v5.3.0; m2w64-gcc-libs, v5.3.0; m2w64-gcc-libs-core, v5.3.0; m2w64-gmp, v6.1.0; m2w64-libwinpthread-git, v5.0.0.4634.697f757; markupsafe, v1.1.1; matplotlib, v3.2.2; mistune, v0.8.4; mkl, v2020.2; mkl-service, v2.3.0; mkl_fft, v1.2.0; mkl_random, v1.1.1; msys2-conda-epoch, v20160418; nbconvert, v5.6.1; nbformat, v5.0.7; ninja, v1.10.1; notebook, v6.1.1; numpy, v1.19.1; numpy-base, v1.19.1; olefile, v0.46; openssl, v1.1.1h; packaging, v20.4; pandas, v1.1.1; pandoc, v2.10.1; pandocfilters, v1.4.2; parso, v0.7.0; patsy, v0.5.1; permutationimportance, v1.2.1.8; pickleshare, v0.7.5; pillow, v7.2.0; pip, v20.2.3; pipenv, v2020.8.13; prometheus_client, v0.8.0; prompt-toolkit, v3.0.7; pyarrow, v1.0.1; pycparser, v2.20; pygments, v2.7.1; pyparsing, v2.4.7; pyproj, v2.6.1.post1; pyqt, v5.9.2; pyrsistent, v0.17.3; pyshp, v2.1.2; python, v3.7.9; python-dateutil, v2.8.1; pytorch, v1.2.0; pytz, v2020.1; pywin32, v227; pywinpty, v0.5.7; pyzmq, v19.0.2; qt, v5.9.7; requests, v2.7.0; scikit-learn, v0.23.2; scipy, v1.1.0; send2trash, v1.5.0; setuptools, v49.6.0; sip, v4.19.8; six, v1.15.0; sqlite, v3.33.0; statsmodels, v0.11.1; terminado, v0.8.3; testpath, v0.4.4; threadpoolctl, v2.1.0; tk, v8.6.10; torchvision, v0.4.0; tornado, v6.0.4; tqdm, v4.50.2; traitlets, v5.0.4; vc, v14.1; virtualenv, v20.0.35; virtualenv-clone, v0.5.4; vs2015_runtime, v14.16.27012; wcwidth, v0.2.5; webencodings, v0.5.1; wheel, v0.35.1; wincertstore, v0.2; winpty, v0.4.3; xz, v5.2.5; zeromq, v4.3.2; zipp, v3.1.0; zlib, v1.2.11; zstd, v1.4.5.</native>
     <crossref>
       <citeinfo>
         <origin>D. Feng</origin>
@@ -172,9 +175,6 @@
         <onlink>https://doi.org/10.1029/2019WR026793</onlink>
       </citeinfo>
     </crossref>
-    <datacred>This study was funded by the Integrated Water Prediction Program of the U.S. Geological Survey, including funds transfered to Pennsylvania State University via Pennsylvania Water Resources Research Center graduate internship G19AC00425.</datacred>
-    <native>Archive-ready data were prepared for this release using the x86_64-apple-darwin17.0 operating system and the R statistical programming language (R version 4.0.2, 2020-06-22; R Core Team, 2020; https://www.R-project.org). R packages loaded into this environment: reticulate, version: 1.16; zip, version: 2.1.1; dssecrets, version: 0.1.4; sbtools, version: 1.1.12; sf, version: 0.9-6; rgdal, version: 1.5-18; sp, version: 1.4-4; feather, version: 0.3.5; meddle, version: 0.0.11; mapdata, version: 2.3.0; maps, version: 3.3.0; yaml, version: 2.2.1; scipiper, version: 0.0.23; forcats, version: 0.5.0; stringr, version: 1.4.0; dplyr, version: 1.0.2; purrr, version: 0.3.4; readr, version: 1.4.0; tidyr, version: 1.1.2; tibble, version: 3.0.4; ggplot2, version: 3.3.2; tidyverse, version: 1.3.0.
-Model-ready data used to train and run the models for the manuscript were originally procesed in the python programming language (Python version 3.7.9; Python Software Foundation, 2020; https://www.python.org). These python modules were installed: appdirs, v1.4.4; argon2-cffi, v20.1.0; attrs, v20.2.0; backcall, v0.2.0; basemap, v1.2.1; blas, v1.0; bleach, v3.2.1; ca-certificates, v2020.7.22; certifi, v2020.6.20; cffi, v1.14.3; colorama, v0.4.3; cudatoolkit, v10.0.130; cycler, v0.10.0; dataretrieval, v0.4; decorator, v4.4.2; defusedxml, v0.6.0; distlib, v0.3.1; entrypoints, v0.3; filelock, v3.0.12; freetype, v2.10.2; icc_rt, v2019.0.0; icu, v58.2; importlib-metadata, v1.7.0; importlib_metadata, v1.7.0; intel-openmp, v2020.2; ipykernel, v5.3.4; ipython, v7.18.1; ipython_genutils, v0.2.0; jedi, v0.17.2; jinja2, v2.11.2; joblib, v0.17.0; jpeg, v9b; jsonschema, v3.2.0; jupyter_client, v6.1.6; jupyter_core, v4.6.3; kiwisolver, v1.2.0; libpng, v1.6.37; libsodium, v1.0.18; libtiff, v4.1.0; lz4-c, v1.9.2; m2w64-gcc-libgfortran, v5.3.0; m2w64-gcc-libs, v5.3.0; m2w64-gcc-libs-core, v5.3.0; m2w64-gmp, v6.1.0; m2w64-libwinpthread-git, v5.0.0.4634.697f757; markupsafe, v1.1.1; matplotlib, v3.2.2; mistune, v0.8.4; mkl, v2020.2; mkl-service, v2.3.0; mkl_fft, v1.2.0; mkl_random, v1.1.1; msys2-conda-epoch, v20160418; nbconvert, v5.6.1; nbformat, v5.0.7; ninja, v1.10.1; notebook, v6.1.1; numpy, v1.19.1; numpy-base, v1.19.1; olefile, v0.46; openssl, v1.1.1h; packaging, v20.4; pandas, v1.1.1; pandoc, v2.10.1; pandocfilters, v1.4.2; parso, v0.7.0; patsy, v0.5.1; permutationimportance, v1.2.1.8; pickleshare, v0.7.5; pillow, v7.2.0; pip, v20.2.3; pipenv, v2020.8.13; prometheus_client, v0.8.0; prompt-toolkit, v3.0.7; pyarrow, v1.0.1; pycparser, v2.20; pygments, v2.7.1; pyparsing, v2.4.7; pyproj, v2.6.1.post1; pyqt, v5.9.2; pyrsistent, v0.17.3; pyshp, v2.1.2; python, v3.7.9; python-dateutil, v2.8.1; pytorch, v1.2.0; pytz, v2020.1; pywin32, v227; pywinpty, v0.5.7; pyzmq, v19.0.2; qt, v5.9.7; requests, v2.7.0; scikit-learn, v0.23.2; scipy, v1.1.0; send2trash, v1.5.0; setuptools, v49.6.0; sip, v4.19.8; six, v1.15.0; sqlite, v3.33.0; statsmodels, v0.11.1; terminado, v0.8.3; testpath, v0.4.4; threadpoolctl, v2.1.0; tk, v8.6.10; torchvision, v0.4.0; tornado, v6.0.4; tqdm, v4.50.2; traitlets, v5.0.4; vc, v14.1; virtualenv, v20.0.35; virtualenv-clone, v0.5.4; vs2015_runtime, v14.16.27012; wcwidth, v0.2.5; webencodings, v0.5.1; wheel, v0.35.1; wincertstore, v0.2; winpty, v0.4.3; xz, v5.2.5; zeromq, v4.3.2; zipp, v3.1.0; zlib, v1.2.11; zstd, v1.4.5.</native>
   </idinfo>
   <dataqual>
     <attracc>
@@ -192,7 +192,7 @@ Model-ready data used to train and run the models for the manuscript were origin
     </posacc>
     <lineage>
       <procstep>
-        <procdesc>At the core of the modeling framework is a deep learning model that uses inputs of XX.</procdesc>
+        <procdesc>Code was contributed by Fang, Feng, and Shen (2020), Wenyu Ouyang, and Farshid Rahmani.</procdesc>
         <procdate>20201106</procdate>
       </procstep>
     </lineage>
@@ -226,8 +226,8 @@ Model-ready data used to train and run the models for the manuscript were origin
     <detailed>
       <enttyp>
         <enttypl>models.zip</enttypl>
-        <enttypd>A zip file containing code to run the neural network (LSTM) and linear regression (LR) temperature models in this study</enttypd>
-        <enttypds>U.S. Geological Survey</enttypds>
+        <enttypd>Python and jupyter notebook code files to run the neural network (LSTM) and linear regression (LR) temperature models described by Rahmani et al. 2020.</enttypd>
+        <enttypds>This study</enttypds>
       </enttyp>
       <attr>
         <attrlabl>README.md</attrlabl>
@@ -256,7 +256,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>hydroDL</attrlabl>
         <attrdef>A python module (multiple files) that trains, tests, and generates predictions from LSTM models</attrdef>
-        <attrdefs>Feng, Fang, and Shen 2020 and this study; https://www.python.org</attrdefs>
+        <attrdefs>Feng, Fang, and Shen (2020) and this study; https://www.python.org</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -279,7 +279,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       </attr>
       <attr>
         <attrlabl>LR.ipynb</attrlabl>
-        <attrdef>A Jupyter notebook that builds and tests a linear regression model</attrdef>
+        <attrdef>A Jupyter notebook that builds and tests a locally-fitted auto-regressive model (called "AR2" by Rahmani et al. 2020)</attrdef>
         <attrdefs>This study; https://ipython.org/notebook.html</attrdefs>
         <attrdomv>
           <rdom>

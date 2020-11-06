@@ -10,8 +10,8 @@
         <origin>Samantha Oliver</origin>
         <origin>Chaopeng Shen</origin>
         <pubdate>2020</pubdate>
-        <title>Data release: Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data (Provisional Data Release)</title>
-        <geoform>Landing page and parent metadata for the full data release</geoform>
+        <title>Data release: Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data</title>
+        <geoform>None (see individual data release components)</geoform>
         <pubinfo>
           <pubplace>Online (digital release)</pubplace>
           <publish>U.S. Geological Survey</publish>
@@ -142,7 +142,7 @@
       </place>
     </keywords>
     <accconst>none</accconst>
-    <useconst>None, but see Distribution Liability below. Users are advised to read the associated publication thoroughly to understand appropriate use and data limitations.</useconst>
+    <useconst>None, but see "Distribution Liability"/"distliab" below. Users are advised to read the associated publication thoroughly to understand appropriate use and data limitations.</useconst>
     <ptcontac>
       <cntinfo>
         <cntperp>
@@ -182,7 +182,7 @@ Model-ready data used to train and run the models for the manuscript were origin
     </posacc>
     <lineage>
       <procstep>
-        <procdesc>At the core of the modeling framework is a deep learning model that uses inputs of XX.</procdesc>
+        <procdesc>This data release was organized into six components for ease of navigation; see "Abstract"/"abstract" for details. Data processing steps for each of those components are given in the metadata files specific to those components.</procdesc>
         <procdate>20201106</procdate>
       </procstep>
     </lineage>
@@ -237,7 +237,7 @@ Model-ready data used to train and run the models for the manuscript were origin
     <stdorder>
       <digform>
         <digtinfo>
-          <formname>Landing page and parent metadata for the full data release</formname>
+          <formname>None (see individual data release components)</formname>
         </digtinfo>
         <digtopt>
           <onlinopt>

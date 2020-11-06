@@ -8,7 +8,7 @@
   {{/authors}}
         <pubdate>{{pubdate}}</pubdate>
         <title>{{title}}</title>
-        <geoform>{{file-format}}</geoform>
+        <geoform>{{geo-format}}</geoform>
         <pubinfo>
           <pubplace>Online (digital release)</pubplace>
           <publish>{{data-publisher}}</publish>
@@ -142,7 +142,6 @@
             {{/authors}}
             <pubdate>{{pubdate}}</pubdate>
             <title>{{title}}</title>
-            <geoform>{{file-format}}</geoform>
             {{#link}}
             <onlink>{{.}}</onlink>
             {{/link}}
@@ -201,7 +200,7 @@
       <enttyp>
         <enttypl>{{data-name}}</enttypl>
         <enttypd>{{data-description}}</enttypd>
-        <enttypds>U.S. Geological Survey</enttypds>
+        <enttypds>{{data-defsrc}}</enttypds>
       </enttyp>
       {{#attributes}}<attr>
         <attrlabl>{{attr-label}}</attrlabl>
@@ -242,7 +241,7 @@
     <stdorder>
       <digform>
         <digtinfo>
-          <formname>{{file-format}}</formname>
+          <formname>{{transfer-format}}</formname>
         </digtinfo>
         <digtopt>
           <onlinopt>

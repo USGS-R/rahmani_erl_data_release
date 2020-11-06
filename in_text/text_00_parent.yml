@@ -17,7 +17,10 @@ abstract: >-
   </ol>
   <p>This research was funded by the Integrated Water Prediction Program at the US Geological Survey.</p>
 
-process-date: !expr format(Sys.time(),'%Y%m%d')
-file-format: Landing page and parent metadata for the full data release
+geo-format: None (see individual data release components)
+transfer-format: None (see individual data release components)
 
-  This data release was prepared using the R Multiple computer systems were used to generate these data, including linux, OSX. The open source languages R and Python were used on all systems. XX
+process-date: !expr format(Sys.time(),'%Y%m%d')
+process-description: >-
+  This data release was organized into six components for ease of navigation; see "Abstract"/"abstract" for details.
+  Data processing steps for each of those components are given in the metadata files specific to those components.

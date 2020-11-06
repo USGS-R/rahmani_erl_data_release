@@ -1,5 +1,6 @@
 title: >-
-  Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 2 Observations
+  Exploring the exceptional performance of a deep learning stream temperature model
+  and the value of streamflow data: 2 Observations
 
 abstract: >-
   <p>This data release component contains mean daily stream water temperature observations,
@@ -7,11 +8,16 @@ abstract: >-
   used to train and validate all temperature models.
   The model training period was from 2010-10-01 to 2014-09-30, and the test period was from 2014-10-01 to 2016-09-30.</p>
 
+geo-format: Tabular digital data
+transfer-format: Comma-separated values (CSV; MIME Type text/csv)
+
 process-date: 2000415
-file-format: Comma-separated values (CSV; MIME Type text/csv)
+process-description: >-
+  Water temperature data for the 118 selected monitoring locations were retrieved from the
+  USGS National Water Information System (NWIS; U.S. Geological Survey, 2020)
+  using the HTTPS and the NWIS web applications programming interface.
 
-
-cross-cites:
+source-cites:
   -
     authors: U.S. Geological Survey
     title: >-
@@ -24,13 +30,15 @@ entities:
     data-name: temperature_observations.csv
     data-description: >-
       Water temperature observation data from 118 catchments used in this study.
-      The observations were retrieved from NWIS and are limited to the test and training period, from 2010-10-01 through 2016-09-30.
+      The observations are limited to the test and training period, 2010-10-01 through 2016-09-30.
+    data-defsrc: This study
+
     attributes:
     -
       attr-label: site_no
       attr-def: >-
-        USGS unique site identifier.
-      attr-defs: NA
+        Unique USGS site identifier.
+      attr-defs: U.S. Geological Survey
       data-min: NA
       data-max: NA
       data-units: NA
@@ -38,14 +46,14 @@ entities:
       attr-label: datetime
       attr-def: >-
         Date of temperature observation.
-      attr-defs: NA
+      attr-defs: U.S. Geological Survey (2020)
       data-min: NA
       data-max: NA
       data-units: NA
     -
       attr-label: wtemp(C)
       attr-def: Observed mean daily water temperature
-      attr-defs: NA
+      attr-defs: U.S. Geological Survey (2020)
       data-min: NA
       data-max: NA
       data-units: degrees Celsius

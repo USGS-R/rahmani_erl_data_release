@@ -11,7 +11,7 @@
         <origin>Chaopeng Shen</origin>
         <pubdate>2020</pubdate>
         <title>Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 3 Model inputs</title>
-        <geoform>Comma-separated values (CSV; MIME Type text/csv)</geoform>
+        <geoform>Tabular digital data</geoform>
         <pubinfo>
           <pubplace>Online (digital release)</pubplace>
           <publish>U.S. Geological Survey</publish>
@@ -142,7 +142,7 @@
       </place>
     </keywords>
     <accconst>none</accconst>
-    <useconst>None, but see Distribution Liability below. Users are advised to read the associated publication thoroughly to understand appropriate use and data limitations.</useconst>
+    <useconst>None, but see "Distribution Liability"/"distliab" below. Users are advised to read the associated publication thoroughly to understand appropriate use and data limitations.</useconst>
     <ptcontac>
       <cntinfo>
         <cntperp>
@@ -162,31 +162,19 @@
         <cntemail>fzr5082@psu.edu</cntemail>
       </cntinfo>
     </ptcontac>
-    <crossref>
-      <citeinfo>
-        <origin>P.E. Thornton</origin>
-        <origin>M.M. Thornton</origin>
-        <origin>B.W. Mayer</origin>
-        <origin>Y. Wei</origin>
-        <origin>R. Devarakonda</origin>
-        <origin>R.S. Vose</origin>
-        <origin>R.B. Cook</origin>
-        <pubdate>2018</pubdate>
-        <title>Daymet: Daily Surface Weather Data on a 1-km Grid for North America, Version 3</title>
-        <onlink>https://doi.org/10.3334/ORNLDAAC/1328</onlink>
-      </citeinfo>
-    </crossref>
-    <crossref>
-      <citeinfo>
-        <origin>J.A. Falcone</origin>
-        <pubdate>2011</pubdate>
-        <title>GAGES-II: Geospatial attributes of gages for evaluating streamflow</title>
-        <onlink>https://doi.org/10.3133/70046617</onlink>
-      </citeinfo>
-    </crossref>
     <datacred>This study was funded by the Integrated Water Prediction Program of the U.S. Geological Survey, including funds transfered to Pennsylvania State University via Pennsylvania Water Resources Research Center graduate internship G19AC00425.</datacred>
     <native>Archive-ready data were prepared for this release using the x86_64-apple-darwin17.0 operating system and the R statistical programming language (R version 4.0.2, 2020-06-22; R Core Team, 2020; https://www.R-project.org). R packages loaded into this environment: reticulate, version: 1.16; zip, version: 2.1.1; dssecrets, version: 0.1.4; sbtools, version: 1.1.12; sf, version: 0.9-6; rgdal, version: 1.5-18; sp, version: 1.4-4; feather, version: 0.3.5; meddle, version: 0.0.11; mapdata, version: 2.3.0; maps, version: 3.3.0; yaml, version: 2.2.1; scipiper, version: 0.0.23; forcats, version: 0.5.0; stringr, version: 1.4.0; dplyr, version: 1.0.2; purrr, version: 0.3.4; readr, version: 1.4.0; tidyr, version: 1.1.2; tibble, version: 3.0.4; ggplot2, version: 3.3.2; tidyverse, version: 1.3.0.
 Model-ready data used to train and run the models for the manuscript were originally procesed in the python programming language (Python version 3.7.9; Python Software Foundation, 2020; https://www.python.org). These python modules were installed: appdirs, v1.4.4; argon2-cffi, v20.1.0; attrs, v20.2.0; backcall, v0.2.0; basemap, v1.2.1; blas, v1.0; bleach, v3.2.1; ca-certificates, v2020.7.22; certifi, v2020.6.20; cffi, v1.14.3; colorama, v0.4.3; cudatoolkit, v10.0.130; cycler, v0.10.0; dataretrieval, v0.4; decorator, v4.4.2; defusedxml, v0.6.0; distlib, v0.3.1; entrypoints, v0.3; filelock, v3.0.12; freetype, v2.10.2; icc_rt, v2019.0.0; icu, v58.2; importlib-metadata, v1.7.0; importlib_metadata, v1.7.0; intel-openmp, v2020.2; ipykernel, v5.3.4; ipython, v7.18.1; ipython_genutils, v0.2.0; jedi, v0.17.2; jinja2, v2.11.2; joblib, v0.17.0; jpeg, v9b; jsonschema, v3.2.0; jupyter_client, v6.1.6; jupyter_core, v4.6.3; kiwisolver, v1.2.0; libpng, v1.6.37; libsodium, v1.0.18; libtiff, v4.1.0; lz4-c, v1.9.2; m2w64-gcc-libgfortran, v5.3.0; m2w64-gcc-libs, v5.3.0; m2w64-gcc-libs-core, v5.3.0; m2w64-gmp, v6.1.0; m2w64-libwinpthread-git, v5.0.0.4634.697f757; markupsafe, v1.1.1; matplotlib, v3.2.2; mistune, v0.8.4; mkl, v2020.2; mkl-service, v2.3.0; mkl_fft, v1.2.0; mkl_random, v1.1.1; msys2-conda-epoch, v20160418; nbconvert, v5.6.1; nbformat, v5.0.7; ninja, v1.10.1; notebook, v6.1.1; numpy, v1.19.1; numpy-base, v1.19.1; olefile, v0.46; openssl, v1.1.1h; packaging, v20.4; pandas, v1.1.1; pandoc, v2.10.1; pandocfilters, v1.4.2; parso, v0.7.0; patsy, v0.5.1; permutationimportance, v1.2.1.8; pickleshare, v0.7.5; pillow, v7.2.0; pip, v20.2.3; pipenv, v2020.8.13; prometheus_client, v0.8.0; prompt-toolkit, v3.0.7; pyarrow, v1.0.1; pycparser, v2.20; pygments, v2.7.1; pyparsing, v2.4.7; pyproj, v2.6.1.post1; pyqt, v5.9.2; pyrsistent, v0.17.3; pyshp, v2.1.2; python, v3.7.9; python-dateutil, v2.8.1; pytorch, v1.2.0; pytz, v2020.1; pywin32, v227; pywinpty, v0.5.7; pyzmq, v19.0.2; qt, v5.9.7; requests, v2.7.0; scikit-learn, v0.23.2; scipy, v1.1.0; send2trash, v1.5.0; setuptools, v49.6.0; sip, v4.19.8; six, v1.15.0; sqlite, v3.33.0; statsmodels, v0.11.1; terminado, v0.8.3; testpath, v0.4.4; threadpoolctl, v2.1.0; tk, v8.6.10; torchvision, v0.4.0; tornado, v6.0.4; tqdm, v4.50.2; traitlets, v5.0.4; vc, v14.1; virtualenv, v20.0.35; virtualenv-clone, v0.5.4; vs2015_runtime, v14.16.27012; wcwidth, v0.2.5; webencodings, v0.5.1; wheel, v0.35.1; wincertstore, v0.2; winpty, v0.4.3; xz, v5.2.5; zeromq, v4.3.2; zipp, v3.1.0; zlib, v1.2.11; zstd, v1.4.5.</native>
+    <crossref>
+      <citeinfo>
+        <origin>D. Feng</origin>
+        <origin>K. Fang</origin>
+        <origin>C. Shen</origin>
+        <pubdate>2020</pubdate>
+        <title>Enhancing streamflow forecast and extracting insights using long-short term memory networks with data integration at continental scales</title>
+        <onlink>https://doi.org/10.1029/2019WR026793</onlink>
+      </citeinfo>
+    </crossref>
   </idinfo>
   <dataqual>
     <attracc>
@@ -203,8 +191,102 @@ Model-ready data used to train and run the models for the manuscript were origin
       </vertacc>
     </posacc>
     <lineage>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>U.S. Geological Survey</origin>
+            <pubdate>Accessed in April 2020</pubdate>
+            <title>National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)</title>
+            <onlink>http://dx.doi.org/10.5066/F7P55KJN</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>online</typesrc>
+        <srctime>
+          <timeinfo>
+            
+            
+          </timeinfo>
+          <srccurr/>
+        </srctime>
+        <srccitea/>
+        <srccontr/>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>J.A. Falcone</origin>
+            <pubdate>2011</pubdate>
+            <title>GAGES-II: Geospatial attributes of gages for evaluating streamflow</title>
+            <onlink>https://doi.org/10.3133/70046617</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>online</typesrc>
+        <srctime>
+          <timeinfo>
+            
+            
+          </timeinfo>
+          <srccurr/>
+        </srctime>
+        <srccitea/>
+        <srccontr/>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>P.E. Thornton</origin>
+            <origin>M.M. Thornton</origin>
+            <origin>B.W. Mayer</origin>
+            <origin>Y. Wei</origin>
+            <origin>R. Devarakonda</origin>
+            <origin>R.S. Vose</origin>
+            <origin>R.B. Cook</origin>
+            <pubdate>2016</pubdate>
+            <title>Daymet: Daily Surface Weather Data on a 1-km Grid for North America, Version 3</title>
+            <onlink>https://doi.org/10.3334/ORNLDAAC/1328</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>online</typesrc>
+        <srctime>
+          <timeinfo>
+            
+            
+          </timeinfo>
+          <srccurr/>
+        </srctime>
+        <srccitea/>
+        <srccontr/>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>N. Gorelick</origin>
+            <origin>M. Hancher</origin>
+            <origin>M. Dixon</origin>
+            <origin>S. Ilyushchenko</origin>
+            <origin>D. Thau</origin>
+            <origin>R. Moore</origin>
+            <pubdate>2017</pubdate>
+            <title>Google Earth Engine: Planetary-scale geospatial analysis for everyone</title>
+            <onlink>https://doi.org/10.1016/j.rse.2017.06.031</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>online</typesrc>
+        <srctime>
+          <timeinfo>
+            
+            
+          </timeinfo>
+          <srccurr/>
+        </srctime>
+        <srccitea/>
+        <srccontr/>
+      </srcinfo>
       <procstep>
-        <procdesc>At the core of the modeling framework is a deep learning model that uses inputs of XX.</procdesc>
+        <procdesc>Discharge data for the 118 selected USGS monitoring locations were retrieved from the USGS National Water Information System (NWIS; U.S. Geological Survey, 2020) using the HTTPS and the NWIS web applications programming interface.
+Attribute data for the basins contributing to those 118 USGS monitoring locations were downloaded from the GAGES-II database (Falcone 2011).
+We obtained basin daily meteorological forcing data (precipitation, maximum and minimum air temperature, vapor pressure, solar radiation) by interpolating a gridded meteorological dataset (Daymet) (Thornton et al. 2016) from Google Earth Engine (GEE) (Gorelick et al. 2017).
+Although some of these datasets were initially downloaded to cover longer periods of time, we subset the results to the combined training and test period for this study, 2010-10-01 through 2016-09-30, for the analysis by Rahmani et al. (2020) and this data release.</procdesc>
         <procdate>20201106</procdate>
       </procstep>
     </lineage>
@@ -238,13 +320,13 @@ Model-ready data used to train and run the models for the manuscript were origin
     <detailed>
       <enttyp>
         <enttypl>weather_drivers.csv</enttypl>
-        <enttypd>Daily weather driver data that was used to drive both the temperature and flow models. Data were obtained from Daymet and interpolated over each basin from the period 2004 to 2016.</enttypd>
-        <enttypds>U.S. Geological Survey</enttypds>
+        <enttypd>Daily weather driver data that were used as inputs to the temperature models.</enttypd>
+        <enttypds>This study</enttypds>
       </enttyp>
       <attr>
         <attrlabl>site_no</attrlabl>
-        <attrdef>The unique site identifier, which is also the USGS gage site ID.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdef>Unique USGS site identifier.</attrdef>
+        <attrdefs>U.S. Geological Survey</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -256,7 +338,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>dayls(s)</attrlabl>
         <attrdef>Duration of the daylight period in seconds per day. This calculation is based on the period of the day during which the sun is above a hypothetical flat horizon.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>dayl as in Thornton et al. 2016</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -268,7 +350,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>prcp(mm/day)</attrlabl>
         <attrdef>Daily total precipitation in millimeters per day, sum of all forms converted to water-equivalent. Precipitation occurrence on any given day may be ascertained.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>prcp as in Thornton et al. 2016</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -280,7 +362,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>srad(W/m2)</attrlabl>
         <attrdef>Incident shortwave radiation flux density in watts per square meter, taken as an average over the daylight period of the day. NOTE: Daily total radiation (MJ/m2/day) can be calculated as follows: ((srad (W/m2) * dayl (s/day)) / l,000,000).</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>srad as in Thornton et al. 2016</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -292,7 +374,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>swe(mm)</attrlabl>
         <attrdef>Snow water equivalent in kilograms per square meter. The amount of water contained within the snowpack.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>swe as in Thornton et al. 2016</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -304,7 +386,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>tmax(C)</attrlabl>
         <attrdef>Daily maximum 2-meter air temperature in degrees Celsius.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>tmax as in Thornton et al. 2016</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -316,7 +398,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>tmin(C)</attrlabl>
         <attrdef>Daily minimum 2-meter air temperature in degrees Celsius.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>tmin as in Thornton et al. 2016</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -328,7 +410,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>vp(Pa)</attrlabl>
         <attrdef>Water vapor pressure in pascals. Daily average partial pressure of water vapor.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>vp as in Thornton et al. 2016</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -340,7 +422,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>datetime</attrlabl>
         <attrdef>Date of observation</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>Thornton et al. 2016</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -353,13 +435,13 @@ Model-ready data used to train and run the models for the manuscript were origin
     <detailed>
       <enttyp>
         <enttypl>AT_basin_attributes.csv</enttypl>
-        <enttypd>River basin characteristics used as inputs to the water temperature model. Basin characteristics are from the Gages II dataset.</enttypd>
-        <enttypds>U.S. Geological Survey</enttypds>
+        <enttypd>River basin characteristics used as inputs to the water temperature model.</enttypd>
+        <enttypds>Falcone 2011</enttypds>
       </enttyp>
       <attr>
         <attrlabl>site_no</attrlabl>
-        <attrdef>The unique site identifier, which is also the USGS gage site ID.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdef>Unique USGS site identifier.</attrdef>
+        <attrdefs>U.S. Geological Survey</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -371,7 +453,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>DRAIN_SQKM</attrlabl>
         <attrdef>Watershed drainage area.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>Falcone 2011</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -383,7 +465,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>STREAMS_KM_SQ_KM</attrlabl>
         <attrdef>Stream density (length of streams per area of watershed).</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>Falcone 2011</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -395,7 +477,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>STOR_NID_2009</attrlabl>
         <attrdef>Dam storage in watershed per watershed area.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>Falcone 2011</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -407,7 +489,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>FORESTNLCD06</attrlabl>
         <attrdef>Watershed percent forest.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>Falcone 2011</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -419,7 +501,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>PLANTNLCD06</attrlabl>
         <attrdef>Watershed percent agriculture (plant).</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>Falcone 2011</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -431,7 +513,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>SLOPE_PCT</attrlabl>
         <attrdef>Mean watershed slope.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>Falcone 2011</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -443,7 +525,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>RAW_DIS_NEAREST_MAJ_DAM</attrlabl>
         <attrdef>Raw straight line distance of gage location to nearest major dam in watershed.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>Falcone 2011</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -455,7 +537,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>PERDUN</attrlabl>
         <attrdef>Dunne overland flow as percentage of total streamflow.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>Falcone 2011</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -467,7 +549,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>RAW_DIS_NEAREST_DAM</attrlabl>
         <attrdef>Raw straight line distance of gage location to nearest dam in watershed.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>Falcone 2011</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -479,7 +561,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>RAW_AVG_DIS_ALL_MAJ_DAMS</attrlabl>
         <attrdef>Raw average straight line distance of gage location to all major dams in watershed.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>Falcone 2011</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -491,7 +573,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>T_MIN_BASIN</attrlabl>
         <attrdef>Average of minimum monthly air temperature for 1971-2000.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>Falcone 2011</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -503,7 +585,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>T_MINSTD_BASIN</attrlabl>
         <attrdef>Standard deviation of minimum monthly air temperature  for 1971-2000.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>Falcone 2011</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -515,7 +597,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>RH_BASIN</attrlabl>
         <attrdef>Watershed average relative humidity.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>Falcone 2011</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -527,7 +609,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>RAW_AVG_DIS_ALLDAMS</attrlabl>
         <attrdef>Raw average straight line distance of gage location to all dams in watershed.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>Falcone 2011</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -539,7 +621,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>PPTAVG_BASIN</attrlabl>
         <attrdef>Mean annual precipitation for watershed for 1971-2000.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>Falcone 2011</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -551,7 +633,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>HIRES_LENTIC_PCT</attrlabl>
         <attrdef>Percent of watershed area covered by lake/pond/reservoir.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>Falcone 2011</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -563,7 +645,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>T_AVG_BASIN</attrlabl>
         <attrdef>Average annual air temperature for the watershed.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>Falcone 2011</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -575,7 +657,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>T_MAX_BASIN</attrlabl>
         <attrdef>Average of maximum monthly air temperature for 1971-2000.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>Falcone 2011</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -587,7 +669,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>T_MAXSTD_BASIN</attrlabl>
         <attrdef>Standard deviation of maximum monthly air temperature for 1971-2000.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>Falcone 2011</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -599,7 +681,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>NDAMS_2009</attrlabl>
         <attrdef>Number of dams in watershed.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>Falcone 2011</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -611,7 +693,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>ELEV_MEAN_M_BASIN</attrlabl>
         <attrdef>Mean watershed elevation.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>Falcone 2011</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -625,12 +707,12 @@ Model-ready data used to train and run the models for the manuscript were origin
       <enttyp>
         <enttypl>pred_discharge.csv</enttypl>
         <enttypd>Simulated discharge that was used as an input to the water temperature models. Simulated discharge was only used during the test period (water years 2014-2016).</enttypd>
-        <enttypds>U.S. Geological Survey</enttypds>
+        <enttypds>This study</enttypds>
       </enttyp>
       <attr>
         <attrlabl>site_no</attrlabl>
-        <attrdef>U.S. Geological Survey site number.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdef>Unique USGS site identifier.</attrdef>
+        <attrdefs>U.S. Geological Survey</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -642,7 +724,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>datetime</attrlabl>
         <attrdef>Date of prediction.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>This study</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -654,7 +736,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>sim_discharge(cfs)</attrlabl>
         <attrdef>Stream discharge as predicted by the discharge model.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>This study; Feng, Fang, and Shen 2020</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -667,13 +749,13 @@ Model-ready data used to train and run the models for the manuscript were origin
     <detailed>
       <enttyp>
         <enttypl>flow_observations.csv</enttypl>
-        <enttypd>Observed mean daily discharge observation retrieved from NWIS for the 118 gages used in this study. Flow observations were used as a driver in the water temperature model. The data were retrieved from NWIS and are limited to the test and training period, from 2010-10-01 through 2016-09-30.</enttypd>
-        <enttypds>U.S. Geological Survey</enttypds>
+        <enttypd>Observed mean daily discharge for the 118 monitoring locations in this study. Discharge (flow) observations were used as a driver in the water temperature model.</enttypd>
+        <enttypds>This study</enttypds>
       </enttyp>
       <attr>
         <attrlabl>site_no</attrlabl>
-        <attrdef>USGS unique site identifier.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdef>Unique USGS site identifier.</attrdef>
+        <attrdefs>U.S. Geological Survey</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -685,7 +767,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>datetime</attrlabl>
         <attrdef>Date of temperature observation.</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>U.S. Geological Survey (2020)</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -697,7 +779,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <attr>
         <attrlabl>discharge(cfs)</attrlabl>
         <attrdef>Observed mean daily discharge</attrdef>
-        <attrdefs>NA</attrdefs>
+        <attrdefs>U.S. Geological Survey (2020)</attrdefs>
         <attrdomv>
           <rdom>
             <rdommin>NA</rdommin>
@@ -731,7 +813,7 @@ Model-ready data used to train and run the models for the manuscript were origin
     <stdorder>
       <digform>
         <digtinfo>
-          <formname>Comma-separated values (CSV; MIME Type text/csv)</formname>
+          <formname>Comma-separated values (CSV; MIME Type text/csv), where weather_drivers.csv is compressed to zipfile (weather_drivers.zip)</formname>
         </digtinfo>
         <digtopt>
           <onlinopt>

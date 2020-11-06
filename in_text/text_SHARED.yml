@@ -16,6 +16,10 @@ start-date: 20101001
 end-date: 20160930
 update: None planned
 descgeog: "Locations of sites used in the study, which are a subset of the Gages II dataset."
+indirect-spatial: U.S.A.
+latitude-res: 0.00001
+longitude-res: 0.00001
+accur-test: No formal attribute accuracy tests were conducted.
 themekeywords: ["machine learning", "deep learning", "water", "temperature", "streams", "modeling"]
 
 # ----contacts----
@@ -39,19 +43,10 @@ metadata-state: PA
 metadata-zip: 16801
 metadata-date: !expr format(Sys.time(),'%Y%m%d')
 
-accur-test: No formal attribute accuracy tests were conducted.
 funding-credits: >-
   This study was funded by the Integrated Water Prediction Program of the U.S. Geological Survey,
   including funds transfered to Pennsylvania State University via
   Pennsylvania Water Resources Research Center graduate internship G19AC00425.
-
-process-description: >-
-  At the core of the modeling framework is a deep learning model that uses inputs of XX.
-
-indirect-spatial: U.S.A.
-latitude-res: 0.00001
-longitude-res: 0.00001
-distro-person: Samantha K. Oliver
 
 build-environment: >-
   Archive-ready data were prepared for this release using the x86_64-apple-darwin17.0 operating system and the
@@ -82,7 +77,9 @@ build-environment: >-
   webencodings, v0.5.1; wheel, v0.35.1; wincertstore, v0.2; winpty, v0.4.3; xz, v5.2.5; zeromq, v4.3.2; zipp, v3.1.0; zlib, v1.2.11; zstd, v1.4.5.
 
 usage-rules: >-
-  None, but see Distribution Liability below. Users are advised to read the associated publication thoroughly to understand appropriate use and data limitations.
+  None, but see "Distribution Liability"/"distliab" below.
+  Users are advised to read the associated publication thoroughly to understand
+  appropriate use and data limitations.
 
 # liability-statement: >-
 #   These data are preliminary or provisional and are subject to revision. They are being provided to meet the need for timely best science.
@@ -94,3 +91,5 @@ liability-statement: >-
   Although these data and associated metadata have been reviewed for accuracy and completeness and approved for release by the U.S. Geological Survey (USGS),
   no warranty expressed or implied is made regarding the display or utility of the data on any other system or for general or scientific purposes, nor shall
   the act of distribution constitute any such warranty.
+
+#  Any use of trade, product, or firm names is for descriptive purposes only and does not imply endorsement by the U.S. Government.
