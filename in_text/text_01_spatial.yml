@@ -2,7 +2,8 @@ title: >-
   Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 1 Spatial information
 
 abstract: >-
-  <p>This data release subitem contains a shapefile of outlet locations for the 118 river basins used by Rahmani et al. (2020).</p>
+  <p>This data release component contains a shapefile of outlet locations for the 118 river basins
+  used by Rahmani et al. (2020).</p>
 
 process-date: !expr format(Sys.time(),'%Y%m%d')
 file-format: Shapefile (.zip of .shp, .shx, .prj, and .dbf files)

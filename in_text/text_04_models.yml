@@ -2,7 +2,8 @@ title: >-
   Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 4 Models
 
 abstract: >-
-  <p>Model code and configurations for the LSTM and linear regression models used to predict stream temperature.
+  <p>This data release component contains model code and configurations for the LSTM and
+  linear regression models used to predict stream temperature.
   The code builds on work by Fang, Feng, and Shen (2020) and others.</p>
 
 cross-cites:

@@ -32,7 +32,7 @@
       </citeinfo>
     </citation>
     <descript>
-      <abstract>&lt;p&gt;Mean daily stream water temperature observations, retrieved from the USGS National Water Information System (NWIS) and used to train and validate all temperature models. The model training period was from 2010-10-01 to 2014-09-30, and the test period was from 2014-10-01 to 2016-09-30.&lt;/p&gt;</abstract>
+      <abstract>&lt;p&gt;This data release component contains mean daily stream water temperature observations, retrieved from the USGS National Water Information System (NWIS) and used to train and validate all temperature models. The model training period was from 2010-10-01 to 2014-09-30, and the test period was from 2014-10-01 to 2016-09-30.&lt;/p&gt;</abstract>
       <purpose>Decision support, water quality research, and advancement of machine learning in hydrology</purpose>
     </descript>
     <timeperd>

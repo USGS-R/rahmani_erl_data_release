@@ -32,7 +32,7 @@
       </citeinfo>
     </citation>
     <descript>
-      <abstract>&lt;p&gt;Water temperature predictions in 118 river catchments across the U.S. Predictions from all four models (locally-fitted linear regression, LSTM-noQ, LSTM-obsQ, and LSTM-simQ) are included.&lt;/p&gt;</abstract>
+      <abstract>&lt;p&gt;This data release component contains water temperature predictions in 118 river catchments across the U.S. Predictions are from the four models described by Rahmani et al. (2020): locally-fitted linear regression, LSTM-noQ, LSTM-obsQ, and LSTM-simQ.&lt;/p&gt;</abstract>
       <purpose>Decision support, water quality research, and advancement of machine learning in hydrology</purpose>
     </descript>
     <timeperd>

@@ -2,8 +2,9 @@ title: >-
     Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 6 Model evaluation
 
 abstract: >-
-  <p>Evaluation metrics used to assess the predictive performance of each stream temperature model.
-  For further description, see the metric calculations in the supplement of Rahmani et al. 2020 (equations S1-S7).</p>
+  <p>This data release component contains evaluation metrics used to assess the
+  predictive performance of each stream temperature model. For further description,
+  see the metric calculations in the supplement of Rahmani et al. (2020), equations S1-S7.</p>
 
 cross-cites:
   -

@@ -32,7 +32,7 @@
       </citeinfo>
     </citation>
     <descript>
-      <abstract>&lt;p&gt;Model code and configurations for the LSTM and linear regression models used to predict stream temperature. The code builds on work by Fang, Feng, and Shen (2020) and others.&lt;/p&gt;</abstract>
+      <abstract>&lt;p&gt;This data release component contains model code and configurations for the LSTM and linear regression models used to predict stream temperature. The code builds on work by Fang, Feng, and Shen (2020) and others.&lt;/p&gt;</abstract>
       <purpose>Decision support, water quality research, and advancement of machine learning in hydrology</purpose>
     </descript>
     <timeperd>

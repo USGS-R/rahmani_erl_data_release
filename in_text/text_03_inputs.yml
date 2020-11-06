@@ -2,7 +2,8 @@ title: >-
   Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 3 Model inputs
 
 abstract: >-
-  <p>Model inputs, including river basin attributes, weather forcing data, and simulated and observed river discharge.</p>
+  <p>This data release component contains model inputs including river basin attributes,
+  weather forcing data, and simulated and observed river discharge.</p>
 
 cross-cites:
   -

@@ -32,7 +32,7 @@
       </citeinfo>
     </citation>
     <descript>
-      <abstract>&lt;p&gt;Evaluation metrics used to assess the predictive performance of each stream temperature model. For further description, see the metric calculations in the supplement of Rahmani et al. 2020 (equations S1-S7).&lt;/p&gt;</abstract>
+      <abstract>&lt;p&gt;This data release component contains evaluation metrics used to assess the predictive performance of each stream temperature model. For further description, see the metric calculations in the supplement of Rahmani et al. (2020), equations S1-S7.&lt;/p&gt;</abstract>
       <purpose>Decision support, water quality research, and advancement of machine learning in hydrology</purpose>
     </descript>
     <timeperd>

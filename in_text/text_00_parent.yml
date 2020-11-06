@@ -2,9 +2,9 @@ title: >-
   Data release: Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data (Provisional Data Release)
 
 abstract: >-
-  <p>This data release provides all data and code used in Rahmani et al. 2020 to model stream temperature and assess results.
+  <p>This data release provides all data and code used in Rahmani et al. (2020) to model stream temperature and assess results.
   Briefly, we used the USGS Gages II dataset as a test case for temperature prediction using deep learning methods.
-  The associated manuscript by Rahmani et al. (2020) explores the value of including stream discharge as a predictor in the temperature models,
+  The associated manuscript explores the value of including stream discharge as a predictor in the temperature models,
   including the value of predicted discharge from a separate model when no discharge measurements are available.</p>
   <p>The data are organized into these items:</p>
   <ol>

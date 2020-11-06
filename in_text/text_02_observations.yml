@@ -2,7 +2,8 @@ title: >-
   Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 2 Observations
 
 abstract: >-
-  <p>Mean daily stream water temperature observations, retrieved from the USGS National Water Information System (NWIS) and
+  <p>This data release component contains mean daily stream water temperature observations,
+  retrieved from the USGS National Water Information System (NWIS) and
   used to train and validate all temperature models.
   The model training period was from 2010-10-01 to 2014-09-30, and the test period was from 2014-10-01 to 2016-09-30.</p>
 
