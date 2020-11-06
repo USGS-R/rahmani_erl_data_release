@@ -1,27 +1,24 @@
 title: >-
   Data release: Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data
 
-
 abstract: >-
-  <p>This data release provides all data and code used in Rahmani et al. 2020. Briefly, this project used the Gages II dataset as a test case for temperature prediction using deep learning methods. XX
-  <br/>The data are organized into these items:</p>
+  <p>This data release provides all data and code used in Rahmani et al. 2020 to model stream temperature and assess results.
+  Briefly, we used the USGS Gages II dataset as a test case for temperature prediction using deep learning methods.
+  The associated manuscript by Rahmani et al. (2020) explores the value of including stream discharge as a predictor in the temperature models,
+  including the value of predicted discharge from a separate model when no discharge measurements are available.</p>
+  <p>The data are organized into these items:</p>
   <ol>
-  <li><a href="https://www.sciencebase.gov/catalog/item/5f908db182ce720ee2d0fef9">Spatial Information</a> - Pour points for 118 river basins used in this study</li>
-  <li><a href="https://www.sciencebase.gov/catalog/item/5f986594d34e198cb77ff084">Observations</a> - Water temperature observations and flow observations for the 118 river reaches used in this study</li>
-  <li><a href="https://www.sciencebase.gov/catalog/item/5f9865abd34e198cb77ff086">Model Inputs</a> - Model inputs, including basin characteristics and weather drivers. </li>
-  <li><a href="https://www.sciencebase.gov/catalog/item/5f9865cfd34e198cb77ff088">Models</a> - Code and configuration for stream temperature models.</li>
-  <li><a href="https://www.sciencebase.gov/catalog/item/5f9865e5d34e198cb77ff08a">Model Predictions</a> - Predictions of stream water temperature and discharge</li>
-  <li><a href="https://www.sciencebase.gov/catalog/item/5f9865fbd34e198cb77ff08c">Model Evaluation</a> - Performance metrics of each stream temperature model</li>
-  <br/>
+  <li><a href="https://www.sciencebase.gov/catalog/item/5f908db182ce720ee2d0fef9">Spatial Information</a> - Outlet locations for the 118 river basins used in this study</li>
+  <li><a href="https://www.sciencebase.gov/catalog/item/5f986594d34e198cb77ff084">Observations</a> - Water temperature observations for the 118 river basin pour points used in this study</li>
+  <li><a href="https://www.sciencebase.gov/catalog/item/5f9865abd34e198cb77ff086">Model Inputs</a> - Model inputs, including basin attributes, weather drivers, and discharge</li>
+  <li><a href="https://www.sciencebase.gov/catalog/item/5f9865cfd34e198cb77ff088">Models</a> - Code and configurations for the stream temperature models</li>
+  <li><a href="https://www.sciencebase.gov/catalog/item/5f9865e5d34e198cb77ff08a">Model Predictions</a> - Predictions of stream water temperature</li>
+  <li><a href="https://www.sciencebase.gov/catalog/item/5f9865fbd34e198cb77ff08c">Model Evaluation</a> - Performance metrics for each stream temperature model</li>
+  </ol>
   <p>This research was funded by the Integrated Water Prediction Program at the US Geological Survey.</p>
 
-build-environment: Multiple computer systems were used to generate these data, including linux, OSX. The open source languages R and Python were used on all systems. XX
-
 process-date: !expr format(Sys.time(),'%Y%m%d')
-indirect-spatial: U.S.A.
-latitude-res: 0.1
-longitude-res: 0.1
-data-name: Full data release
-data-description: >-
-  This is the landing page for the other data release units, described in the attributes section.
-file-format: parent data item for released data products
+file-format: Landing page and parent metadata for the full data release
+
+build-environment: >-
+  This data release was prepared using the R Multiple computer systems were used to generate these data, including linux, OSX. The open source languages R and Python were used on all systems. XX

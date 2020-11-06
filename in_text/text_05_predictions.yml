@@ -1,14 +1,15 @@
 title: >-
-    Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 5 model prediction data
+    Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 5 Model predictions
 
 abstract: >-
-  A deep learning model framework was used to make water temperature predictions in 118 river catchments across the U.S. All four model (LR, noQ, obsQ, and simQ) predictions are included.
+  <p>Water temperature predictions in 118 river catchments across the U.S. Predictions from all four models (locally-fitted linear regression, LSTM-noQ, LSTM-obsQ, and LSTM-simQ) are included.</p>
 
 cross-cites:
   -
-    authors: ['DP Feng', 'K Fang', "CP Shen"]
+    authors: ['D. Feng', 'K. Fang', "C. Shen"]
     title: >-
-      Enhancing streamflow forecast and extracting insights using continental-scale long-short term memory networks with data integration
+      Enhancing streamflow forecast and extracting insights using long-short term
+      memory networks with data integration at continental scales
     pubdate: 2020
     link: https://doi.org/10.1029/2019WR026793
 
@@ -48,10 +49,7 @@ entities:
       data-units: degrees Celsius
 
 process-date: !expr format(Sys.time(),'%Y%m%d')
-indirect-spatial: U.S.A.
-latitude-res: 0.00001
-longitude-res: 0.00001
 data-name: Model predictions
 data-description: >-
   Stream water temperature predictions from each model described in Rahmani et al. 2020.
-file-format: comma seperated file format (csv)
+file-format: Comma-separated values (CSV; MIME Type text/csv)

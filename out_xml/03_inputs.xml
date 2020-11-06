@@ -10,13 +10,13 @@
         <origin>Samantha Oliver</origin>
         <origin>Chaopeng Shen</origin>
         <pubdate>2020</pubdate>
-        <title>Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 3 model inputs</title>
-        <geoform>comma seperated file format (csv)</geoform>
+        <title>Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 3 Model inputs</title>
+        <geoform>Comma-separated values (CSV; MIME Type text/csv)</geoform>
         <pubinfo>
           <pubplace>Online (digital release)</pubplace>
           <publish>U.S. Geological Survey</publish>
         </pubinfo>
-        <onlink>XX</onlink>
+        <onlink>https://doi.org/10.5066/P97CGHZH</onlink>
         <lworkcit>
           <citeinfo>
             <origin>Farshid Rahmani</origin>
@@ -32,21 +32,21 @@
       </citeinfo>
     </citation>
     <descript>
-      <abstract>Inputs to the deep learning models included daily weather forcing data, river catchment attributes, and simulated or observed flow.</abstract>
-      <purpose>Decision support, water quality research</purpose>
+      <abstract>&lt;p&gt;Model inputs, including river basin attributes, weather forcing data, and simulated and observed river discharge.&lt;/p&gt;</abstract>
+      <purpose>Decision support, water quality research, and advancement of machine learning in hydrology</purpose>
     </descript>
     <timeperd>
       <timeinfo>
         <rngdates>
-          <begdate>19801001</begdate>
-          <enddate>20191231</enddate>
+          <begdate>20101001</begdate>
+          <enddate>20160930</enddate>
         </rngdates>
       </timeinfo>
       <current>See publication date</current>
     </timeperd>
     <status>
       <progress>Complete</progress>
-      <update>none planned</update>
+      <update>None planned</update>
     </status>
     <spdom>
       <descgeog>Locations of sites used in the study, which are a subset of the Gages II dataset.</descgeog>
@@ -144,7 +144,7 @@
       </place>
     </keywords>
     <accconst>none</accconst>
-    <useconst>These data are subject to change and are not citable until reviewed and approved for official publication by the USGS</useconst>
+    <useconst>None, but see Distribution Liability below. Users are advised to read the associated publication thoroughly to understand appropriate use and data limitations.</useconst>
     <ptcontac>
       <cntinfo>
         <cntperp>
@@ -206,7 +206,7 @@
     <lineage>
       <procstep>
         <procdesc>At the core of the modeling framework is a deep learning model that uses inputs of XX.</procdesc>
-        <procdate>20201103</procdate>
+        <procdate>20201106</procdate>
       </procstep>
     </lineage>
   </dataqual>
@@ -223,8 +223,8 @@
   <spref>
     <horizsys>
       <geograph>
-        <latres>0.1</latres>
-        <longres>0.1</longres>
+        <latres>1e-05</latres>
+        <longres>1e-05</longres>
         <geogunit>Decimal degrees</geogunit>
       </geograph>
       <geodetic>
@@ -732,13 +732,13 @@
     <stdorder>
       <digform>
         <digtinfo>
-          <formname>comma seperated file format (csv)</formname>
+          <formname>Comma-separated values (CSV; MIME Type text/csv)</formname>
         </digtinfo>
         <digtopt>
           <onlinopt>
             <computer>
               <networka>
-                <networkr>XX</networkr>
+                <networkr>https://doi.org/10.5066/P97CGHZH</networkr>
               </networka>
             </computer>
           </onlinopt>
@@ -748,7 +748,7 @@
     </stdorder>
   </distinfo>
   <metainfo>
-    <metd>20201103</metd>
+    <metd>20201106</metd>
     <metc>
       <cntinfo>
         <cntperp>

@@ -10,8 +10,8 @@
         <origin>Samantha Oliver</origin>
         <origin>Chaopeng Shen</origin>
         <pubdate>2020</pubdate>
-        <title>Data release: Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data (Provisional Data Release)</title>
-        <geoform>Landing page and parent metadata for the full data release</geoform>
+        <title>Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 4 Models</title>
+        <geoform>Zip file of code scripts (.zip of text files with varying extensions)</geoform>
         <pubinfo>
           <pubplace>Online (digital release)</pubplace>
           <publish>U.S. Geological Survey</publish>
@@ -32,7 +32,7 @@
       </citeinfo>
     </citation>
     <descript>
-      <abstract>&lt;p&gt;This data release provides all data and code used in Rahmani et al. 2020 to model stream temperature and assess results. Briefly, we used the USGS Gages II dataset as a test case for temperature prediction using deep learning methods. The associated manuscript by Rahmani et al. (2020) explores the value of including stream discharge as a predictor in the temperature models, including the value of predicted discharge from a separate model when no discharge measurements are available.&lt;/p&gt; &lt;p&gt;The data are organized into these items:&lt;/p&gt; &lt;ol&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f908db182ce720ee2d0fef9"&gt;Spatial Information&lt;/a&gt; - Outlet locations for the 118 river basins used in this study&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f986594d34e198cb77ff084"&gt;Observations&lt;/a&gt; - Water temperature observations for the 118 river basin pour points used in this study&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865abd34e198cb77ff086"&gt;Model Inputs&lt;/a&gt; - Model inputs, including basin attributes, weather drivers, and discharge&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865cfd34e198cb77ff088"&gt;Models&lt;/a&gt; - Code and configurations for the stream temperature models&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865e5d34e198cb77ff08a"&gt;Model Predictions&lt;/a&gt; - Predictions of stream water temperature&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865fbd34e198cb77ff08c"&gt;Model Evaluation&lt;/a&gt; - Performance metrics for each stream temperature model&lt;/li&gt; &lt;/ol&gt; &lt;p&gt;This research was funded by the Integrated Water Prediction Program at the US Geological Survey.&lt;/p&gt;</abstract>
+      <abstract>&lt;p&gt;Model code and configurations for the LSTM and linear regression models used to predict stream temperature. The code builds on work by Fang, Feng, and Shen (2020) and others.&lt;/p&gt;</abstract>
       <purpose>Decision support, water quality research, and advancement of machine learning in hydrology</purpose>
     </descript>
     <timeperd>
@@ -165,7 +165,17 @@
       </cntinfo>
     </ptcontac>
     <datacred>This study was funded by the Integrated Water Prediction Program at the U.S. Geological Survey. XX.</datacred>
-    <native>This data release was prepared using the R Multiple computer systems were used to generate these data, including linux, OSX. The open source languages R and Python were used on all systems. XX</native>
+    <native>This dataset was generated using open source tools available in the XX.</native>
+    <crossref>
+      <citeinfo>
+        <origin>D. Feng</origin>
+        <origin>K. Fang</origin>
+        <origin>C. Shen</origin>
+        <pubdate>2020</pubdate>
+        <title>Enhancing streamflow forecast and extracting insights using long-short term memory networks with data integration at continental scales</title>
+        <onlink>https://doi.org/10.1029/2019WR026793</onlink>
+      </citeinfo>
+    </crossref>
   </idinfo>
   <dataqual>
     <attracc>
@@ -214,7 +224,110 @@
     </horizsys>
   </spref>
   <eainfo>
-      </eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>models.zip</enttypl>
+        <enttypd>A zip file containing code to run the neural network (LSTM) and linear regression (LR) temperature models in this study</enttypd>
+        <enttypds>U.S. Geological Survey</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>README.md</attrlabl>
+        <attrdef>A markdown file (can be read as text file) that explains how to run the code in this entity</attrdef>
+        <attrdefs>This study; https://tools.ietf.org/html/rfc7763</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>NA</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>condaenv_lstm_*.yml</attrlabl>
+        <attrdef>Conda environment files that can be used to install a suitable combination of python modules for running this code</attrdef>
+        <attrdefs>http://anaconda.com/</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>NA</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>hydroDL</attrlabl>
+        <attrdef>A python module (multiple files) that trains, tests, and generates predictions from LSTM models</attrdef>
+        <attrdefs>Feng, Fang, and Shen 2020 and this study; https://www.python.org</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>NA</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>StreamTemp-Integ.py</attrlabl>
+        <attrdef>A python script that builds and tests an LSTM model</attrdef>
+        <attrdefs>This study; https://www.python.org</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>NA</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>LR.ipynb</attrlabl>
+        <attrdef>A Jupyter notebook that builds and tests a linear regression model</attrdef>
+        <attrdefs>This study; https://ipython.org/notebook.html</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>NA</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>datarelease</attrlabl>
+        <attrdef>A folder that can be created, using instructions in README.md, to store data files downloaded from this data release, to be used in preparing inputs to the models</attrdef>
+        <attrdefs>This study</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>NA</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>input</attrlabl>
+        <attrdef>A folder that can be created, using instructions in README.md, to store data files ready for input to the temperature models</attrdef>
+        <attrdefs>This study</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>NA</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>output</attrlabl>
+        <attrdef>A folder that can be created, using instructions in README.md, to store output files produced by the models</attrdef>
+        <attrdefs>This study</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>NA</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+    </detailed>
+  </eainfo>
   <distinfo>
     <distrib>
       <cntinfo>
@@ -238,7 +351,7 @@
     <stdorder>
       <digform>
         <digtinfo>
-          <formname>Landing page and parent metadata for the full data release</formname>
+          <formname>Zip file of code scripts (.zip of text files with varying extensions)</formname>
         </digtinfo>
         <digtopt>
           <onlinopt>

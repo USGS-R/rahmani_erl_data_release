@@ -1,101 +1,86 @@
 title: >-
-  Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 4 models
+  Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 4 Models
 
 abstract: >-
-  This section provides model code and configuration for the deep learning models used in this work. XX
+  <p>Model code and configurations for the LSTM and linear regression models used to predict stream temperature.
+  The code builds on work by Fang, Feng, and Shen (2020) and others.</p>
+
 cross-cites:
   -
-    authors: ['XX']
+    authors: ['D. Feng', 'K. Fang', "C. Shen"]
     title: >-
-      Cross cite the code base used. 
-    pubdate: XX
-    form: XX
-    link: XX
+      Enhancing streamflow forecast and extracting insights using long-short term
+      memory networks with data integration at continental scales
+    pubdate: 2020
+    link: https://doi.org/10.1029/2019WR026793
 
 entities:
   -
-    data-name: pb0_config.json
-    data-description: A JSON file containing parameters for each of the lakes in this study
+    data-name: models.zip
+    data-description: A zip file containing code to run the neural network (LSTM) and linear regression (LR) temperature models in this study
     attributes:
     -
-      attr-label: glm_setup
-      attr-def: parameters for setting up the General Lake Model and defining constants
-      attr-defs: Hipsey et al. 2019
+      attr-label: README.md
+      attr-def: A markdown file (can be read as text file) that explains how to run the code in this entity
+      attr-defs: This study; https://tools.ietf.org/html/rfc7763
       data-min: NA
       data-max: NA
       data-units: NA
     -
-      attr-label: morphometry
-      attr-def: parameters describing the depth/area relationship of the lake for the General Lake Model
-      attr-defs: Hipsey et al. 2019
+      attr-label: condaenv_lstm_*.yml
+      attr-def: Conda environment files that can be used to install a suitable combination of python modules for running this code
+      attr-defs: http://anaconda.com/
       data-min: NA
       data-max: NA
       data-units: NA
     -
-      attr-label: time
-      attr-def: parameters describing the time period and frequency of model runs for the General Lake Model
-      attr-defs: Hipsey et al. 2019
+      attr-label: hydroDL
+      attr-def: A python module (multiple files) that trains, tests, and generates predictions from LSTM models
+      attr-defs: Feng, Fang, and Shen 2020 and this study; https://www.python.org
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: StreamTemp-Integ.py
+      attr-def: A python script that builds and tests an LSTM model
+      attr-defs: This study; https://www.python.org
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: LR.ipynb
+      attr-def: A Jupyter notebook that builds and tests a linear regression model
+      attr-defs: This study; https://ipython.org/notebook.html
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: datarelease
+      attr-def: A folder that can be created, using instructions in README.md, to store data files downloaded from this data release, to be used in preparing inputs to the models
+      attr-defs: This study
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: input
+      attr-def: A folder that can be created, using instructions in README.md, to store data files ready for input to the temperature models
+      attr-defs: This study
       data-min: NA
       data-max: NA
       data-units: NA
     -
       attr-label: output
-      attr-def: parameters describing how the outputs of model runs from the General Lake Model are written
-      attr-defs: Hipsey et al. 2019
+      attr-def: A folder that can be created, using instructions in README.md, to store output files produced by the models
+      attr-defs: This study
       data-min: NA
       data-max: NA
       data-units: NA
-    -
-      attr-label: init_profiles
-      attr-def: parameters describing General Lake Model initial conditions
-      attr-defs: Hipsey et al. 2019
-      data-min: NA
-      data-max: NA
-      data-units: NA
-    -
-      attr-label: meteorology
-      attr-def: parameters describing time series drivers of General Lake Model runs
-      attr-defs: Hipsey et al. 2019
-      data-min: NA
-      data-max: NA
-      data-units: NA
-    -
-      attr-label: bird_model
-      attr-def: parameters describing the use (if applicable) of the Bird model for General Lake Model runs
-      attr-defs: Hipsey et al. 2019
-      data-min: NA
-      data-max: NA
-      data-units: NA
-    -
-      attr-label: inflow
-      attr-def: parameters describing inflows to the General Lake Model
-      attr-defs: Hipsey et al. 2019
-      data-min: NA
-      data-max: NA
-      data-units: NA
-    -
-      attr-label: outflow
-      attr-def: parameters describing outflows from the General Lake Model
-      attr-defs: Hipsey et al. 2019
-      data-min: NA
-      data-max: NA
-      data-units: NA
-    -
-      attr-label: snowice
-      attr-def: parameters describing how snow and ice dynamics are calculated by the General Lake Model
-      attr-defs: Hipsey et al. 2019
-      data-min: NA
-      data-max: NA
-      data-units: NA
- 
+
 build-environment: >-
   This dataset was generated using open source tools available in the XX.
-  
-process-date: XX
-indirect-spatial: U.S.A.
-latitude-res: 0.1
-longitude-res: 0.1
-data-name: Model code and configuration details
+
+process-date: !expr format(Sys.time(),'%Y%m%d')
+data-name: Model predictions
 data-description: >-
-  Model code and configurations for a deep learning model XX.
-file-format: XX
+  Code for the stream water temperature models described in Rahmani et al. 2020.
+file-format: Zip file of code scripts (.zip of text files with varying extensions)

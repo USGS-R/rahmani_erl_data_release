@@ -34,7 +34,7 @@ targets:
   spatial_metadata:
     command: extract_feature(gage_locations)
 
-  out_data/01_gage_locations.zip:
+  out_data/gage_locations.zip:
     command: sf_to_zip(target_name,
       sf_object = gage_locations,
       layer_name = I('gage_locations'))

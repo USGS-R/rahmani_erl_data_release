@@ -14,12 +14,30 @@
     - etc.
 ```
 
-2. Download or clone the entire contents of the temperature model code repo at https://github.com/FRahmani368/LSTM_Temperature. Copy the essential code files into the "tmp" folder in this project to create
+2. Download or clone the entire contents of the temperature model code repo from https://github.com/FRahmani368/LSTM_Temperature into a directory called LSTM_Temperature just adjacent to rahmani_erl_data_release. Switch to the data release branch of that repository (`erl-release`).
 ```
-- in_data
-  - Data - ERL paper
+- [parent folder]
+  - rahmani_erl_data_release
   - LSTM_Temperature
-    - the essential code files from the LSTM_Temperature repo go here
+      - hydroDL
+      - StreamTemp-Integ.py
+      - etc.
 ```
 
 3. Run `scipiper::scmake()`.
+
+## Testing the code
+
+To get an interactive allocation on Slurm with GPU:
+
+```sh
+ssh tallgrass.cr.usgs.gov
+salloc -N 1 -n 1 -c 1 --gres=gpu:1 -p gpu --mem=256GB -A watertemp -t 5:00:00
+squeue
+ssh dl-0001 # or whichever node you get assigned in squeue
+cd /caldera/projects/usgs/water/iidd/datasci/psu/LSTM_Temperature # or wherever you put a copy of the code
+module load cuda10.0/toolkit/10.0.130
+conda activate lstm_tq
+# [edit StreamTemp-Integ.py and/or hydroDL/data/camels.py if needed]
+python StreamTemp-Integ.py
+```

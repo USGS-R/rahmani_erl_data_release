@@ -10,13 +10,13 @@
         <origin>Samantha Oliver</origin>
         <origin>Chaopeng Shen</origin>
         <pubdate>2020</pubdate>
-        <title>Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 5 model prediction data</title>
-        <geoform>comma seperated file format (csv)</geoform>
+        <title>Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 5 Model predictions</title>
+        <geoform>Comma-separated values (CSV; MIME Type text/csv)</geoform>
         <pubinfo>
           <pubplace>Online (digital release)</pubplace>
           <publish>U.S. Geological Survey</publish>
         </pubinfo>
-        <onlink>XX</onlink>
+        <onlink>https://doi.org/10.5066/P97CGHZH</onlink>
         <lworkcit>
           <citeinfo>
             <origin>Farshid Rahmani</origin>
@@ -32,21 +32,21 @@
       </citeinfo>
     </citation>
     <descript>
-      <abstract>A deep learning model framework was used to make water temperature predictions in 118 river catchments across the U.S. All four model (LR, noQ, obsQ, and simQ) predictions are included.</abstract>
-      <purpose>Decision support, water quality research</purpose>
+      <abstract>&lt;p&gt;Water temperature predictions in 118 river catchments across the U.S. Predictions from all four models (locally-fitted linear regression, LSTM-noQ, LSTM-obsQ, and LSTM-simQ) are included.&lt;/p&gt;</abstract>
+      <purpose>Decision support, water quality research, and advancement of machine learning in hydrology</purpose>
     </descript>
     <timeperd>
       <timeinfo>
         <rngdates>
-          <begdate>19801001</begdate>
-          <enddate>20191231</enddate>
+          <begdate>20101001</begdate>
+          <enddate>20160930</enddate>
         </rngdates>
       </timeinfo>
       <current>See publication date</current>
     </timeperd>
     <status>
       <progress>Complete</progress>
-      <update>none planned</update>
+      <update>None planned</update>
     </status>
     <spdom>
       <descgeog>Locations of sites used in the study, which are a subset of the Gages II dataset.</descgeog>
@@ -144,7 +144,7 @@
       </place>
     </keywords>
     <accconst>none</accconst>
-    <useconst>These data are subject to change and are not citable until reviewed and approved for official publication by the USGS</useconst>
+    <useconst>None, but see Distribution Liability below. Users are advised to read the associated publication thoroughly to understand appropriate use and data limitations.</useconst>
     <ptcontac>
       <cntinfo>
         <cntperp>
@@ -168,11 +168,11 @@
     <native>We used XX open source XX; Any supercomputing resources used? XX</native>
     <crossref>
       <citeinfo>
-        <origin>DP Feng</origin>
-        <origin>K Fang</origin>
-        <origin>CP Shen</origin>
+        <origin>D. Feng</origin>
+        <origin>K. Fang</origin>
+        <origin>C. Shen</origin>
         <pubdate>2020</pubdate>
-        <title>Enhancing streamflow forecast and extracting insights using continental-scale long-short term memory networks with data integration</title>
+        <title>Enhancing streamflow forecast and extracting insights using long-short term memory networks with data integration at continental scales</title>
         <onlink>https://doi.org/10.1029/2019WR026793</onlink>
       </citeinfo>
     </crossref>
@@ -194,7 +194,7 @@
     <lineage>
       <procstep>
         <procdesc>At the core of the modeling framework is a deep learning model that uses inputs of XX.</procdesc>
-        <procdate>20201103</procdate>
+        <procdate>20201106</procdate>
       </procstep>
     </lineage>
   </dataqual>
@@ -291,13 +291,13 @@
     <stdorder>
       <digform>
         <digtinfo>
-          <formname>comma seperated file format (csv)</formname>
+          <formname>Comma-separated values (CSV; MIME Type text/csv)</formname>
         </digtinfo>
         <digtopt>
           <onlinopt>
             <computer>
               <networka>
-                <networkr>XX</networkr>
+                <networkr>https://doi.org/10.5066/P97CGHZH</networkr>
               </networka>
             </computer>
           </onlinopt>
@@ -307,7 +307,7 @@
     </stdorder>
   </distinfo>
   <metainfo>
-    <metd>20201103</metd>
+    <metd>20201106</metd>
     <metc>
       <cntinfo>
         <cntperp>

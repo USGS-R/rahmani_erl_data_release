@@ -10,13 +10,13 @@
         <origin>Samantha Oliver</origin>
         <origin>Chaopeng Shen</origin>
         <pubdate>2020</pubdate>
-        <title>Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 6 model evaluation</title>
-        <geoform>comma seperated file format (csv)</geoform>
+        <title>Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 6 Model evaluation</title>
+        <geoform>Comma-separated values (CSV; MIME Type text/csv)</geoform>
         <pubinfo>
           <pubplace>Online (digital release)</pubplace>
           <publish>U.S. Geological Survey</publish>
         </pubinfo>
-        <onlink>XX</onlink>
+        <onlink>https://doi.org/10.5066/P97CGHZH</onlink>
         <lworkcit>
           <citeinfo>
             <origin>Farshid Rahmani</origin>
@@ -32,21 +32,21 @@
       </citeinfo>
     </citation>
     <descript>
-      <abstract>Several evaluation metrics were used to assess the predictive performance of each stream temperature model. For further description, see the metric calculations in the supplement of Rahmani et al. 2020. Each file correspond to a different model, but the structure of the files is the same across all models.</abstract>
-      <purpose>Decision support, water quality research</purpose>
+      <abstract>&lt;p&gt;Evaluation metrics used to assess the predictive performance of each stream temperature model. For further description, see the metric calculations in the supplement of Rahmani et al. 2020 (equations S1-S7).&lt;/p&gt;</abstract>
+      <purpose>Decision support, water quality research, and advancement of machine learning in hydrology</purpose>
     </descript>
     <timeperd>
       <timeinfo>
         <rngdates>
-          <begdate>19801001</begdate>
-          <enddate>20191231</enddate>
+          <begdate>20101001</begdate>
+          <enddate>20160930</enddate>
         </rngdates>
       </timeinfo>
       <current>See publication date</current>
     </timeperd>
     <status>
       <progress>Complete</progress>
-      <update>none planned</update>
+      <update>None planned</update>
     </status>
     <spdom>
       <descgeog>Locations of sites used in the study, which are a subset of the Gages II dataset.</descgeog>
@@ -144,7 +144,7 @@
       </place>
     </keywords>
     <accconst>none</accconst>
-    <useconst>These data are subject to change and are not citable until reviewed and approved for official publication by the USGS</useconst>
+    <useconst>None, but see Distribution Liability below. Users are advised to read the associated publication thoroughly to understand appropriate use and data limitations.</useconst>
     <ptcontac>
       <cntinfo>
         <cntperp>
@@ -192,7 +192,7 @@
     <lineage>
       <procstep>
         <procdesc>At the core of the modeling framework is a deep learning model that uses inputs of XX.</procdesc>
-        <procdate>20201103</procdate>
+        <procdate>20201106</procdate>
       </procstep>
     </lineage>
   </dataqual>
@@ -225,7 +225,7 @@
     <detailed>
       <enttyp>
         <enttypl>model_{modabbrev}_evaluation.csv</enttypl>
-        <enttypd>The performance metrics of each stream temperature model assessed in Rahmani et al. 2020. Each file represents a different stream temperature model, where model names are contained in the filename (modabbrev). Model abbreviation "lr" refers the locally-fitted linear regression model, "obsq" to the model trained with observed discharge, "simq" to the model trained with simulated discharge, and "noq" to the model trained with no discharge information.</enttypd>
+        <enttypd>The performance metrics of each stream temperature model assessed in Rahmani et al. 2020. Each file corresponds to a different model, and the structure of the files is the same across all models. Model names are contained in the filename (modabbrev): "lr" refers the locally-fitted linear regression model, "obsq" to the model trained with observed discharge, "simq" to the model trained with simulated discharge, and "noq" to the model trained with no discharge information.</enttypd>
         <enttypds>U.S. Geological Survey</enttypds>
       </enttyp>
       <attr>
@@ -337,13 +337,13 @@
     <stdorder>
       <digform>
         <digtinfo>
-          <formname>comma seperated file format (csv)</formname>
+          <formname>Comma-separated values (CSV; MIME Type text/csv)</formname>
         </digtinfo>
         <digtopt>
           <onlinopt>
             <computer>
               <networka>
-                <networkr>XX</networkr>
+                <networkr>https://doi.org/10.5066/P97CGHZH</networkr>
               </networka>
             </computer>
           </onlinopt>
@@ -353,7 +353,7 @@
     </stdorder>
   </distinfo>
   <metainfo>
-    <metd>20201103</metd>
+    <metd>20201106</metd>
     <metc>
       <cntinfo>
         <cntperp>

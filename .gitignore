@@ -2,6 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
+**/.DS_Store
 
 out_data/*
 in_data/*
