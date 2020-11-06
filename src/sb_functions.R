@@ -27,7 +27,7 @@ sb_render_post_xml <- function(sb_id, ..., xml_file = NULL, template){
     xml_file <- file.path(tempdir(), paste0(sb_id,'.xml'))
   }
 
-  render(filename = xml_file, ...)
+  render(filename = xml_file, ..., template = template)
 
   sb_replace_files(sb_id = sb_id, xml_file)
 
