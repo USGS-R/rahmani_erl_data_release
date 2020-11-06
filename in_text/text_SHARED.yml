@@ -41,7 +41,9 @@ metadata-date: !expr format(Sys.time(),'%Y%m%d')
 
 accur-test: No formal attribute accuracy tests were conducted.
 funding-credits: >-
-  This study was funded by the Integrated Water Prediction Program at the U.S. Geological Survey. XX.
+  This study was funded by the Integrated Water Prediction Program of the U.S. Geological Survey,
+  including funds transfered to Pennsylvania State University via
+  Pennsylvania Water Resources Research Center graduate internship G19AC00425.
 
 process-description: >-
   At the core of the modeling framework is a deep learning model that uses inputs of XX.
