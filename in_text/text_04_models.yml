@@ -77,9 +77,6 @@ entities:
       data-max: NA
       data-units: NA
 
-build-environment: >-
-  This dataset was generated using open source tools available in the XX.
-
 process-date: !expr format(Sys.time(),'%Y%m%d')
 data-name: Model predictions
 data-description: >-

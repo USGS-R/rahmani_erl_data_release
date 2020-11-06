@@ -20,5 +20,4 @@ abstract: >-
 process-date: !expr format(Sys.time(),'%Y%m%d')
 file-format: Landing page and parent metadata for the full data release
 
-build-environment: >-
   This data release was prepared using the R Multiple computer systems were used to generate these data, including linux, OSX. The open source languages R and Python were used on all systems. XX

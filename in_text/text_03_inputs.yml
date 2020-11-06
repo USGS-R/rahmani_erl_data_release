@@ -334,7 +334,6 @@ entities:
       data-max: NA
       data-units: degrees Celsius
 
-build-environment: Multiple computer systems were used to generate these data, including XX. The open source languages R and Python was used on all systems, as well as XX.
 
 process-date: !expr format(Sys.time(),'%Y%m%d')
 data-name: Model driver data

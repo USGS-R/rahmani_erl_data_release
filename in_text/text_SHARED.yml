@@ -52,14 +52,17 @@ longitude-res: 0.00001
 distro-person: Samantha K. Oliver
 
 build-environment: >-
-  Archive-ready data were prepared for this release using the x86_64-apple-darwin17.0 operating system and the R statistical programming language (R version 4.0.2 (2020-06-22)).
+  Archive-ready data were prepared for this release using the x86_64-apple-darwin17.0 operating system and the
+  R statistical programming language (R version 4.0.2, 2020-06-22; R Core Team, 2020; https://www.R-project.org).
   R packages loaded into this environment: reticulate, version: 1.16; zip, version: 2.1.1; dssecrets, version: 0.1.4;
   sbtools, version: 1.1.12; sf, version: 0.9-6; rgdal, version: 1.5-18; sp, version: 1.4-4; feather, version: 0.3.5;
   meddle, version: 0.0.11; mapdata, version: 2.3.0; maps, version: 3.3.0; yaml, version: 2.2.1; scipiper, version: 0.0.23;
   forcats, version: 0.5.0; stringr, version: 1.4.0; dplyr, version: 1.0.2; purrr, version: 0.3.4; readr, version: 1.4.0;
   tidyr, version: 1.1.2; tibble, version: 3.0.4; ggplot2, version: 3.3.2; tidyverse, version: 1.3.0.
+
   Model-ready data used to train and run the models for the manuscript were originally procesed in the python
-  programming language with these modules installed: appdirs, v1.4.4; argon2-cffi, v20.1.0; attrs, v20.2.0; backcall, v0.2.0;
+  programming language (Python version 3.7.9; Python Software Foundation, 2020; https://www.python.org).
+  These python modules were installed: appdirs, v1.4.4; argon2-cffi, v20.1.0; attrs, v20.2.0; backcall, v0.2.0;
   basemap, v1.2.1; blas, v1.0; bleach, v3.2.1; ca-certificates, v2020.7.22; certifi, v2020.6.20; cffi, v1.14.3; colorama, v0.4.3;
   cudatoolkit, v10.0.130; cycler, v0.10.0; dataretrieval, v0.4; decorator, v4.4.2; defusedxml, v0.6.0; distlib, v0.3.1; entrypoints, v0.3;
   filelock, v3.0.12; freetype, v2.10.2; icc_rt, v2019.0.0; icu, v58.2; importlib-metadata, v1.7.0; importlib_metadata, v1.7.0; intel-openmp, v2020.2;

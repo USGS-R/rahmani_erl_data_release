@@ -15,9 +15,6 @@ cross-cites:
     pubdate: 2020
     link: https://doi.org/10.1029/2019WR026793
 
-build-environment: >-
-  We used XX open source XX; Any supercomputing resources used? XX
-
 entities:
   -
     data-name: model_{}_predictions.csv

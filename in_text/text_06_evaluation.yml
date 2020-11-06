@@ -81,8 +81,5 @@ entities:
       data-max: NA
       data-units: NA
 
-build-environment: >-
-  We used XX open source XX.
-
 process-date: !expr format(Sys.time(),'%Y%m%d')
 file-format: Comma-separated values (CSV; MIME Type text/csv)
