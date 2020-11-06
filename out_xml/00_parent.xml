@@ -10,13 +10,13 @@
         <origin>Samantha Oliver</origin>
         <origin>Chaopeng Shen</origin>
         <pubdate>2020</pubdate>
-        <title>Data release: Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data</title>
-        <geoform>parent data item for released data products</geoform>
+        <title>Data release: Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data (Provisional Data Release)</title>
+        <geoform>Landing page and parent metadata for the full data release</geoform>
         <pubinfo>
           <pubplace>Online (digital release)</pubplace>
           <publish>U.S. Geological Survey</publish>
         </pubinfo>
-        <onlink>XX</onlink>
+        <onlink>https://doi.org/10.5066/P97CGHZH</onlink>
         <lworkcit>
           <citeinfo>
             <origin>Farshid Rahmani</origin>
@@ -32,21 +32,21 @@
       </citeinfo>
     </citation>
     <descript>
-      <abstract>&lt;p&gt;This data release provides all data and code used in Rahmani et al. 2020. Briefly, this project used the Gages II dataset as a test case for temperature prediction using deep learning methods. XX &lt;br/&gt;The data are organized into these items:&lt;/p&gt; &lt;ol&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f908db182ce720ee2d0fef9"&gt;Spatial Information&lt;/a&gt; - Pour points for 118 river basins used in this study&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f986594d34e198cb77ff084"&gt;Observations&lt;/a&gt; - Water temperature observations and flow observations for the 118 river reaches used in this study&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865abd34e198cb77ff086"&gt;Model Inputs&lt;/a&gt; - Model inputs, including basin characteristics and weather drivers. &lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865cfd34e198cb77ff088"&gt;Models&lt;/a&gt; - Code and configuration for stream temperature models.&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865e5d34e198cb77ff08a"&gt;Model Predictions&lt;/a&gt; - Predictions of stream water temperature and discharge&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865fbd34e198cb77ff08c"&gt;Model Evaluation&lt;/a&gt; - Performance metrics of each stream temperature model&lt;/li&gt; &lt;br/&gt; &lt;p&gt;This research was funded by the Integrated Water Prediction Program at the US Geological Survey.&lt;/p&gt;</abstract>
-      <purpose>Decision support, water quality research</purpose>
+      <abstract>&lt;p&gt;This data release provides all data and code used in Rahmani et al. 2020 to model stream temperature and assess results. Briefly, we used the USGS Gages II dataset as a test case for temperature prediction using deep learning methods. The associated manuscript by Rahmani et al. (2020) explores the value of including stream discharge as a predictor in the temperature models, including the value of predicted discharge from a separate model when no discharge measurements are available.&lt;/p&gt; &lt;p&gt;The data are organized into these items:&lt;/p&gt; &lt;ol&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f908db182ce720ee2d0fef9"&gt;Spatial Information&lt;/a&gt; - Outlet locations for the 118 river basins used in this study&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f986594d34e198cb77ff084"&gt;Observations&lt;/a&gt; - Water temperature observations for the 118 river basin pour points used in this study&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865abd34e198cb77ff086"&gt;Model Inputs&lt;/a&gt; - Model inputs, including basin attributes, weather drivers, and discharge&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865cfd34e198cb77ff088"&gt;Models&lt;/a&gt; - Code and configurations for the stream temperature models&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865e5d34e198cb77ff08a"&gt;Model Predictions&lt;/a&gt; - Predictions of stream water temperature&lt;/li&gt; &lt;li&gt;&lt;a href="https://www.sciencebase.gov/catalog/item/5f9865fbd34e198cb77ff08c"&gt;Model Evaluation&lt;/a&gt; - Performance metrics for each stream temperature model&lt;/li&gt; &lt;/ol&gt; &lt;p&gt;This research was funded by the Integrated Water Prediction Program at the US Geological Survey.&lt;/p&gt;</abstract>
+      <purpose>Decision support, water quality research, and advancement of machine learning in hydrology</purpose>
     </descript>
     <timeperd>
       <timeinfo>
         <rngdates>
-          <begdate>19801001</begdate>
-          <enddate>20191231</enddate>
+          <begdate>20101001</begdate>
+          <enddate>20160930</enddate>
         </rngdates>
       </timeinfo>
       <current>See publication date</current>
     </timeperd>
     <status>
       <progress>Complete</progress>
-      <update>none planned</update>
+      <update>None planned</update>
     </status>
     <spdom>
       <descgeog>Locations of sites used in the study, which are a subset of the Gages II dataset.</descgeog>
@@ -144,7 +144,7 @@
       </place>
     </keywords>
     <accconst>none</accconst>
-    <useconst>These data are subject to change and are not citable until reviewed and approved for official publication by the USGS</useconst>
+    <useconst>None, but see Distribution Liability below. Users are advised to read the associated publication thoroughly to understand appropriate use and data limitations.</useconst>
     <ptcontac>
       <cntinfo>
         <cntperp>
@@ -165,7 +165,7 @@
       </cntinfo>
     </ptcontac>
     <datacred>This study was funded by the Integrated Water Prediction Program at the U.S. Geological Survey. XX.</datacred>
-    <native>Multiple computer systems were used to generate these data, including linux, OSX. The open source languages R and Python were used on all systems. XX</native>
+    <native>This data release was prepared using the R Multiple computer systems were used to generate these data, including linux, OSX. The open source languages R and Python were used on all systems. XX</native>
   </idinfo>
   <dataqual>
     <attracc>
@@ -184,7 +184,7 @@
     <lineage>
       <procstep>
         <procdesc>At the core of the modeling framework is a deep learning model that uses inputs of XX.</procdesc>
-        <procdate>20201104</procdate>
+        <procdate>20201106</procdate>
       </procstep>
     </lineage>
   </dataqual>
@@ -238,13 +238,13 @@
     <stdorder>
       <digform>
         <digtinfo>
-          <formname>parent data item for released data products</formname>
+          <formname>Landing page and parent metadata for the full data release</formname>
         </digtinfo>
         <digtopt>
           <onlinopt>
             <computer>
               <networka>
-                <networkr>XX</networkr>
+                <networkr>https://doi.org/10.5066/P97CGHZH</networkr>
               </networka>
             </computer>
           </onlinopt>
@@ -254,7 +254,7 @@
     </stdorder>
   </distinfo>
   <metainfo>
-    <metd>20201104</metd>
+    <metd>20201106</metd>
     <metc>
       <cntinfo>
         <cntperp>
