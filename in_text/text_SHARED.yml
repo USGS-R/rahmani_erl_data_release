@@ -15,7 +15,6 @@ purpose: Decision support, water quality research, and advancement of machine le
 start-date: 20101001
 end-date: 20160930
 update: None planned
-descgeog: "Locations of sites used in the study, which are a subset of the GAGES-II dataset."
 indirect-spatial: U.S.A.
 latitude-res: 0.00001
 longitude-res: 0.00001

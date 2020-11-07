@@ -49,7 +49,6 @@
       <update>None planned</update>
     </status>
     <spdom>
-      <descgeog>Locations of sites used in the study, which are a subset of the GAGES-II dataset.</descgeog>
       <bounding>
         <westbc>-123.32988684</westbc>
         <eastbc>-70.97964444</eastbc>
@@ -176,9 +175,6 @@ Model-ready data used to train and run the models for the manuscript were origin
       <horizpa>
         <horizpar>A formal accuracy assessment of the horizontal positional information in the dataset was not conducted.</horizpar>
       </horizpa>
-      <vertacc>
-        <vertaccr>A formal accuracy assessment of the vertical positional information in the dataset was not conducted.</vertaccr>
-      </vertacc>
     </posacc>
     <lineage>
       <srcinfo>
@@ -316,7 +312,7 @@ Model-ready data used to train and run the models for the manuscript were origin
     </stdorder>
   </distinfo>
   <metainfo>
-    <metd>20201106</metd>
+    <metd>20201107</metd>
     <metc>
       <cntinfo>
         <cntperp>

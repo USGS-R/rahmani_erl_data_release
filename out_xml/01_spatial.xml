@@ -49,7 +49,6 @@
       <update>None planned</update>
     </status>
     <spdom>
-      <descgeog>Locations of sites used in the study, which are a subset of the GAGES-II dataset.</descgeog>
       <bounding>
         <westbc>-123.32988684</westbc>
         <eastbc>-70.97964444</eastbc>
@@ -176,9 +175,6 @@ Model-ready data used to train and run the models for the manuscript were origin
       <horizpa>
         <horizpar>A formal accuracy assessment of the horizontal positional information in the dataset was not conducted.</horizpar>
       </horizpa>
-      <vertacc>
-        <vertaccr>A formal accuracy assessment of the vertical positional information in the dataset was not conducted.</vertaccr>
-      </vertacc>
     </posacc>
     <lineage>
       <srcinfo>
@@ -204,7 +200,7 @@ Model-ready data used to train and run the models for the manuscript were origin
       <procstep>
         <procdesc>Monitoring site coordinates were downloaded from the GAGES-II website (Falcone, 2011) and subset to the 118 sites of interest using the R programming language (see "Native Data Set Environment"/"native").
 To select the 118 monitoring sites (and thus their contributing basins), water temperature (see data release component "2 Observations") and basin attribute data (data release component "3 Inputs") were initially downloaded for all 9322 sites in the GAGES-II database, and sites were then subset to those (1) with more than 60% of days between 2010/10/01 and 2014/09/30 having observed daily temperatures, and (2) whose contributing basins contained no major dams (more than 50 ft in height, or having more than 5000 acre feet storage). This subsetting process yielded 118 sites (and their basins) for inclusion in the modeling applications and this data release.</procdesc>
-        <procdate>20201106</procdate>
+        <procdate>20201107</procdate>
       </procstep>
     </lineage>
   </dataqual>
@@ -329,7 +325,7 @@ To select the 118 monitoring sites (and thus their contributing basins), water t
     </stdorder>
   </distinfo>
   <metainfo>
-    <metd>20201106</metd>
+    <metd>20201107</metd>
     <metc>
       <cntinfo>
         <cntperp>
