@@ -27,15 +27,6 @@ process-description: >-
   the results to the combined training and test period for this study, 2010-10-01 through 2016-09-30,
   for the analysis by Rahmani et al. (2020) and this data release.
 
-cross-cites:
-  -
-    authors: ['D. Feng', 'K. Fang', "C. Shen"]
-    title: >-
-      Enhancing streamflow forecast and extracting insights using long-short term
-      memory networks with data integration at continental scales
-    pubdate: 2020
-    link: https://doi.org/10.1029/2019WR026793
-
 source-cites:
   -
     authors: U.S. Geological Survey
@@ -61,6 +52,13 @@ source-cites:
        Google Earth Engine: Planetary-scale geospatial analysis for everyone
     pubdate: 2017
     link: https://doi.org/10.1016/j.rse.2017.06.031
+  -
+    authors: ['D. Feng', 'K. Fang', "C. Shen"]
+    title: >-
+      Enhancing streamflow forecast and extracting insights using long-short term
+      memory networks with data integration at continental scales
+    pubdate: 2020
+    link: https://doi.org/10.1029/2019WR026793
 
 entities:
   -
@@ -319,9 +317,9 @@ entities:
   -
     data-name: pred_discharge.csv
     data-description: >-
-      Simulated discharge that was used as an input to the water temperature models.
-      Simulated discharge was only used during the test period (water years 2014-2016).
-    data-defsrc: This study
+      Simulated discharge, predicted by a model developed by Feng, Fang, and Shen (2020) and
+      used as an input to the "simq" water temperature model.
+    data-defsrc: Feng, Fang, and Shen (2020)
     attributes:
     -
       attr-label: site_no
