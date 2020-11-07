@@ -287,7 +287,7 @@ Model-ready data used to train and run the models for the manuscript were origin
 Attribute data for the basins contributing to those 118 USGS monitoring sites were downloaded from the GAGES-II database (Falcone 2011).
 Basin-averaged daily meteorological forcing data (precipitation, maximum and minimum air temperature, vapor pressure, solar radiation) were obtained by interpolating a gridded meteorological dataset (Daymet) (Thornton et al. 2016) from Google Earth Engine (GEE) (Gorelick et al. 2017).
 Although some of these datasets were initially downloaded to cover longer periods of time, we subset the results to the combined training and test period for this study, 2010-10-01 through 2016-09-30, for the analysis by Rahmani et al. (2020) and this data release.</procdesc>
-        <procdate>20201106</procdate>
+        <procdate>20201107</procdate>
       </procstep>
     </lineage>
   </dataqual>
@@ -336,7 +336,19 @@ Although some of these datasets were initially downloaded to cover longer period
         </attrdomv>
       </attr>
       <attr>
-        <attrlabl>dayls(s)</attrlabl>
+        <attrlabl>datetime</attrlabl>
+        <attrdef>Date of observation</attrdef>
+        <attrdefs>Converted from day of year as reported by Thornton et al. 2016</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>NA</rdommin>
+            <rdommax>NA</rdommax>
+            <attrunit>NA</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>dayl(s/d)</attrlabl>
         <attrdef>Duration of the daylight period in seconds per day. This calculation is based on the period of the day during which the sun is above a hypothetical flat horizon.</attrdef>
         <attrdefs>dayl as in Thornton et al. 2016</attrdefs>
         <attrdomv>
@@ -348,7 +360,7 @@ Although some of these datasets were initially downloaded to cover longer period
         </attrdomv>
       </attr>
       <attr>
-        <attrlabl>prcp(mm/day)</attrlabl>
+        <attrlabl>prcp(mm/d)</attrlabl>
         <attrdef>Daily total precipitation in millimeters per day, sum of all forms converted to water-equivalent. Precipitation occurrence on any given day may be ascertained.</attrdef>
         <attrdefs>prcp as in Thornton et al. 2016</attrdefs>
         <attrdomv>
@@ -368,18 +380,6 @@ Although some of these datasets were initially downloaded to cover longer period
             <rdommin>NA</rdommin>
             <rdommax>NA</rdommax>
             <attrunit>watts per square meter</attrunit>
-          </rdom>
-        </attrdomv>
-      </attr>
-      <attr>
-        <attrlabl>swe(mm)</attrlabl>
-        <attrdef>Snow water equivalent in kilograms per square meter. The amount of water contained within the snowpack.</attrdef>
-        <attrdefs>swe as in Thornton et al. 2016</attrdefs>
-        <attrdomv>
-          <rdom>
-            <rdommin>NA</rdommin>
-            <rdommax>NA</rdommax>
-            <attrunit>kilograms per square meter</attrunit>
           </rdom>
         </attrdomv>
       </attr>
@@ -416,18 +416,6 @@ Although some of these datasets were initially downloaded to cover longer period
             <rdommin>NA</rdommin>
             <rdommax>NA</rdommax>
             <attrunit>pascals</attrunit>
-          </rdom>
-        </attrdomv>
-      </attr>
-      <attr>
-        <attrlabl>datetime</attrlabl>
-        <attrdef>Date of observation</attrdef>
-        <attrdefs>Thornton et al. 2016</attrdefs>
-        <attrdomv>
-          <rdom>
-            <rdommin>NA</rdommin>
-            <rdommax>NA</rdommax>
-            <attrunit>NA</attrunit>
           </rdom>
         </attrdomv>
       </attr>
@@ -829,7 +817,7 @@ Although some of these datasets were initially downloaded to cover longer period
     </stdorder>
   </distinfo>
   <metainfo>
-    <metd>20201106</metd>
+    <metd>20201107</metd>
     <metc>
       <cntinfo>
         <cntperp>

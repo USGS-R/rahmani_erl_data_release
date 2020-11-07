@@ -29,9 +29,10 @@ subset_pred_discharge <- function(out_file, in_file){
 
 subset_weather_drivers <- function(in_file) {
   dat <- readr::read_csv(in_file) %>%
-    select(-X1, -`00010_Mean`, -`00060_Mean`, -combine_discharge) %>%
+    select(-X1, -`swe(mm)`, -`00010_Mean`, -`00060_Mean`, -combine_discharge) %>%
+    rename(`dayl(s/d)`=`dayl(s)`, `prcp(mm/d)`=`prcp(mm/day)`) %>%
     filter(datetime >= as.Date('2010-10-01') & datetime <= as.Date('2016-09-30')) %>%
-    select(site_no, everything())
+    select(site_no, datetime, everything())
 
   return(dat)
 }

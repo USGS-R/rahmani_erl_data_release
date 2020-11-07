@@ -79,7 +79,15 @@ entities:
       data-max: NA
       data-units: NA
     -
-      attr-label: dayls(s)
+      attr-label: datetime
+      attr-def: >-
+        Date of observation
+      attr-defs: Converted from day of year as reported by Thornton et al. 2016
+      data-min: NA
+      data-max: NA
+      data-units: NA
+    -
+      attr-label: dayl(s/d)
       attr-def: >-
         Duration of the daylight period in seconds per day. This calculation is based on the period of the day during which the sun is above a hypothetical flat horizon.
       attr-defs: dayl as in Thornton et al. 2016
@@ -87,7 +95,7 @@ entities:
       data-max: NA
       data-units: seconds per day
     -
-      attr-label: prcp(mm/day)
+      attr-label: prcp(mm/d)
       attr-def: >-
         Daily total precipitation in millimeters per day, sum of all forms converted to water-equivalent. Precipitation occurrence on any given day may be ascertained.
       attr-defs: prcp as in Thornton et al. 2016
@@ -102,14 +110,6 @@ entities:
       data-min: NA
       data-max: NA
       data-units: watts per square meter
-    -
-      attr-label: swe(mm)
-      attr-def: >-
-        Snow water equivalent in kilograms per square meter. The amount of water contained within the snowpack.
-      attr-defs: swe as in Thornton et al. 2016
-      data-min: NA
-      data-max: NA
-      data-units: kilograms per square meter
     -
       attr-label: tmax(C)
       attr-def: >-
@@ -134,14 +134,6 @@ entities:
       data-min: NA
       data-max: NA
       data-units: pascals
-    -
-      attr-label: datetime
-      attr-def: >-
-        Date of observation
-      attr-defs: Thornton et al. 2016
-      data-min: NA
-      data-max: NA
-      data-units: NA
   -
     data-name: AT_basin_attributes.csv
     data-description: River basin characteristics used as inputs to the water temperature model.
