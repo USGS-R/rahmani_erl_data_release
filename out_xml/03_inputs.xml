@@ -748,7 +748,7 @@ Although some of these datasets were initially downloaded to cover longer period
     </detailed>
     <detailed>
       <enttyp>
-        <enttypl>flow_observations.csv</enttypl>
+        <enttypl>obs_discharge.csv</enttypl>
         <enttypd>Observed mean daily discharge for the 118 monitoring locations in this study. Discharge (flow) observations were used as a driver in the water temperature model.</enttypd>
         <enttypds>This study</enttypds>
       </enttyp>
@@ -784,7 +784,7 @@ Although some of these datasets were initially downloaded to cover longer period
           <rdom>
             <rdommin>NA</rdommin>
             <rdommax>NA</rdommax>
-            <attrunit>degrees Celsius</attrunit>
+            <attrunit>cubic feet per second</attrunit>
           </rdom>
         </attrdomv>
       </attr>

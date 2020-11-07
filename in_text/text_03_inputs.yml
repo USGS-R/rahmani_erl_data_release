@@ -346,7 +346,7 @@ entities:
       data-max: NA
       data-units: cubic feet per second
   -
-    data-name: flow_observations.csv
+    data-name: obs_discharge.csv
     data-description: >-
       Observed mean daily discharge for the 118 monitoring locations in this study.
       Discharge (flow) observations were used as a driver in the water temperature model.
@@ -374,4 +374,4 @@ entities:
       attr-defs: U.S. Geological Survey (2020)
       data-min: NA
       data-max: NA
-      data-units: degrees Celsius
+      data-units: cubic feet per second
