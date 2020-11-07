@@ -19,7 +19,7 @@ indirect-spatial: U.S.A.
 latitude-res: 0.00001
 longitude-res: 0.00001
 accur-test: No formal attribute accuracy tests were conducted.
-themekeywords: ["machine learning", "deep learning", "water", "temperature", "streams", "modeling"]
+themekeywords: ["machine learning", "deep learning", "water resources", "water temperature", "streams", "modeling"]
 
 # ----contacts----
 contact-person: Farshid Rahmani
