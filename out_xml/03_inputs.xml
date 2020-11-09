@@ -731,7 +731,7 @@ Although some of these datasets were initially downloaded to cover longer period
       </attr>
       <attr>
         <attrlabl>sim_discharge(cfs)</attrlabl>
-        <attrdef>Stream discharge as predicted by the discharge model.</attrdef>
+        <attrdef>Stream discharge as predicted by the discharge model (Qsim) and used by the LSTMsimQ water temperature model.</attrdef>
         <attrdefs>This study; Feng, Fang, and Shen 2020</attrdefs>
         <attrdomv>
           <rdom>
@@ -745,7 +745,7 @@ Although some of these datasets were initially downloaded to cover longer period
     <detailed>
       <enttyp>
         <enttypl>obs_discharge.csv</enttypl>
-        <enttypd>Observed mean daily discharge for the 118 monitoring locations in this study. Discharge (flow) observations were used as a driver in the water temperature model.</enttypd>
+        <enttypd>Observed mean daily discharge for the 118 monitoring locations in this study. Discharge observations were used as a driver in the LSTMobsQ water temperature model.</enttypd>
         <enttypds>This study</enttypds>
       </enttyp>
       <attr>

@@ -189,7 +189,7 @@ Model-ready data used to train and run the models for the manuscript were origin
     <lineage>
       <procstep>
         <procdesc>Code was contributed by Fang, Feng, and Shen (2020), Wenyu Ouyang, and Farshid Rahmani.</procdesc>
-        <procdate>20201107</procdate>
+        <procdate>20201108</procdate>
       </procstep>
     </lineage>
   </dataqual>
@@ -274,8 +274,8 @@ Model-ready data used to train and run the models for the manuscript were origin
         </attrdomv>
       </attr>
       <attr>
-        <attrlabl>LR.ipynb</attrlabl>
-        <attrdef>A Jupyter notebook that builds and tests a locally-fitted auto-regressive model (called "AR2" by Rahmani et al. 2020)</attrdef>
+        <attrlabl>AR2.ipynb</attrlabl>
+        <attrdef>A Jupyter notebook that builds and tests a locally-fitted auto-regressive model as described by Rahmani et al. 2020</attrdef>
         <attrdefs>This study; https://ipython.org/notebook.html</attrdefs>
         <attrdomv>
           <rdom>
@@ -362,7 +362,7 @@ Model-ready data used to train and run the models for the manuscript were origin
     </stdorder>
   </distinfo>
   <metainfo>
-    <metd>20201107</metd>
+    <metd>20201108</metd>
     <metc>
       <cntinfo>
         <cntperp>

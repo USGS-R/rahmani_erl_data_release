@@ -60,8 +60,8 @@ entities:
       data-max: NA
       data-units: NA
     -
-      attr-label: LR.ipynb
-      attr-def: A Jupyter notebook that builds and tests a locally-fitted auto-regressive model (called "AR2" by Rahmani et al. 2020)
+      attr-label: AR2.ipynb
+      attr-def: A Jupyter notebook that builds and tests a locally-fitted auto-regressive model as described by Rahmani et al. 2020
       attr-defs: This study; https://ipython.org/notebook.html
       data-min: NA
       data-max: NA

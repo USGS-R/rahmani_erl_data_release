@@ -178,7 +178,7 @@ Model-ready data used to train and run the models for the manuscript were origin
     </posacc>
     <lineage>
       <procstep>
-        <procdesc>Daily model predictions were compared to daily water temperature observations for the test period from 2014-10-01 through 2016-09-30. For each model and each monitoring location, performance metrics were computed according to equations in the manuscript body and supplement of Rahmani et al. 2020 (details in the attribute definitions of this metadata file).</procdesc>
+        <procdesc>Daily model predictions were compared to daily water temperature observations for the test period from 2014-10-01 through 2016-09-30. For each model and each monitoring location, performance metrics were computed according to equations in the manuscript body and supplement of Rahmani et al. 2020 (details in the attribute definitions of this metadata file). These metric calculations are implemented in the "hydroDL/post/stat.py" file contained in "models.zip" of the data release component "4 Models".</procdesc>
         <procdate>20201107</procdate>
       </procstep>
     </lineage>
