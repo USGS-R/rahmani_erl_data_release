@@ -182,7 +182,7 @@ Model-ready data used to train and run the models for the manuscript were origin
 All four models (lr, obsq, simq, and noq) were trained on inputs and water temperature observations from 2010-10-01 through 2014-09-30, then the models were used to generate predictions for the test period from 2014-10-01 through 2016-09-30.
 Deep learning (LSTM) model inputs were the meteorological drivers, basin attributes, and, for the "obsq" and "simq" models, discharge observations and/or predictions. The "simq" models were trained with observed discharge and tested with simulated discharge. Model inputs for the locally-fitted auto-regressive model (AR2) were air temperature and observed discharge only.
 After the models had been run, predictions were formatted into comma-separated values with a common structure across all four models.</procdesc>
-        <procdate>20201107</procdate>
+        <procdate>20201108</procdate>
       </procstep>
     </lineage>
   </dataqual>
@@ -295,7 +295,7 @@ After the models had been run, predictions were formatted into comma-separated v
     </stdorder>
   </distinfo>
   <metainfo>
-    <metd>20201107</metd>
+    <metd>20201108</metd>
     <metc>
       <cntinfo>
         <cntperp>

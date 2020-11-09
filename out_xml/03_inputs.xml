@@ -181,7 +181,7 @@ Model-ready data used to train and run the models for the manuscript were origin
         <srccite>
           <citeinfo>
             <origin>U.S. Geological Survey</origin>
-            <pubdate>Accessed in April 2020</pubdate>
+            <pubdate>2020</pubdate>
             <title>National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)</title>
             <onlink>http://dx.doi.org/10.5066/F7P55KJN</onlink>
           </citeinfo>
@@ -189,13 +189,15 @@ Model-ready data used to train and run the models for the manuscript were origin
         <typesrc>online</typesrc>
         <srctime>
           <timeinfo>
-            
-            
+            <rngdates>
+              <begdate>20101001</begdate>
+              <enddate>20160930</enddate>
+            </rngdates>
           </timeinfo>
-          <srccurr/>
+          <srccurr>access date</srccurr>
         </srctime>
-        <srccitea/>
-        <srccontr/>
+        <srccitea>NWIS</srccitea>
+        <srccontr>Daily mean temperature observations at each of the 118 selected monitoring sites</srccontr>
       </srcinfo>
       <srcinfo>
         <srccite>
@@ -209,13 +211,14 @@ Model-ready data used to train and run the models for the manuscript were origin
         <typesrc>online</typesrc>
         <srctime>
           <timeinfo>
-            
-            
+            <sngdate>
+              <caldate>2011</caldate>
+            </sngdate>
           </timeinfo>
-          <srccurr/>
+          <srccurr>publication date</srccurr>
         </srctime>
-        <srccitea/>
-        <srccontr/>
+        <srccitea>Falcone (2011)</srccitea>
+        <srccontr>Attributes of the basins whose outlets are at each of the 118 selected monitoring sites</srccontr>
       </srcinfo>
       <srcinfo>
         <srccite>
@@ -235,13 +238,15 @@ Model-ready data used to train and run the models for the manuscript were origin
         <typesrc>online</typesrc>
         <srctime>
           <timeinfo>
-            
-            
+            <rngdates>
+              <begdate>20101001</begdate>
+              <enddate>20160930</enddate>
+            </rngdates>
           </timeinfo>
-          <srccurr/>
+          <srccurr>access date</srccurr>
         </srctime>
-        <srccitea/>
-        <srccontr/>
+        <srccitea>Thornton et al. (2016)</srccitea>
+        <srccontr>Weather data for the basins whose outlets are at each of the 118 selected monitoring sites</srccontr>
       </srcinfo>
       <srcinfo>
         <srccite>
@@ -260,13 +265,14 @@ Model-ready data used to train and run the models for the manuscript were origin
         <typesrc>online</typesrc>
         <srctime>
           <timeinfo>
-            
-            
+            <sngdate>
+              <caldate>2020</caldate>
+            </sngdate>
           </timeinfo>
-          <srccurr/>
+          <srccurr>access date</srccurr>
         </srctime>
-        <srccitea/>
-        <srccontr/>
+        <srccitea>Gorelick (2017)</srccitea>
+        <srccontr>Cloud computing platform used to aggregate the Daymet data (Thornton et al. 2016) to a single daily value for each variable for each basin</srccontr>
       </srcinfo>
       <srcinfo>
         <srccite>
@@ -282,20 +288,21 @@ Model-ready data used to train and run the models for the manuscript were origin
         <typesrc>online</typesrc>
         <srctime>
           <timeinfo>
-            
-            
+            <sngdate>
+              <caldate>2020</caldate>
+            </sngdate>
           </timeinfo>
-          <srccurr/>
+          <srccurr>publication date</srccurr>
         </srctime>
-        <srccitea/>
-        <srccontr/>
+        <srccitea>Feng, Fang, and Shen (2020)</srccitea>
+        <srccontr>Code on which stream temperature and discharge LSTM models were based</srccontr>
       </srcinfo>
       <procstep>
         <procdesc>Discharge data at the 118 selected USGS monitoring sites were retrieved from the USGS National Water Information System (NWIS; U.S. Geological Survey, 2020) using the HTTPS and the NWIS web applications programming interface.
 Attribute data for the basins contributing to those 118 USGS monitoring sites were downloaded from the GAGES-II database (Falcone 2011).
 Basin-averaged daily meteorological forcing data (precipitation, maximum and minimum air temperature, vapor pressure, solar radiation) were obtained by interpolating a gridded meteorological dataset (Daymet) (Thornton et al. 2016) from Google Earth Engine (GEE) (Gorelick et al. 2017).
 Although some of these datasets were initially downloaded to cover longer periods of time, we subset the results to the combined training and test period for this study, 2010-10-01 through 2016-09-30, for the analysis by Rahmani et al. (2020) and this data release.</procdesc>
-        <procdate>20201107</procdate>
+        <procdate>20201108</procdate>
       </procstep>
     </lineage>
   </dataqual>
@@ -825,7 +832,7 @@ Although some of these datasets were initially downloaded to cover longer period
     </stdorder>
   </distinfo>
   <metainfo>
-    <metd>20201107</metd>
+    <metd>20201108</metd>
     <metc>
       <cntinfo>
         <cntperp>

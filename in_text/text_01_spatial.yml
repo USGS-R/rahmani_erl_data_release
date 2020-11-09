@@ -30,6 +30,12 @@ source-cites:
       GAGES-II: Geospatial attributes of gages for evaluating streamflow
     pubdate: 2011
     link: https://doi.org/10.3133/70046617
+    sngdate:
+      - caldate: 2011
+    srccurr: publication date
+    srccitea: 'Falcone (2011)'
+    srccontr: >-
+      Coordinates of the basin outlets corresponding to the 118 selected monitoring sites
 
 entities:
   -

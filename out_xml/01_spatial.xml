@@ -189,18 +189,19 @@ Model-ready data used to train and run the models for the manuscript were origin
         <typesrc>online</typesrc>
         <srctime>
           <timeinfo>
-            
-            
+            <sngdate>
+              <caldate>2011</caldate>
+            </sngdate>
           </timeinfo>
-          <srccurr/>
+          <srccurr>publication date</srccurr>
         </srctime>
-        <srccitea/>
-        <srccontr/>
+        <srccitea>Falcone (2011)</srccitea>
+        <srccontr>Coordinates of the basin outlets corresponding to the 118 selected monitoring sites</srccontr>
       </srcinfo>
       <procstep>
         <procdesc>Monitoring site coordinates were downloaded from the GAGES-II website (Falcone, 2011) and subset to the 118 sites of interest using the R programming language (see "Native Data Set Environment"/"native").
 To select the 118 monitoring sites (and thus their contributing basins), water temperature (see data release component "2 Observations") and basin attribute data (data release component "3 Inputs") were initially downloaded for all 9322 sites in the GAGES-II database, and sites were then subset to those (1) with more than 60% of days between 2010/10/01 and 2014/09/30 having observed daily temperatures, and (2) whose contributing basins contained no major dams (more than 50 ft in height, or having more than 5000 acre feet storage). This subsetting process yielded 118 sites (and their basins) for inclusion in the modeling applications and this data release.</procdesc>
-        <procdate>20201107</procdate>
+        <procdate>20201108</procdate>
       </procstep>
     </lineage>
   </dataqual>
@@ -325,7 +326,7 @@ To select the 118 monitoring sites (and thus their contributing basins), water t
     </stdorder>
   </distinfo>
   <metainfo>
-    <metd>20201107</metd>
+    <metd>20201108</metd>
     <metc>
       <cntinfo>
         <cntperp>

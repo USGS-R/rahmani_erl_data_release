@@ -179,7 +179,7 @@ Model-ready data used to train and run the models for the manuscript were origin
     <lineage>
       <procstep>
         <procdesc>This data release was organized into six components for ease of navigation; see "Abstract"/"abstract" for details. Data processing steps for each of those components are given in the metadata files specific to those components.</procdesc>
-        <procdate>20201107</procdate>
+        <procdate>20201108</procdate>
       </procstep>
     </lineage>
   </dataqual>
@@ -328,7 +328,7 @@ Model-ready data used to train and run the models for the manuscript were origin
     </stdorder>
   </distinfo>
   <metainfo>
-    <metd>20201107</metd>
+    <metd>20201108</metd>
     <metc>
       <cntinfo>
         <cntperp>

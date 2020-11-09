@@ -32,26 +32,52 @@ source-cites:
     authors: U.S. Geological Survey
     title: >-
        National Water Information System data available on the World Wide Web (USGS Water Data for the Nation)
-    pubdate: Accessed in April 2020
+    pubdate: 2020
     link: http://dx.doi.org/10.5066/F7P55KJN
+    rngdates: True
+    begdate: 20101001
+    enddate: 20160930
+    srccurr: access date
+    srccitea: NWIS
+    srccontr: >-
+      Daily mean temperature observations at each of the 118 selected monitoring sites
   -
     authors: ['J.A. Falcone']
     title: >-
       GAGES-II: Geospatial attributes of gages for evaluating streamflow
     pubdate: 2011
     link: https://doi.org/10.3133/70046617
+    sngdate: True
+    caldate: 2011
+    srccurr: publication date
+    srccitea: 'Falcone (2011)'
+    srccontr: >-
+      Attributes of the basins whose outlets are at each of the 118 selected monitoring sites
   -
     authors: ['P.E. Thornton', 'M.M. Thornton', 'B.W. Mayer', 'Y. Wei', 'R. Devarakonda', 'R.S. Vose', 'R.B. Cook']
     title: >-
       Daymet: Daily Surface Weather Data on a 1-km Grid for North America, Version 3
     pubdate: 2016
     link: https://doi.org/10.3334/ORNLDAAC/1328
+    rngdates: True
+    begdate: 20101001
+    enddate: 20160930
+    srccurr: access date
+    srccitea: 'Thornton et al. (2016)'
+    srccontr: >-
+      Weather data for the basins whose outlets are at each of the 118 selected monitoring sites
   -
     authors: ['N. Gorelick', 'M. Hancher', 'M. Dixon', 'S. Ilyushchenko', 'D. Thau', 'R. Moore']
     title: >-
        Google Earth Engine: Planetary-scale geospatial analysis for everyone
     pubdate: 2017
     link: https://doi.org/10.1016/j.rse.2017.06.031
+    sngdate: True
+    caldate: 2020
+    srccurr: access date
+    srccitea: 'Gorelick (2017)'
+    srccontr: >-
+      Cloud computing platform used to aggregate the Daymet data (Thornton et al. 2016) to a single daily value for each variable for each basin
   -
     authors: ['D. Feng', 'K. Fang', "C. Shen"]
     title: >-
@@ -59,6 +85,12 @@ source-cites:
       memory networks with data integration at continental scales
     pubdate: 2020
     link: https://doi.org/10.1029/2019WR026793
+    sngdate: True
+    caldate: 2020
+    srccurr: publication date
+    srccitea: 'Feng, Fang, and Shen (2020)'
+    srccontr: >-
+      Code on which stream temperature and discharge LSTM models were based
 
 entities:
   -
