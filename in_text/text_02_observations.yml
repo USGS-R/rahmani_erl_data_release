@@ -15,7 +15,7 @@ process-date: 2000415
 process-description: >-
   Water temperature data at the 118 selected monitoring sites were retrieved from the
   USGS National Water Information System (NWIS; U.S. Geological Survey, 2020)
-  using the HTTPS and the NWIS web applications programming interface.
+  in May 2020 using the HTTPS and the NWIS web applications programming interface.
 
 source-cites:
   -

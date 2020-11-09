@@ -13,15 +13,17 @@ process-date: !expr format(Sys.time(),'%Y%m%d')
 process-description: >-
   Discharge data at the 118 selected USGS monitoring sites were retrieved from the
   USGS National Water Information System (NWIS; U.S. Geological Survey, 2020)
-  using the HTTPS and the NWIS web applications programming interface.
+  in May 2020 using the HTTPS and the NWIS web applications programming interface.
 
   Attribute data for the basins contributing to those 118 USGS monitoring sites
   were downloaded from the GAGES-II database (Falcone 2011).
 
   Basin-averaged daily meteorological forcing data (precipitation,
-  maximum and minimum air temperature, vapor pressure, solar radiation) were obtained by interpolating
-  a gridded meteorological dataset (Daymet) (Thornton et al. 2016) from Google Earth Engine (GEE)
-  (Gorelick et al. 2017).
+  maximum and minimum air temperature, vapor pressure, solar radiation) were obtained from
+  a gridded meteorological dataset (Daymet) (Thornton et al. 2016) using Google Earth Engine (GEE)
+  (Gorelick et al. 2017). Any missing values were filled by linear interpolation in time. Values
+  in the grid cells within a basin were then averaged for each day to produce a single value for
+  each variable-date-basin combination.
 
   Although some of these datasets were initially downloaded to cover longer periods of time, we subset
   the results to the combined training and test period for this study, 2010-10-01 through 2016-09-30,
@@ -77,7 +79,7 @@ source-cites:
     srccurr: access date
     srccitea: 'Gorelick (2017)'
     srccontr: >-
-      Cloud computing platform used to aggregate the Daymet data (Thornton et al. 2016) to a single daily value for each variable for each basin
+      Cloud computing platform used to procure and process the Daymet data (Thornton et al. 2016) to a single daily value for each variable for each basin
   -
     authors: ['D. Feng', 'K. Fang', "C. Shen"]
     title: >-
@@ -229,6 +231,7 @@ entities:
       attr-label: RAW_DIS_NEAREST_MAJ_DAM
       attr-def: >-
         Raw straight line distance of gage location to nearest major dam in watershed.
+        Because the 118 selected basins were those with MAJ_NDAMS_2009=0, this variable is always 0.
       attr-defs: Falcone 2011
       data-min: NA
       data-max: NA
@@ -253,6 +256,7 @@ entities:
       attr-label: RAW_AVG_DIS_ALL_MAJ_DAMS
       attr-def: >-
         Raw average straight line distance of gage location to all major dams in watershed.
+        Because the 118 selected basins were those with MAJ_NDAMS_2009=0, this variable is always -999.
       attr-defs: Falcone 2011
       data-min: NA
       data-max: NA

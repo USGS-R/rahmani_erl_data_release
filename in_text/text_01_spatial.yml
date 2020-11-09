@@ -20,7 +20,8 @@ process-description: >-
   and basin attribute data (data release component "3 Inputs") were initially downloaded for all 9322 sites
   in the GAGES-II database, and sites were then subset to those (1) with more than
   60% of days between 2010/10/01 and 2014/09/30 having observed daily temperatures, and (2)
-  whose contributing basins contained no major dams (more than 50 ft in height, or having more than 5000 acre feet storage).
+  whose contributing basins contained no major dams (more than 50 ft in height, or having more than 5000 acre feet storage)
+  as quantified in the MAJ_NDAMS_2009 variable in GAGES-II.
   This subsetting process yielded 118 sites (and their basins) for inclusion in the modeling applications and this data release.
 
 source-cites:

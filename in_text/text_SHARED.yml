@@ -76,6 +76,10 @@ build-environment: >-
   tornado, v6.0.4; tqdm, v4.50.2; traitlets, v5.0.4; vc, v14.1; virtualenv, v20.0.35; virtualenv-clone, v0.5.4; vs2015_runtime, v14.16.27012; wcwidth, v0.2.5;
   webencodings, v0.5.1; wheel, v0.35.1; wincertstore, v0.2; winpty, v0.4.3; xz, v5.2.5; zeromq, v4.3.2; zipp, v3.1.0; zlib, v1.2.11; zstd, v1.4.5.
 
+  Model predictions and evaluations were generated using a computer with a 64 bit Windows 10 operating system,
+  2 Intel(R) Xeon(R) E5-2690 v2 @ 3.00 GHz CPUs with a total of 20 physical cores, 1 NVIDIA GeForce GTX 1080 Ti GPU,
+  and 128 GB memory.
+
 usage-rules: >-
   None, but see "Distribution Liability"/"distliab" below.
   Users are advised to read the associated publication thoroughly to understand
