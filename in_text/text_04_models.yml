@@ -1,9 +1,17 @@
 title: >-
-  Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 4 Models
+  Exploring the exceptional performance of a deep learning stream temperature model
+  and the value of streamflow data: 4 Models
 
 abstract: >-
-  <p>Model code and configurations for the LSTM and linear regression models used to predict stream temperature.
-  The code builds on work by Fang, Feng, and Shen (2020) and others.</p>
+  <p>This data release component contains model code and configurations for the LSTM and
+  linear regression models used to predict stream temperature.</p>
+
+geo-format: Tabular digital data
+transfer-format: Zip file of code scripts (.zip of text files with varying extensions)
+
+process-date: !expr format(Sys.time(),'%Y%m%d')
+process-description: >-
+  Code was contributed by Fang, Feng, and Shen (2020), Wenyu Ouyang, and Farshid Rahmani.
 
 cross-cites:
   -
@@ -17,7 +25,11 @@ cross-cites:
 entities:
   -
     data-name: models.zip
-    data-description: A zip file containing code to run the neural network (LSTM) and linear regression (LR) temperature models in this study
+    data-description: >-
+      Python and jupyter notebook code files to run the neural network (LSTM) and linear regression (LR)
+      temperature models described by Rahmani et al. 2020.
+    data-defsrc: This study
+
     attributes:
     -
       attr-label: README.md
@@ -36,7 +48,7 @@ entities:
     -
       attr-label: hydroDL
       attr-def: A python module (multiple files) that trains, tests, and generates predictions from LSTM models
-      attr-defs: Feng, Fang, and Shen 2020 and this study; https://www.python.org
+      attr-defs: Feng, Fang, and Shen (2020) and this study; https://www.python.org
       data-min: NA
       data-max: NA
       data-units: NA
@@ -48,8 +60,8 @@ entities:
       data-max: NA
       data-units: NA
     -
-      attr-label: LR.ipynb
-      attr-def: A Jupyter notebook that builds and tests a linear regression model
+      attr-label: AR2.ipynb
+      attr-def: A Jupyter notebook that builds and tests a locally-fitted auto-regressive model as described by Rahmani et al. 2020
       attr-defs: This study; https://ipython.org/notebook.html
       data-min: NA
       data-max: NA
@@ -75,12 +87,3 @@ entities:
       data-min: NA
       data-max: NA
       data-units: NA
-
-build-environment: >-
-  This dataset was generated using open source tools available in the XX.
-
-process-date: !expr format(Sys.time(),'%Y%m%d')
-data-name: Model predictions
-data-description: >-
-  Code for the stream water temperature models described in Rahmani et al. 2020.
-file-format: Zip file of code scripts (.zip of text files with varying extensions)

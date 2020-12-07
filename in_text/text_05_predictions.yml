@@ -1,33 +1,49 @@
 title: >-
-    Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 5 Model predictions
+    Exploring the exceptional performance of a deep learning stream temperature model
+    and the value of streamflow data: 5 Model predictions
 
 abstract: >-
-  <p>Water temperature predictions in 118 river catchments across the U.S. Predictions from all four models (locally-fitted linear regression, LSTM-noQ, LSTM-obsQ, and LSTM-simQ) are included.</p>
+  <p>This data release component contains water temperature predictions in 118 river catchments
+  across the U.S. Predictions are from the four models described by Rahmani et al. (2020):
+  locally-fitted linear regression, LSTM-noQ, LSTM-obsQ, and LSTM-simQ.</p>
 
-cross-cites:
-  -
-    authors: ['D. Feng', 'K. Fang', "C. Shen"]
-    title: >-
-      Enhancing streamflow forecast and extracting insights using long-short term
-      memory networks with data integration at continental scales
-    pubdate: 2020
-    link: https://doi.org/10.1029/2019WR026793
+geo-format: Tabular digital data
+transfer-format: Comma-separated values (CSV; MIME Type text/csv)
 
-build-environment: >-
-  We used XX open source XX; Any supercomputing resources used? XX
+process-date: !expr format(Sys.time(),'%Y%m%d')
+process-description: >-
+  Models were constructed and applied using the code in data release component "4 Models".
+
+  All four models (lr, obsq, simq, and noq) were trained on inputs and water temperature observations from
+  2010-10-01 through 2014-09-30, then the models were used to generate predictions for the test period from
+  2014-10-01 through 2016-09-30.
+
+  Deep learning (LSTM) model inputs were the meteorological drivers, basin attributes, and,
+  for the "obsq" and "simq" models, discharge observations and/or predictions. The "simq" models
+  were trained with observed discharge and tested with simulated discharge.
+  Model inputs for the locally-fitted auto-regressive model (AR2) were air temperature and observed
+  discharge only.
+
+  After the models had been run, predictions were formatted into comma-separated values with a common structure
+  across all four models.
 
 entities:
   -
-    data-name: model_{}_predictions.csv
+    data-name: model_{modabbrev}_predictions.csv
     data-description: >-
-      The water temperature predictions from each stream temperature model described in Rahmani et al. 2020. Each file represents a different stream temperature model, where model names are contained in the filename (modabbrev). Model abbreviation "lr" refers the locally-fitted linear regression model, "obsq" to the model trained with observed discharge, "simq" to the model trained with simulated discharge, and "noq" to the model trained with no discharge information.
+      Water temperature predictions from each stream temperature model described in Rahmani et al. 2020.
+      Each file contains predictions from a different model, where model names are given in the
+      filename (modabbrev). Model abbreviation "lr" refers the locally-fitted linear regression model,
+      "obsq" to the model trained with observed discharge, "simq" to the model trained with simulated
+      discharge, and "noq" to the model trained with no discharge information.
+    data-defsrc: This study
 
     attributes:
     -
       attr-label: site_no
       attr-def: >-
         Unique USGS site identifier.
-      attr-defs: NA
+      attr-defs: U.S. Geological Survey
       data-min: NA
       data-max: NA
       data-units: NA
@@ -35,7 +51,7 @@ entities:
       attr-label: datetime
       attr-def: >-
         Date of prediction.
-      attr-defs: NA
+      attr-defs: This study
       data-min: NA
       data-max: NA
       data-units: NA
@@ -43,13 +59,7 @@ entities:
       attr-label: sim_wtemp(C)
       attr-def: >-
         Simulated water temperature.
-      attr-defs: NA
+      attr-defs: This study
       data-min: NA
       data-max: NA
       data-units: degrees Celsius
-
-process-date: !expr format(Sys.time(),'%Y%m%d')
-data-name: Model predictions
-data-description: >-
-  Stream water temperature predictions from each model described in Rahmani et al. 2020.
-file-format: Comma-separated values (CSV; MIME Type text/csv)

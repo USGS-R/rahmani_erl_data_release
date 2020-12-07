@@ -1,39 +1,56 @@
 title: >-
-  Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 1 Spatial information
+  Exploring the exceptional performance of a deep learning stream temperature model
+  and the value of streamflow data: 1 Spatial information
 
 abstract: >-
-  <p>This data release subitem contains a shapefile of outlet locations for the 118 river basins used by Rahmani et al. (2020).</p>
+  <p>This data release component contains a shapefile of
+  monitoring site locations coincident with the outlets of the 118 river basins
+  modeled by Rahmani et al. (2020).<\p>
+
+geo-format: Vector digital data
+transfer-format: Zipfile containing shapefile components (.shp, .shx, .prj, and .dbf files)
 
 process-date: !expr format(Sys.time(),'%Y%m%d')
-file-format: Shapefile (.zip of .shp, .shx, .prj, and .dbf files)
+process-description: >-
+  Monitoring site coordinates were downloaded from the GAGES-II website (Falcone, 2011)
+  and subset to the 118 sites of interest
+  using the R programming language (see "Native Data Set Environment"/"native").
 
-build-environment: >-
-  These spatial data were downloaded from the GAGES-II website and processed using the R statistical programming language (R version 4.0.2 (2020-06-22)).
-  The computing platform for generating data and metadata was x86_64-apple-darwin17.0.
-  R packages loaded into this environment: reticulate, version: 1.16; zip, version: 2.1.1; dssecrets, version: 0.1.4;
-  sbtools, version: 1.1.12; sf, version: 0.9-6; rgdal, version: 1.5-18; sp, version: 1.4-4; feather, version: 0.3.5;
-  meddle, version: 0.0.11; mapdata, version: 2.3.0; maps, version: 3.3.0; yaml, version: 2.2.1; scipiper, version: 0.0.23;
-  forcats, version: 0.5.0; stringr, version: 1.4.0; dplyr, version: 1.0.2; purrr, version: 0.3.4; readr, version: 1.4.0;
-  tidyr, version: 1.1.2; tibble, version: 3.0.4; ggplot2, version: 3.3.2; tidyverse, version: 1.3.0.
+  To select the 118 monitoring sites (and thus their contributing basins), water temperature (see data release component "2 Observations")
+  and basin attribute data (data release component "3 Inputs") were initially downloaded for all 9322 sites
+  in the GAGES-II database, and sites were then subset to those (1) with more than
+  60% of days between 2010/10/01 and 2014/09/30 having observed daily temperatures, and (2)
+  whose contributing basins contained no major dams (more than 50 ft in height, or having more than 5000 acre feet storage)
+  as quantified in the MAJ_NDAMS_2009 variable in GAGES-II.
+  This subsetting process yielded 118 sites (and their basins) for inclusion in the modeling applications and this data release.
 
-cross-cites:
+source-cites:
   -
     authors: ['J.A. Falcone']
     title: >-
       GAGES-II: Geospatial attributes of gages for evaluating streamflow
     pubdate: 2011
     link: https://doi.org/10.3133/70046617
+    sngdate:
+      - caldate: 2011
+    srccurr: publication date
+    srccitea: 'Falcone (2011)'
+    srccontr: >-
+      Coordinates of the basin outlets corresponding to the 118 selected monitoring sites
 
 entities:
   -
     data-name: gage_locations.zip
-    data-description: GIS point locations for the 118 river catchments included in this study. These sites are a subset from the Gages II dataset.
+    data-description: >-
+      GIS point locations for the monitoring sites that define the outlets of the 118 basins modeled in this study.
+    data-defsrc: Falcone (2011) and this study
+
     attributes:
     -
       attr-label: site_no
       attr-def: >-
-        USGS unique site identifier.
-      attr-defs: NA
+        Unique USGS site identifier.
+      attr-defs: U.S. Geological Survey; STAID as in Falcone (2011)
       data-min: NA
       data-max: NA
       data-units: NA
@@ -41,7 +58,7 @@ entities:
       attr-label: site_name
       attr-def: >-
         Name of the site, which often includes river name.
-      attr-defs: NA
+      attr-defs: STANAME as in Falcone (2011)
       data-min: NA
       data-max: NA
       data-units: NA

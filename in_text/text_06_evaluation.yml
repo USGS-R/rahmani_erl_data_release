@@ -1,17 +1,23 @@
 title: >-
-    Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data: 6 Model evaluation
+    Exploring the exceptional performance of a deep learning stream temperature model
+    and the value of streamflow data: 6 Model evaluation
 
 abstract: >-
-  <p>Evaluation metrics used to assess the predictive performance of each stream temperature model.
-  For further description, see the metric calculations in the supplement of Rahmani et al. 2020 (equations S1-S7).</p>
+  <p>This data release component contains evaluation metrics used to assess the
+  predictive performance of each stream temperature model. For further description,
+  see the metric calculations in the supplement of Rahmani et al. (2020), equations S1-S7.</p>
 
-cross-cites:
-  -
-    authors: ['XX']
-    title: >-
-      Cross cite code base?
-    pubdate: XX
-    link: XX
+geo-format: Tabular digital data
+transfer-format: Comma-separated values (CSV; MIME Type text/csv)
+
+process-date: !expr format(Sys.time(),'%Y%m%d')
+process-description: >-
+  Daily model predictions were compared to daily water temperature observations for
+  the test period from 2014-10-01 through 2016-09-30. For each model and each monitoring location,
+  performance metrics were computed according to equations in the manuscript body and
+  supplement of Rahmani et al. 2020 (details in the attribute definitions of this metadata file).
+  These metric calculations are implemented in the "hydroDL/post/stat.py" file contained in "models.zip"
+  of the data release component "4 Models".
 
 entities:
   -
@@ -19,39 +25,45 @@ entities:
     data-description: >-
       The performance metrics of each stream temperature model assessed in Rahmani et al. 2020.
       Each file corresponds to a different model, and the structure of the files is the same across all models.
-      Model names are contained in the filename (modabbrev): "lr" refers the locally-fitted linear regression model,
+      Model names are contained in the filename (modabbrev): "lr" refers the locally-fitted auto-regressive model
+      (also referred to as AR2 in the Rahmani et al. 2020 manuscript),
       "obsq" to the model trained with observed discharge, "simq" to the model trained with simulated discharge, and
       "noq" to the model trained with no discharge information.
+    data-defsrc: This study
+
     attributes:
     -
       attr-label: site_no
       attr-def: >-
         Unique USGS site identifier.
-      attr-defs: NA
+      attr-defs: U.S. Geological Survey
       data-min: NA
       data-max: NA
       data-units: NA
     -
       attr-label: Bias
       attr-def: >-
-        mean error (bias)
-      attr-defs: NA
+        Mean error (bias)
+      attr-defs: This study
       data-min: NA
       data-max: NA
       data-units: degrees Celsius
     -
       attr-label: RMSE
       attr-def: >-
-        root mean squared error
-      attr-defs: NA
+        Root mean squared error
+      attr-defs: This study
       data-min: NA
       data-max: NA
       data-units: degrees Celsius
     -
       attr-label: ubRMSE
       attr-def: >-
-        Unbiased root mean squared error (RMSE), which is calculated as RMSE minus the mean bias.
-      attr-defs: NA
+        Unbiased root mean squared error (RMSE), which is calculated as the
+        square root of the mean of the differences between
+        prediction anomalies (prediction minus mean prediction) and
+        observation anomalies (observation minus mean observation).
+      attr-defs: This study
       data-min: NA
       data-max: NA
       data-units: degrees Celsius
@@ -59,29 +71,24 @@ entities:
       attr-label: NSE
       attr-def: >-
         Nash-Sutcliffe efficiency
-      attr-defs: NA
+      attr-defs: This study
       data-min: NA
       data-max: NA
       data-units: NA
     -
       attr-label: NSE_res
       attr-def: >-
-        Residual Nash-Sutcliffe efficiency (NSE), where NSE is calculated on the residual between stream and air temperature.
-      attr-defs: NA
+        Residual Nash-Sutcliffe efficiency (NSE), where NSE is calculated on the residual
+        between stream and air temperature.
+      attr-defs: This study
       data-min: NA
       data-max: NA
       data-units: NA
     -
       attr-label: Corr_res
       attr-def: >-
-        Pearson's correlation coefficient, calculated on the residual between stream and air temperature.
-      attr-defs: NA
+        Pearson's correlation coefficient calculated on the residual between stream and air temperature.
+      attr-defs: This study
       data-min: NA
       data-max: NA
       data-units: NA
-
-build-environment: >-
-  We used XX open source XX.
-
-process-date: !expr format(Sys.time(),'%Y%m%d')
-file-format: Comma-separated values (CSV; MIME Type text/csv)

@@ -45,36 +45,43 @@ targets:
 
   out_xml/00_parent.xml:
     command: sb_render_post_xml(xml_file = target_name, sb_id = sbid_00_parent,
+      template = "in_text/FGDC_template.mustache",
       "in_text/text_SHARED.yml", spatial_metadata,
       "in_text/text_00_parent.yml")
 
   out_xml/01_spatial.xml:
     command: sb_render_post_xml(xml_file = target_name, sb_id = sbid_01_spatial,
+      template = "in_text/FGDC_template.mustache",
       "in_text/text_SHARED.yml", spatial_metadata,
       "in_text/text_01_spatial.yml")
 
   out_xml/02_observations.xml:
     command: sb_render_post_xml(xml_file = target_name, sb_id = sbid_02_observations,
+      template = "in_text/FGDC_template.mustache",
       "in_text/text_SHARED.yml", spatial_metadata,
       "in_text/text_02_observations.yml")
 
   out_xml/03_inputs.xml:
     command: sb_render_post_xml(xml_file = target_name, sb_id = sbid_03_inputs,
+      template = "in_text/FGDC_template.mustache",
       "in_text/text_SHARED.yml", spatial_metadata,
       "in_text/text_03_inputs.yml")
 
   out_xml/04_models.xml:
     command: sb_render_post_xml(xml_file = target_name, sb_id = sbid_04_models,
+      template = "in_text/FGDC_template.mustache",
       "in_text/text_SHARED.yml", spatial_metadata,
       "in_text/text_04_models.yml")
 
   out_xml/05_predictions.xml:
     command: sb_render_post_xml(xml_file = target_name, sb_id = sbid_05_predictions,
+      template = "in_text/FGDC_template.mustache",
       "in_text/text_SHARED.yml", spatial_metadata,
       "in_text/text_05_predictions.yml")
 
   out_xml/06_evaluation.xml:
     command: sb_render_post_xml(xml_file = target_name, sb_id = sb_id_06_evaluation,
+      template = "in_text/FGDC_template.mustache",
       "in_text/text_SHARED.yml", spatial_metadata,
       "in_text/text_06_evaluation.yml")
 
