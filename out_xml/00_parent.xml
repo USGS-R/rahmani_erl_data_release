@@ -10,21 +10,21 @@
         <origin>Samantha Oliver</origin>
         <origin>Chaopeng Shen</origin>
         <pubdate>2020</pubdate>
-        <title>Data release: Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data</title>
+        <title>Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data</title>
         <geoform>None (see individual data release components)</geoform>
         <pubinfo>
           <pubplace>Online (digital release)</pubplace>
-          <publish>U.S. Geological Survey</publish>
+          <publish>U.S. Geological Survey data release</publish>
         </pubinfo>
         <onlink>https://doi.org/10.5066/P97CGHZH</onlink>
         <lworkcit>
           <citeinfo>
-            <origin>Farshid Rahmani</origin>
-            <origin>Kathryn Lawson</origin>
-            <origin>Wenyu Ouyang</origin>
-            <origin>Alison Appling</origin>
-            <origin>Samantha Oliver</origin>
-            <origin>Chaopeng Shen</origin>
+            <origin>Rahmani, F.</origin>
+            <origin>Lawson, K.</origin>
+            <origin>Ouyang, W.</origin>
+            <origin>Appling, A.P.</origin>
+            <origin>Oliver, S.K.</origin>
+            <origin>Shen, C.</origin>
             <pubdate>2020</pubdate>
             <title>Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data.</title>
           </citeinfo>
