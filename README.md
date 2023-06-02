@@ -1,3 +1,5 @@
+Active development moved to https://code.usgs.gov/wma/wp/data-releases/rahmani_erl_data_release
+
 ## Data release to accompany Rahmani et al., Exploring the exceptional performance of a deep learning stream temperature model and the value of streamflow data
 
 
